@@ -1,0 +1,11 @@
+{{#if weather}}
+  <div class="title">
+    <h3>{{weather.location}}</h3>
+  </div>
+  <div class="temp">
+    <h3>{{weatherDetails.tempF}}&deg;</h3>
+  </div>
+  <div class="icon">
+    {{icon-name weatherDetails.icon}}
+  </div>
+{{/if}}

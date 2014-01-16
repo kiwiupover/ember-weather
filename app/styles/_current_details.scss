@@ -1,0 +1,44 @@
+.weather-stript {
+  @include grid-row;
+  padding-top: 15px;
+  background:rgba(#444, 0.9);
+  border-radius: 0 0 3px 3px;
+  margin-bottom: 50px;
+  .current-details {
+    // @include grid-row($behavior: nest);
+    @include grid-column(4);
+
+    .temp-date {
+      @include grid-column(6, $collapse: true);
+      text-align: center;
+      .temp {
+        font-size: 60px;
+        font-weight: 100;
+        letter-spacing: -5px;
+        margin: 20px 0 30px;
+      }
+      .display-date {
+        @include label($padding: 7px 16px 9px, $radius: $global-rounded, $bg: #999, $text-size: 16px);
+      }
+    }
+    .icon-wind {
+      @include grid-column(6, $collapse: true);
+      padding: 0;
+      text-align: center;
+      font-size: 18px;
+      .large-icon {
+        width: 100%;
+        i {
+          font-size: 100px;
+          padding: 0 0 15px;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .forcast {
+    @include grid-column(8);
+  }
+
+}

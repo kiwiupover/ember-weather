@@ -1,0 +1,11 @@
+{{input value=searchTerm}}
+{{#if results}}
+  <ul id="result-dropdown" class="small f-dropdown open">
+    {{#each results}}
+      <li>
+        <a href='#' {{action 'search' name}}>{{name}}</a>
+      </li>
+    {{/each}}
+  </ul>
+{{/if}}
+<button {{action "search" searchTerm}}>Search</button>

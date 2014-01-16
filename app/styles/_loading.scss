@@ -1,0 +1,7 @@
+.loading {
+  @include panel();
+  @include grid-column($columns:6, $center:true);
+  margin-top: 100px;
+  text-align: center;
+  padding: 50px;
+}
