@@ -8,7 +8,7 @@ export default DS.Model.extend({
   iconUrl: DS.attr('string'),
   days: DS.attr('string'),
   image: DS.attr('string'),
-  searchField: DS.attr(),
+  searchField: DS.attr('string'),
 
   imageLarge: function(){
     if (this.get('image.image_url')) {
