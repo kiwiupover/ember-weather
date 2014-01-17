@@ -33,7 +33,6 @@ export default DS.JSONSerializer.extend({
     return ret;
   }
 
-
 });
 
 /*
