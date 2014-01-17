@@ -1,6 +1,5 @@
-<div class="row">
-  {{search-button searchMessage="searchHandler" searchTerm=model.searchTerm}}
-</div>
+{{search-button   searchMessage="searchHandler"
+                  searchTerm=model.searchTerm}}
 
 {{weather-current weather=model
                   saveLocationHandler="handleSaveLocation"}}

@@ -1,8 +1,5 @@
 import getJSON from "appkit/utils/get-json";
 
-var Promise = Ember.RSVP.Promise;
-
-
 export default DS.Adapter.extend({
 
   find: function(store, type, term) {

@@ -1,7 +1,7 @@
 import getJSON from "appkit/utils/get-json";
 
 export default Ember.Component.extend({
-  classNames: 'search',
+  classNames: ['row', 'search'],
   searchTerm: null,
   results: [],
 
