@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "api/",
+    "api-stub/",
+  ],
+  "ext": "js json"
+}

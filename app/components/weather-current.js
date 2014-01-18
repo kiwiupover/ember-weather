@@ -1,14 +1,11 @@
 export default Ember.Component.extend({
-  weather: null,
-  weatherDetails: Ember.computed.alias('weather.weather'),
-
   setupBackGroundImages: function(){
-    this._setImageBackGround(this.get('weather.imageLarge'));
+    this._setBackgroundImage(this.get('location.imageLarge'));
   }.on('didInsertElement'),
 
   setImage: function(){
-    this._setImageBackGround(this.get('weather.imageLarge'));
-  }.observes('weather.imageLarge'),
+    this._setBackgroundImage(this.get('location.imageLarge'));
+  }.observes('location.imageLarge'),
 
   actions: {
     saveLocation: function (location) {
@@ -16,7 +13,7 @@ export default Ember.Component.extend({
     }
   },
 
-  _setImageBackGround: function(image){
+  _setBackgroundImage: function(image){
     this.$('.bg').css('background-image', 'url(' + image + ')');
     this.$('#bg').foggy({
       blurRadius: 12,

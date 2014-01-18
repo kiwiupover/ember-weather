@@ -1,92 +1,69 @@
 var request = require('request')
-  , Promise = require('bluebird')
+  , RSVP = require('rsvp')
+  , get = RSVP.denodeify(request.get)
+  , apiKeys = require('./api-keys')
+  , Lazy = require('lazy.js')
 
-var get = Promise.promisify(request.get)
+function getSearch(query, opts) {
+  var query = query.split('-').join(', ')
+    , wundergroundQueryUrl = 'http://autocomplete.wunderground.com/aq?query=' + query
+    , limit = (opts && opts.limit) || 1
 
-var apiKeys = {
-  wunderground: process.env.WUNDERGROUND_KEY,
-  fiveHundredPX: process.env.FIVEHUNDRED_PX_KEY
-};
-
-function buildWeatherUrl(type, lField) {
-  return 'http://api.wunderground.com/api/' +
-          apiKeys.wunderground + '/' +
-          type +
-          lField + '/' +
-          '.json'
-}
-
-function build500pxUrl(nameField){
-  var key = '&consumer_key=' + apiKeys.fiveHundredPX;
-
-  return 'https://api.500px.com/v1/photos/search?term=' +
-         nameField +
-         '&only=landscapes&sort=favorites_count&rpp=1' +
-         key;
-}
-
-function weatherUrls(response) {
-  var body = JSON.parse(response[1])
-    , lField = body.RESULTS[0].l
-    , nameField = body.RESULTS[0].name;
-
-  var ret = {
-    conditions: buildWeatherUrl('conditions', lField),
-    forecast: buildWeatherUrl('forecast10day', lField),
-    image500pxAPI: build500pxUrl(nameField),
-    location: nameField,
-    searchField: lField
-  }
-
-  console.log("the ret is:", ret);
-  return ret
-}
-
-function asJSON(responsePromise) {
-  return responsePromise.then(function (response) {
-    return JSON.parse(response[0].body)
+  return get(wundergroundQueryUrl).then(function(response) {
+    var results = JSON.parse(response[1]).RESULTS
+    return Lazy(results).filter({'type': 'city'}).take(limit).toArray()
   })
 }
 
+function fetchPayload(searchResults) {
+  var result = searchResults[0]
+    , lField = result.l
+    , nameField = result.name
+
+  return RSVP.hash({
+    weatherConditions: asJSON(get(buildWeatherUrl('conditions', lField))),
+    weatherForecast: asJSON(get(buildWeatherUrl('forecast10day', lField))),
+    imageApi: asJSON(get(build500pxUrl(nameField))),
+    location: nameField,
+    lField: lField
+  })
+
+  function buildWeatherUrl (type, lField) {
+    return 'http://api.wunderground.com/api/' +
+            apiKeys.wunderground + '/' + type +
+            lField + '.json'
+  }
+
+  function build500pxUrl (nameField) {
+    return 'https://api.500px.com/v1/photos/search?term=' +
+           nameField +
+           '&only=landscapes&sort=favorites_count&rpp=1&consumer_key=' +
+           apiKeys.fiveHundredPX
+  }
+
+  function asJSON (responsePromise) {
+    return responsePromise.then(function (response) {
+      return JSON.parse(response[0].body)
+    })
+  }
+}
+
+function handleError(e) {
+  console.log("there was an error", e)
+}
+
 module.exports = function(app) {
+  app.get('/api/weather/:location', function (req, res) {
+    getSearch(req.params.location)
+    .then(fetchPayload)
+    .then(res.send.bind(res))
+    .catch(handleError)
+  })
 
-  console.log('Api keys: ', apiKeys);
+  app.get('/api/search/:term', function (req, res) {
+    getSearch(req.params.term, {limit: 5})
+    .then(res.send.bind(res))
+    .catch(handleError)
+  })
 
-	app.get('/api/weather/:location', function (req, finalRes) {
-    console.log('req is', req.params);
-    var location = req.params.location
-      , l = location.split('-').join(', ')
-      , wundergroundQueryUrl = 'http://autocomplete.wunderground.com/aq?query=' + l
-
-    console.log('req after is', l);
-    console.log('wundergroundApiUrl is', wundergroundQueryUrl);
-
-    get(wundergroundQueryUrl).then(function (response) {
-      return weatherUrls(response);
-    }).then(function (weatherUrls, response) {
-      return Promise.props({
-        weatherConditions: asJSON(get(weatherUrls.conditions)),
-        weatherForecast: asJSON(get(weatherUrls.forecast)),
-        imageApi: asJSON(get(weatherUrls.image500pxAPI)),
-        location: weatherUrls.location,
-        searchField: weatherUrls.searchField
-      })
-    }).then(function(result) {
-      finalRes.send(result)
-    }).catch(function (e) {
-      console.log("there was an error", e)
-    })
-
-	});
-
-  app.get('/api/search/:term', function(req, searchResults){
-    var term = req.params.term
-      , wundergroundQueryUrl = 'http://autocomplete.wunderground.com/aq?query=' + term;
-
-    get(wundergroundQueryUrl).then(function(response) {
-      searchResults.send(response);
-    })
-
-  });
-
-};
+}

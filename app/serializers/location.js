@@ -1,10 +1,14 @@
+var a_forEach = Ember.ArrayPolyfills.forEach,
+    a_map = Ember.ArrayPolyfills.map,
+    merge = Ember.merge;
+
 export default DS.JSONSerializer.extend({
 
-  extract: function(store, type, payload) {
+  extractFind: function(store, type, payload) {
     var weatherConditions = payload.weatherConditions.current_observation,
         weatherForecastDay = payload.weatherForecast.forecast.simpleforecast.forecastday,
         imageApi = payload.imageApi.photos,
-        location = payload.location;
+        title = payload.location;
 
     // TODO: map
     var days = [];
@@ -13,25 +17,33 @@ export default DS.JSONSerializer.extend({
     });
 
     var weather = {
-          tempC: weatherConditions.temp_c,
-          tempF: weatherConditions.temp_f,
-          iconUrl: weatherConditions.icon_url,
-          temperatureString: weatherConditions.temperature_string,
-        };
+      tempC: weatherConditions.temp_c,
+      tempF: weatherConditions.temp_f,
+      iconUrl: weatherConditions.icon_url,
+      temperatureString: weatherConditions.temperature_string,
+    };
 
     var ret = {
-      id: location.split(", ").join('-').toLowerCase(),
-      weather: Ember.merge(weather, weatherConditions),
+      id: title.split(", ").join('-').toLowerCase(),
+      weather: merge(weather, weatherConditions),
       days: days,
       image: imageApi[0],
-      location: location,
-      searchField: payload.searchField
+      title: title,
+      lField: payload.lField
     };
 
 
-    window.console.log("from the serializer", ret);
+    window.console.log("from the serializer %o", ret);
     return ret;
-  }
+  },
+
+  // extractFindAll: function (store, type, payload) {
+  //   return a_map.call(payload, function(item) {
+  //     return merge(item, {
+  //       id: 1
+  //     });
+  //   });
+  // }
 
 });
 
