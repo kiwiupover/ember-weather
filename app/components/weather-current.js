@@ -12,6 +12,15 @@ export default Ember.Component.extend({
     }
   }.property('location.image.image_url'),
 
+  displayDate: function () {
+    var day = moment.unix(this.get('location.local_epoch'));
+    return day.format('MMM Do');
+  }.property('location.local_epoch'),
+
+  eightDays: function () {
+    return this.get('location.days').slice(0,7);
+  }.property('location.days'),
+
   setupBackGroundImages: function(){
     this._setBackgroundImage(this.get('imageLarge'));
   }.on('didInsertElement'),
