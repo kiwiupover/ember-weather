@@ -1,7 +1,10 @@
 {
-  "watch": [
-    "server/api/"
+  "ignore": [
+    "server/log/"
   ],
-  "ignore": ["server/log/*"],
+  "verbose": true,
+  "watch": [
+    "server/"
+  ],
   "ext": "js json"
 }
