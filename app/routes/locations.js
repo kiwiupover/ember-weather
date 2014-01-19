@@ -1,28 +1,18 @@
 export default Ember.Route.extend({
-
-  model: function(){
-    var model =  this.store.find('location');
-    window.console.log('the location model is %o', model);
-    return model;
-  },
-
   actions: {
-    handleSaveLocation: function(weather){
-
-      var id = weather.get('location').split(", ").join('-').toLowerCase();
-
+    handleSaveLocation: function (weather) {
+      var id = weather.get('title').split(", ").join('-').toLowerCase();
       var createdLocation = this.store.createRecord('location', {
         id: id,
-        location: weather.get('location'),
-        searchField: weather.get('searchField'),
+        location: weather.get('title'),
+        lField: weather.get('lField'),
         weather: weather
       });
-
       createdLocation.save();
     },
 
-    handleTransition: function(location){
-      this.transitionTo('weather', location);
+    handleTransition: function (location) {
+      this.transitionTo('location', location);
     }
   }
 });

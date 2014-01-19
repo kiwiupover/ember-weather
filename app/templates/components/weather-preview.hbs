@@ -1,0 +1,13 @@
+{{#if location}}
+  <div class="title">
+    <h3>{{location.title}}</h3>
+  </div>
+  <div class="temp">
+    <h3>{{location.weather.tempF}}&deg;</h3>
+  </div>
+  <div class="icon">
+    {{icon-name location.weather.icon}}
+  </div>
+{{else}}
+  <h1>No saved locations</h1>
+{{/if}}

@@ -1,46 +1,20 @@
 var express = require('express')
   , server = express()
   , path = require('path')
+  , fs = require('fs')
   , port = process.env.PORT || 5000
   , serverBase = path.resolve(__dirname, '../dist')
-  , fs = require('fs')
 
 server.set('serverBase', serverBase)
 
 require('../api/routes')(server)
-
-
 server.use(static({ directory: serverBase }));
-// server.use(static({ directory: serverBase + '/assets' }));
-server.use(static({ file: serverBase + '/index.html' })); // Gotta catch 'em all
-
-// server
-  // .use(express.logger())
-  // .use(express.bodyParser())
-  // .use(express.methodOverride())
-  // .get('/dist/index.html', function (req, res) { res.redirect('/') })
-  // .use(express.static(serverBase))
-
-  // keep server from being browsable @ /public
-  // server.get('/dist', function (req, res) {
-  //   res.redirect('/');
-  // });
-  // server.get('/dist/index.html', function (req, res) {
-  //   res.redirect('/');
-  // });
-
-  // // serve everything
-  server.use('/', express.static(serverBase));
-
-  // // serve /public @ /
-  // server.use('/', express.static(path.join(serverBase, 'dist')));
-
+server.use(static({ file: path.join(serverBase, 'index.html') }));
+server.use(static({ file: path.join(serverBase, 'index.html'), ignoredFileExtensions: /\.\w{1,5}$/ }));
 
 server.listen(port, function() {
   console.log("Connect server listenting on port " + port)
 })
-
-
 
 function static(options) {
   return function(req, res, next) { // Gotta catch 'em all (and serve index.html)
@@ -57,13 +31,20 @@ function static(options) {
     fs.stat(filePath, function(err, stats) {
       if (err) { next(); return; } // Not a file, not a folder => can't handle it
 
+      if (options.ignoredFileExtensions) {
+        if (options.ignoredFileExtensions.test(req.path)) {
+          res.send(404, {error: 'Resource not found'});
+          return; // Do not serve index.html
+        }
+      }
+
       // Is it a directory? If so, search for an index.html in it.
       if (stats.isDirectory()) { filePath = path.join(filePath, 'index.html'); }
 
       // Serve the file
       res.sendfile(filePath, function(err) {
         if (err) { next(); return; }
-        // grunt.verbose.ok('Served: ' + filePath);
+        // TODO: logging with winston
       });
     });
   };

@@ -24,7 +24,9 @@
     "request": "~2.30.0",
     "express-namespace": "~0.1.1",
     "express": "~3.4.2",
-    "bluebird": "~0.11.5-1"
+    "lodash": "~2.4.1",
+    "rsvp": "~3.0.3",
+    "lazy.js": "~0.3.2"
   },
   "devDependencies": {
     "lockfile": "~>0.3.0",
