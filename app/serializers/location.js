@@ -1,39 +1,28 @@
-var a_forEach = Ember.ArrayPolyfills.forEach,
-    a_map = Ember.ArrayPolyfills.map,
+var a_map = Ember.ArrayPolyfills.map,
     merge = Ember.merge;
 
 export default DS.JSONSerializer.extend({
 
   extractFind: function(store, type, payload) {
-    var weatherConditions = payload.weatherConditions.current_observation,
-        weatherForecastDay = payload.weatherForecast.forecast.simpleforecast.forecastday,
-        imageApi = payload.imageApi.photos,
-        title = payload.location;
+    var title = payload.location;
 
-    // TODO: map
-    var days = [];
-    Ember.ArrayPolyfills.forEach.call(weatherForecastDay, function(day) {
-      days.pushObject(day);
-    });
-
-    var weather = {
-      tempC: weatherConditions.temp_c,
-      tempF: weatherConditions.temp_f,
-      iconUrl: weatherConditions.icon_url,
-      temperatureString: weatherConditions.temperature_string,
-    };
+    var currentWeather = merge({
+      tempC: payload.weatherConditions.current_observation.temp_c,
+      tempF: payload.weatherConditions.current_observation.temp_f,
+      iconUrl: payload.weatherConditions.current_observation.icon_url,
+      temperatureString: payload.weatherConditions.current_observation.temperature_string,
+    }, payload.weatherConditions.current_observation);
 
     var ret = {
       id: title.split(", ").join('-').toLowerCase(),
-      weather: merge(weather, weatherConditions),
-      days: days,
-      image: imageApi[0],
+      weather: currentWeather,
+      days: payload.weatherForecast.forecast.simpleforecast.forecastday,
+      image: payload.imageApi.photos[0],
       title: title,
       lField: payload.lField
     };
 
-
-    window.console.log("from the serializer %o", ret);
+    window.console.log("location serializer data is %o", ret);
     return ret;
   },
 
@@ -47,7 +36,11 @@ export default DS.JSONSerializer.extend({
 
 });
 
+
+
 /*
+Example Response:
+
 image =====================
 {
    "current_page":1,
