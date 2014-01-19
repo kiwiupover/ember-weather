@@ -3,13 +3,14 @@ var request = require('request')
   , get = RSVP.denodeify(request.get)
   , apiKeys = require('./api-keys')
   , Lazy = require('lazy.js')
+  , logger = require('./logger')().logger
 
 function getSearch(query, opts) {
   var query = query.split('-').join(', ')
     , wundergroundQueryUrl = 'http://autocomplete.wunderground.com/aq?query=' + query
     , limit = (opts && opts.limit) || 1
 
-  return get(wundergroundQueryUrl).then(function(response) {
+  return timedGet(wundergroundQueryUrl).then(function(response) {
     var results = JSON.parse(response[1]).RESULTS
     return Lazy(results).filter({'type': 'city'}).take(limit).toArray()
   })
@@ -21,9 +22,9 @@ function fetchPayload(searchResults) {
     , nameField = result.name
 
   return RSVP.hash({
-    weatherConditions: asJSON(get(buildWeatherUrl('conditions', lField))),
-    weatherForecast: asJSON(get(buildWeatherUrl('forecast10day', lField))),
-    imageApi: asJSON(get(build500pxUrl(nameField))),
+    weatherConditions: asJSON(timedGet(buildWeatherUrl('conditions', lField))),
+    weatherForecast: asJSON(timedGet(buildWeatherUrl('forecast10day', lField))),
+    imageApi: asJSON(timedGet(build500pxUrl(nameField))),
     location: nameField,
     lField: lField
   })
@@ -48,8 +49,16 @@ function fetchPayload(searchResults) {
   }
 }
 
+function timedGet(url) {
+  var beforeGetTS = Date.now()
+  return get(url).then(function (r) {
+    logger.info("Request to " + url + " took " + (Date.now() - beforeGetTS) + " ms ")
+    return r
+  })
+}
+
 function handleError(e) {
-  console.log("there was an error", e)
+  logger.info("there was an error", e)
 }
 
 module.exports = function(app) {

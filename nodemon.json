@@ -3,5 +3,6 @@
     "api/",
     "api-stub/",
   ],
+  "ignore": ["api/log/*"],
   "ext": "js json"
 }
