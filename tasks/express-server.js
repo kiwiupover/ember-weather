@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       // Load API stub routes
       app.use(express.json());
       app.use(express.urlencoded());
-      require('../api/routes')(app);
+      require('../server/api/routes')(app); // modified
     } else if (proxyMethod === 'proxy') {
       var proxyURL = grunt.config('express-server.options.proxyURL');
       grunt.log.writeln('Proxying API requests to: ' + proxyURL);

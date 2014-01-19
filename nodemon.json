@@ -1,8 +1,7 @@
 {
   "watch": [
-    "api/",
-    "api-stub/",
+    "server/api/"
   ],
-  "ignore": ["api/log/*"],
+  "ignore": ["server/log/*"],
   "ext": "js json"
 }

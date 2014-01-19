@@ -15,4 +15,4 @@
 .DS_Store
 Thumbs.db
 /coverage/*
-/api/log
+/server/log
