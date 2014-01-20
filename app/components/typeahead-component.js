@@ -11,18 +11,23 @@ export default Ember.Component.extend({
 
     var self = this;
 
-    typeahead.on("typeahead:selected", function(event, item) {
+    typeahead.on("typeahead:initialized", function(event, prefetchedData) {
       Ember.run(function () {
-        self.sendAction("searchMessage", item.name);
+        self.$('input').focus();
       });
     });
 
-    typeahead.on("typeahead:autocompleted", function(event, item) {
+    typeahead.on("typeahead:selected", function(event, location) {
       Ember.run(function () {
-        self.sendAction("searchMessage", item.name);
+        self.sendAction("transitionToLocation", location.name);
       });
     });
 
+    typeahead.on("typeahead:autocompleted", function(event, location) {
+      Ember.run(function () {
+        self.sendAction("transitionToLocation", location.name);
+      });
+    });
   }.on('didInsertElement')
 
 });
