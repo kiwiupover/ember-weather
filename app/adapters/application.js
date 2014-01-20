@@ -1,5 +1,5 @@
-var ApplicationAdapter = DS.LSAdapter.extend({
-  namespace: 'ember-weather'
-});
+// var ApplicationAdapter = DS.LSAdapter.extend({
+//   namespace: 'ember-weather'
+// });
 
-export default ApplicationAdapter;
+// export default ApplicationAdapter;

@@ -1,4 +1,6 @@
 import Resolver from 'resolver';
+import stringUtil from 'appkit/utils/string-util';
+stringUtil();
 
 /**
  * Canary Features: http://emberjs.com/guides/configuring-ember/feature-flags/
@@ -13,12 +15,6 @@ import Resolver from 'resolver';
  *
  *   window.ENV.ENABLE_ALL_FEATURES = true;
  */
-
-window.ENV.ENABLE_ALL_FEATURES = true;
-window.ENV.FEATURES = {
-  'ember-metal-run-bind': true
-};
-window.console.log("ENV is %o", window.ENV);
 
 var App = Ember.Application.extend({
   LOG_ACTIVE_GENERATION: true,

@@ -2,8 +2,9 @@ export default Ember.Component.extend({
   tagName: 'li',
   classNames: ['weather-list'],
 
-  click: function(){
-    this.sendAction('transitionHandler', this.get('location'));
+  actions: {
+    click: function(){
+      this.sendAction('transitionToLocation', this.get('location'));
+    }
   }
-
 });
