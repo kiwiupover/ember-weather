@@ -1,4 +1,5 @@
-.search {
+.search, .twitter-typeahead{
+  @include grid-row;
   margin-top: 50px;
   input[type='text'] {
     @include grid-column($columns:9);
