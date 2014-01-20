@@ -2,24 +2,27 @@ var a_map = Ember.ArrayPolyfills.map,
     merge = Ember.merge;
 
 export default DS.JSONSerializer.extend({
-
+  /**
+  * wunderground conditions     -> model.{tempF,icon,windGustMph,localEpoch} (Object)
+  * wunderground forecast10day  -> model.weatherForecast (Array)
+  * 500px                       -> model.imageUrl (String)
+  */
   extractFind: function(store, type, payload) {
-    var title = payload.location;
-
-    var currentWeather = merge({
-      tempC: payload.weatherConditions.current_observation.temp_c,
-      tempF: payload.weatherConditions.current_observation.temp_f,
-      iconUrl: payload.weatherConditions.current_observation.icon_url,
-      temperatureString: payload.weatherConditions.current_observation.temperature_string,
-    }, payload.weatherConditions.current_observation);
+    var title = payload.location, // TODO: use id only
+        weatherCurrent = payload.weatherConditions.current_observation,
+        weatherForecast = payload.weatherForecast.forecast.simpleforecast.forecastday.slice(0,7),
+        imageUrl = mungedImageUrl(payload.imageApi.photos[0].image_url);
 
     var ret = {
       id: title.split(", ").join('-').toLowerCase(),
-      weather: currentWeather,
-      days: payload.weatherForecast.forecast.simpleforecast.forecastday,
-      image: payload.imageApi.photos[0],
       title: title,
-      lField: payload.lField
+      forecast: weatherForecast,
+      imageUrl: imageUrl,
+      // properties plucked from weatherCurrent object
+      tempF: weatherCurrent.temp_f,
+      icon: weatherCurrent.icon,
+      windGustMph: weatherCurrent.wind_gust_mph,
+      localEpoch: weatherCurrent.local_epoch,
     };
 
     window.console.log("location serializer data is %o", ret);
@@ -36,7 +39,22 @@ export default DS.JSONSerializer.extend({
 
 });
 
+/*
+Hack to change the last part of the image url to /5.jpg, e.g:
 
+http://ppcdn.500px.org/54543406/aedfc61af4e3ac7c62a6ce08ebf694b6d7fae7ab/2.jpg
+-> becomes
+http://ppcdn.500px.org/54543406/aedfc61af4e3ac7c62a6ce08ebf694b6d7fae7ab/5.jpg
+
+TODO: re-investigate a better solution, does the api must provide a query for
+      returning high res images?
+ */
+function mungedImageUrl(imageUrl) {
+  var splitApart = imageUrl.split('/');
+  splitApart[5] = '5.jpg';
+  var joinedAgain = splitApart.join('/');
+  return joinedAgain;
+}
 
 /*
 Example Response:
