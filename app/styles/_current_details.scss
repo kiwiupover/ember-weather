@@ -4,10 +4,9 @@
   background:rgba(#444, 0.9);
   border-radius: 0 0 3px 3px;
   margin-bottom: 50px;
+  border: none;
   .current-details {
-    // @include grid-row($behavior: nest);
     @include grid-column(4);
-
     .temp-date {
       @include grid-column(6, $collapse: true);
       text-align: center;

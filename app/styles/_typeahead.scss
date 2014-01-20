@@ -1,14 +1,32 @@
+.search{
+  @include grid-row;
+  margin-top: 50px;
+  .twitter-typeahead {
+    @include grid-column($columns:9, $collapse:true);
+    margin-bottom: 0;
+    border-radius: 4px 0 0 0;
+    input {
+      margin-bottom: 0;
+      border-radius: 4px 0 0 0;
+    }
+  }
+  button {
+    @include button($padding: rem-calc(10));
+    @include grid-column($columns:3);
+    font-size: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+    border-radius: 0 4px 0 0;
+  }
+}
 .typeahead,
 .tt-query,
 .tt-hint {
   height: 30px;
-  padding: 8px 12px;
+  padding: 8px 15px !important;
   font-size: 24px;
   line-height: 30px;
-  border: 2px solid #ccc;
-  -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-          border-radius: 8px;
   outline: none;
 }
 
@@ -31,23 +49,17 @@
 }
 
 .tt-dropdown-menu {
+  color: black;
   width: 422px;
-  margin-top: 12px;
+  margin-top: 0px;
   padding: 8px 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-          border-radius: 8px;
-  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
-     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
-          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  background-color: rgba(#fff, 0.8);
+  border-radius: 0 0 4px 4px;
 }
 
 .tt-suggestion {
-  padding: 3px 20px;
-  font-size: 18px;
+  padding: 3px 15px;
+  // font-size: 18px;
   line-height: 24px;
 }
 
