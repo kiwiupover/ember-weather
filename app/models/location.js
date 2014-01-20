@@ -3,7 +3,7 @@ export default DS.Model.extend({
   forecast: DS.attr(),
   imageUrl: DS.attr(),
   // properties plucked from weatherCurrent in serializer
-  tempF: DS.attr('number'),
+  tempF: DS.attr(),
   icon: DS.attr(),
   windGustMph: DS.attr(),
   localEpoch: DS.attr()

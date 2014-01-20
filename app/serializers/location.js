@@ -1,6 +1,3 @@
-var a_map = Ember.ArrayPolyfills.map,
-    merge = Ember.merge;
-
 export default DS.JSONSerializer.extend({
   /**
   * wunderground conditions     -> model.{tempF,icon,windGustMph,localEpoch} (Object)
@@ -8,36 +5,41 @@ export default DS.JSONSerializer.extend({
   * 500px                       -> model.imageUrl (String)
   */
   extractFind: function(store, type, payload) {
-    var name = payload.locationName, // TODO: use id only
-        weatherCurrent = payload.weatherConditions.current_observation,
-        weatherForecast = payload.weatherForecast.forecast.simpleforecast.forecastday.slice(0,7),
-        imageUrl = mungedImageUrl(payload.imageApi.photos);
-
-    var ret = {
-      id: name.split(", ").join('-').toLowerCase(),
-      name: name,
-      forecast: weatherForecast,
-      imageUrl: imageUrl,
-      // properties plucked from weatherCurrent object
-      tempF: weatherCurrent.temp_f,
-      icon: weatherCurrent.icon,
-      windGustMph: weatherCurrent.wind_gust_mph,
-      localEpoch: weatherCurrent.local_epoch,
-    };
-
+    var ret = normalizeObject(payload);
     window.console.log("location serializer data is %o", ret);
     return ret;
   },
 
-  // extractFindAll: function (store, type, payload) {
-  //   return a_map.call(payload, function(item) {
-  //     return merge(item, {
-  //       id: 1
-  //     });
-  //   });
-  // }
+  extractFindAll: function (store, type, payload) {
+    var a_map = Ember.ArrayPolyfills.map;
+    var ret = a_map.call(payload, function (record) {
+      return normalizeObject(record);
+    });
+
+    window.console.log("location findAll serializer data", ret);
+    return ret;
+  }
 
 });
+
+function normalizeObject(obj) {
+  var name = obj.locationName, // TODO: use id only
+      weatherCurrent = obj.weatherConditions.current_observation,
+      weatherForecast = obj.weatherForecast.forecast.simpleforecast.forecastday.slice(0,7),
+      imageUrl = mungedImageUrl(obj.imageApi.photos);
+
+  return {
+    id: name.split(", ").join('-').toLowerCase(),
+    name: name,
+    forecast: weatherForecast,
+    imageUrl: imageUrl,
+    // properties plucked from weatherCurrent object
+    tempF: weatherCurrent.temp_f,
+    icon: weatherCurrent.icon,
+    windGustMph: weatherCurrent.wind_gust_mph,
+    localEpoch: weatherCurrent.local_epoch,
+  };
+}
 
 /*
 Hack to change the last part of the image url to /5.jpg, e.g:
