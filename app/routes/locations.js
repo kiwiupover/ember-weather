@@ -1,6 +1,6 @@
 export default Ember.Route.extend({
   actions: {
-    handleTransition: function (location) {
+    clickHandler: function (location) {
       this.transitionTo('location', location);
     }
   }

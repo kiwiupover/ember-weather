@@ -8,14 +8,14 @@ export default DS.JSONSerializer.extend({
   * 500px                       -> model.imageUrl (String)
   */
   extractFind: function(store, type, payload) {
-    var title = payload.location, // TODO: use id only
+    var name = payload.locationName, // TODO: use id only
         weatherCurrent = payload.weatherConditions.current_observation,
         weatherForecast = payload.weatherForecast.forecast.simpleforecast.forecastday.slice(0,7),
         imageUrl = mungedImageUrl(payload.imageApi.photos[0].image_url);
 
     var ret = {
-      id: title.split(", ").join('-').toLowerCase(),
-      title: title,
+      id: name.split(", ").join('-').toLowerCase(),
+      name: name,
       forecast: weatherForecast,
       imageUrl: imageUrl,
       // properties plucked from weatherCurrent object

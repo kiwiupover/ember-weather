@@ -25,8 +25,7 @@ function fetchPayload(searchResults) {
     weatherConditions: asJSON(timedGet(buildWeatherUrl('conditions', lField))),
     weatherForecast: asJSON(timedGet(buildWeatherUrl('forecast10day', lField))),
     imageApi: asJSON(timedGet(build500pxUrl(nameField))),
-    location: nameField,
-    lField: lField
+    locationName: nameField
   })
 
   function buildWeatherUrl (type, lField) {
