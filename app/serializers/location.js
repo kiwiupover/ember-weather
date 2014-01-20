@@ -11,7 +11,7 @@ export default DS.JSONSerializer.extend({
     var name = payload.locationName, // TODO: use id only
         weatherCurrent = payload.weatherConditions.current_observation,
         weatherForecast = payload.weatherForecast.forecast.simpleforecast.forecastday.slice(0,7),
-        imageUrl = mungedImageUrl(payload.imageApi.photos[0].image_url);
+        imageUrl = mungedImageUrl(payload.imageApi.photos);
 
     var ret = {
       id: name.split(", ").join('-').toLowerCase(),
@@ -49,11 +49,16 @@ http://ppcdn.500px.org/54543406/aedfc61af4e3ac7c62a6ce08ebf694b6d7fae7ab/5.jpg
 TODO: re-investigate a better solution, does the api must provide a query for
       returning high res images?
  */
-function mungedImageUrl(imageUrl) {
-  var splitApart = imageUrl.split('/');
-  splitApart[5] = '5.jpg';
-  var joinedAgain = splitApart.join('/');
-  return joinedAgain;
+function mungedImageUrl(images) {
+  var ret;
+  if (images.length > 0) {
+    var splitApart = images[0].image_url.split('/');
+    splitApart[5] = '5.jpg';
+    ret = splitApart.join('/');
+  } else {
+    ret = '/assets/images/earth.jpg';
+  }
+  return ret;
 }
 
 /*
