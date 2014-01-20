@@ -1,11 +1,13 @@
 import getJSON from "appkit/utils/get-json";
 
 export default Ember.Component.extend({
+  classNames: 'search',
 
   setUpTypeahead: function() {
     var typeahead = this.$('input').typeahead({
       name: 'searchTerm',
       valueKey: 'name',
+      limit: 10,
       remote: '/api/search/%QUERY'
     });
 
