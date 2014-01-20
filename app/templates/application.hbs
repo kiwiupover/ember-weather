@@ -1,3 +1,5 @@
 {{! partial 'nav'}}
-
-{{outlet}}
+<div {{bind-attr class="wrapper"}}>
+	controller name is {{controllerName}}
+	{{outlet}}
+</div>
