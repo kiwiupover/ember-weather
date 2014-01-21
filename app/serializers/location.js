@@ -1,9 +1,4 @@
 export default DS.JSONSerializer.extend({
-  /**
-  * wunderground conditions     -> model.{tempF,icon,windGustMph,localEpoch} (Object)
-  * wunderground forecast10day  -> model.weatherForecast (Array)
-  * 500px                       -> model.imageUrl (String)
-  */
   extractFind: function(store, type, payload) {
     var ret = normalizeObject(payload);
     window.console.log("location serializer data is %o", ret);
@@ -22,6 +17,14 @@ export default DS.JSONSerializer.extend({
 
 });
 
+/**
+* Helper to normalize an object returned by server
+*
+* wunderground conditions     -> model.{tempF,icon,windGustMph,localEpoch} (Object)
+* wunderground forecast10day  -> model.weatherForecast (Array)
+* 500px                       -> model.imageUrl (String)
+*
+*/
 function normalizeObject(obj) {
   var name = obj.locationName, // TODO: use id only
       weatherCurrent = obj.weatherConditions.current_observation,

@@ -7,7 +7,6 @@ export default Ember.Component.extend({
     var typeahead = this.$('input').typeahead({
       name: 'searchTerm',
       valueKey: 'name',
-      limit: 10,
       remote: '/api/search/%QUERY'
     });
 
