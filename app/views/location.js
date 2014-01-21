@@ -13,7 +13,6 @@ export default Ember.View.extend({
   }.observes('imageUrl'),
 
   setBackgroundImage: function (image) {
-    window.console.log("hello from UUUUUUU %o", image);
     this.$('.bg').css('background-image', 'url(' + image + ')');
     this.$('#bg').foggy({
       blurRadius: 12,
