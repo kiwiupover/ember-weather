@@ -1,9 +1,1 @@
-{{! partial 'nav'}}
-
 {{outlet}}
-
-<ul class="no-bullet columns small-8 small-centered">
-  {{#each}}
-    <li>{{weather-preview location=this transitionToLocation="transitionToLocationHandler"}}</li>
-  {{/each}}
-</ul>
