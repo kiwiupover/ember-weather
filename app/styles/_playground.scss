@@ -1,0 +1,11 @@
+.playground {
+  @include grid-row;
+  @include grid-column(8, $center:true);
+  padding-top: 50px;
+  .panel {
+    color: black;
+    &.callout {
+      background: $primary-color;
+    }
+  }
+}
