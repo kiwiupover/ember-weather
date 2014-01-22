@@ -1,8 +1,16 @@
 export default Ember.Component.extend({
-  location: null,
+  weather: null,
 
-  displayDate: function () {
-    return moment.unix(this.get('location.localEpoch')).format('MMM DD');
-  }.property('location.localEpoch')
+  setupBackGroundImages: function(){
+    this._setImageBackGround(this.get('weather.imageUrl'));
+  }.observes('weather.imageUrl').on('didInsertElement'),
+
+  _setImageBackGround: function(image){
+    this.$('.bg').css('background-image', 'url(' + image + ')');
+    this.$('#bg').foggy({
+      blurRadius: 12,
+      opacity: 1
+    });
+  }
 
 });
