@@ -29,13 +29,15 @@ function normalizeObject(obj) {
   var name = obj.locationName, // TODO: use id only
       weatherCurrent = obj.weatherConditions.current_observation,
       weatherForecast = obj.weatherForecast.forecast.simpleforecast.forecastday.slice(0,7),
-      imageUrl = mungedImageUrl(obj.imageApi.photos);
+      imageUrl = mungedImageUrl(obj.imageApi.photos),
+      photographer = obj.imageApi.photos[0].user;
 
   return {
     id: name.split(", ").join('-').toLowerCase(),
     name: name,
     forecast: weatherForecast,
     imageUrl: imageUrl,
+    photographer: photographer,
     // properties plucked from weatherCurrent object
     tempF: weatherCurrent.temp_f,
     icon: weatherCurrent.icon,
