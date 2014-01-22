@@ -5,6 +5,7 @@ $footer-height: 30px;
 }
 #main-content { //push the footer to the bottom of the page
   overflow: auto;
+  min-height: 400px;
   padding-bottom: $footer-height;
 }
 .footer {
