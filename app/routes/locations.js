@@ -5,15 +5,23 @@ export default Ember.Route.extend({
 
   actions: {
     saveLocation: function(weather){
-      var id = weather.get('name').split(", ").join('-').toLowerCase();
+      var locations = this.controllerFor('locations'),
+          totalSavedLocations = locations.get('length'),
+          id = weather.get('name').split(", ").join('-').toLowerCase();
 
-      var createdLocation = this.store.createRecord('location', {
-        id: id,
-        name: weather.get('name'),
-        weather: weather
-      });
+      if (totalSavedLocations < 2) {
+        var createdLocation = this.store.createRecord('location', {
+          id: id,
+          name: weather.get('name'),
+          weather: weather
+        });
 
-      createdLocation.save();
+        createdLocation.save();
+      } else {
+        window.alert('You can only save two locations. ' +
+                      'Please remove one before saving again.');
+      }
+
     },
 
     removeLocation: function(weather){
