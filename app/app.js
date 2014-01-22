@@ -17,6 +17,7 @@ stringUtil();
  */
 
 var App = Ember.Application.extend({
+  rootElement: '#main-content',
   LOG_ACTIVE_GENERATION: true,
   LOG_MODULE_RESOLVER: true,
   LOG_TRANSITIONS: true,

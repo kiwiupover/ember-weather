@@ -1,0 +1,32 @@
+$footer-height: 30px;
+
+.wrapper {
+  min-height: 100%;
+}
+#main-content { //push the footer to the bottom of the page
+  overflow: auto;
+  padding-bottom: $footer-height;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  background: #333;
+  position: relative;
+  margin-top: -$footer-height;
+  height: $footer-height;
+  clear:both;
+  ul {
+    font-size: 11px;
+    margin: 0 auto;
+    width: 100%;
+    height: $footer-height;
+    padding: 8px;
+    li {
+      display: inline-block;
+      padding: 0 10px;
+    }
+    a {
+      color: white
+    }
+  }
+}

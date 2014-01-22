@@ -312,8 +312,10 @@ $cursor-text-value: text !default;
       @include box-sizing(border-box);
     }
 
-    html,
-    body { font-size: $base-font-size; }
+    html, body {
+      height: 100%;
+      font-size: $base-font-size;
+    }
 
     // Default body styles
     body {
@@ -380,4 +382,7 @@ $cursor-text-value: text !default;
     // Make select elements 100% width by default
     select { width: 100%; }
   }
+}
+html, body {
+  height: 100%;
 }
