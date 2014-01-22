@@ -1,12 +1,12 @@
 {{#if location}}
   <div class="title">
-    <h3>{{location.name}}</h3>
+    <h3>{{locations.name}}</h3>
   </div>
   <div class="temp">
-    <h3>{{location.tempF}}&deg;</h3>
+    <h3>{{location.weather.tempF}}&deg;</h3>
   </div>
   <div class="icon">
-    {{icon-name location.icon}}
+    {{icon-name location.waether.icon}}
   </div>
 {{else}}
   <h1>No saved locations</h1>

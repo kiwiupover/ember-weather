@@ -3,7 +3,12 @@
 <div class="weather-panel bg">
   <div class="small-12 columns">
     <h1>{{weather.name}}</h1>
-    <a {{action 'saveLocation' id}}>Save Location</a>
+
+    {{#if saved}}
+      <a {{action 'removeLocation' weather}}>Remove Location</a>
+    {{else}}
+      <a {{action 'saveLocation' weather}}>Save Location</a>
+    {{/if}}
   </div>
   <div class="attribution">
     photo by: {{photographer-link weather.photographer}}
