@@ -1,10 +1,12 @@
 @import "vendor/foundation/scss/normalize";
 @import "foundation/foundation";
-@import "icons";
 @import "foundation/foundation_default";
+
+@import "icons";
 @import "forecast";
 @import "current_details";
 @import "weather_list";
 @import "dropdowns";
 @import "loading";
 @import "typeahead";
+@import "footer";
