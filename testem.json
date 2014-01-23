@@ -7,5 +7,5 @@
         "/assets/templates.js": "tmp/result/assets/templates.js",
         "/assets/app.css": "tmp/result/assets/app.css"
       },
-  "launch_in_dev": ["PhantomJS", "Chrome"]
+  "launch_in_dev": ["PhantomJS", "Chrome", "FireFox", "Safari"]
 }

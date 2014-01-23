@@ -1,0 +1,53 @@
+$width: 20px;
+$height: 20px;
+$arrow-length: 20px;
+$arrow-width: 5px;
+$gray: #eee;
+$border: 4px;
+
+.weather-vane {
+  position: relative;
+  width: $width;
+  margin: 0 auto;
+  .text {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: $width;
+    height: $height;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: helvetica;
+    .speed {
+      font-size: 80%;
+    }
+  }
+  .circle {
+    position: relative;
+    width: $width;
+    height: $height;
+    border: $border solid $gray;
+    border-radius: 999px;
+    background: #333;
+  }
+
+  .arrow {
+    position: absolute;
+    top: -26px;
+    right: 0;
+    left: 0;
+    height: 0px;
+    border: $arrow-width solid transparent;
+    display:inline-block;
+    border-bottom-color: $gray;
+    border-bottom-width: $arrow-length;
+  }
+
+  .arrow:hover{
+    transform:rotate(360deg);
+      -ms-transform:rotate(360deg); /* IE 9 */
+      -webkit-transform:rotate(360deg); /* Safari and Chrome */
+  }
+
+}

@@ -5,6 +5,6 @@ export default Ember.Component.extend({
   weather: Ember.computed.alias('location.weather'),
 
   click: function () {
-    this.sendAction('transitionToLocation', this.get('location'));
+    this.sendAction('transitionToLocation', this.get('weather'));
   }
 });

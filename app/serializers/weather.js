@@ -40,9 +40,11 @@ function normalizeObject(obj) {
     photographer: photographer,
     // properties plucked from weatherCurrent object
     tempF: weatherCurrent.temp_f,
+    tempC: weatherCurrent.temp_c,
     icon: weatherCurrent.icon,
     windGustMph: weatherCurrent.wind_gust_mph,
-    localEpoch: weatherCurrent.local_epoch,
+    windDegrees: weatherCurrent.wind_degrees,
+    localEpoch: weatherCurrent.local_epoch
   };
 }
 

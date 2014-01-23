@@ -10,15 +10,12 @@ module('Acceptances - Index', {
 });
 
 test('index renders', function(){
-  expect(3);
+  expect(1);
 
   visit('/').then(function(){
-    var title = find('h2#title');
-    var list = find('ul li');
+    var title = find('h1');
 
-    equal(title.text(), 'Welcome to Ember.js');
+    equal(title.text(), 'the weather is world wide');
 
-    equal(list.length, 3);
-    equal(list.text(), 'redyellowblue');
   });
 });

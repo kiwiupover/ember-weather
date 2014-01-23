@@ -39,5 +39,24 @@
   .forcast {
     @include grid-column(8);
   }
+  .wind-direction {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      &.speed {
+        padding-right: 16px;
+      }
+      &.direction {
+        padding-top: 4px;
+      }
+
+    }
+
+
+  }
 
 }
