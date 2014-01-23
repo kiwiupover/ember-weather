@@ -2,6 +2,7 @@ import getJSON from "appkit/utils/get-json";
 
 export default Ember.Component.extend({
   classNames: 'search',
+  placeholder: "Search for weather around the world",
 
   setUpTypeahead: function() {
     var typeahead = this.$('input').typeahead({

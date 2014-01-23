@@ -21,7 +21,6 @@ export default Ember.Route.extend({
         window.alert('You can only save two locations. ' +
                       'Please remove one before saving again.');
       }
-
     },
 
     removeLocation: function(weather){

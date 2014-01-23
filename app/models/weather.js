@@ -4,8 +4,10 @@ export default DS.Model.extend({
   imageUrl: DS.attr('string'),
   photographer: DS.attr('string'),
   // properties plucked from weatherCurrent in serializer
-  tempF: DS.attr('string'),
+  tempF: DS.attr('numbers'),
+  tempC: DS.attr('numbers'),
   icon: DS.attr('string'),
   windGustMph: DS.attr('string'),
-  localEpoch: DS.attr('string')
+  windDegree: DS.attr('string'),
+  localEpoch: DS.attr('date')
 });
