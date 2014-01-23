@@ -13,5 +13,8 @@
         <li>{{#link-to 'weather' this.id}}{{this.name}}{{/link-to}}</li>
       {{/each}}
     </ul>
+    <ul class='right'>
+      <li>{{weather-searchbar transitionToLocation="transitionToLocationHandler"}}</li>
+    </ul>
   </section>
 </nav>
