@@ -33,3 +33,7 @@ export default Ember.Component.extend({
   }.on('didInsertElement')
 
 });
+
+
+
+

@@ -8,6 +8,6 @@ export default DS.Model.extend({
   tempC: DS.attr('numbers'),
   icon: DS.attr('string'),
   windGustMph: DS.attr('string'),
-  windDegree: DS.attr('string'),
+  windDegrees: DS.attr('string'),
   localEpoch: DS.attr('date')
 });
