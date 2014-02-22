@@ -1,10 +1,33 @@
-export default Ember.Route.extend({
+var App,
+    weatherUrl = 'http://localhost:8000/weather/vancouver-canada';
 
-  model: function(params) {
-    return this.store.find('weather', params.location_id);
-    // return weather;
+module('Acceptances - Weather', {
+  setup: function(){
+    App = startApp();
+    // ic.ajax.defineFixture(weatherUrl, {
+    //     response: weather,
+    //     jqXHR: {},
+    //     textStatus: 'success'
+    // });
+
+  },
+  teardown: function() {
+    Ember.run(App, 'destroy');
   }
 });
+
+test('locations/weather renders', function(){
+  expect(1);
+  visit('/').then(function(){
+
+    visit('/locations/vancouver-canada').then(function(){
+      var title = find('.weather-panel h1');
+
+      equal(title.text(), 'Vancouver, Canada');
+    });
+  });
+});
+
 
 var weather = {
     "id": "vancouver-canada",

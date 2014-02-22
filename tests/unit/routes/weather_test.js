@@ -1,9 +1,27 @@
-export default Ember.Route.extend({
+import Weather from 'appkit/routes/weather';
 
-  model: function(params) {
-    return this.store.find('weather', params.location_id);
-    // return weather;
+var route;
+module("Unit - WeatherRoute", {
+  setup: function(){
+    var container = isolatedContainer([
+      'route:weather'
+    ]);
+
+    route = container.lookup('route:weather');
   }
+});
+
+test("it exists", function(){
+  ok(route);
+  ok(route instanceof Weather);
+});
+
+test("#model", function(){
+  deepEqual(route.model(), weather);
+});
+
+test("#beforeModel", function(){
+  equal(route.beforeModel, weather);
 });
 
 var weather = {

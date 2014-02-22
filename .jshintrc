@@ -8,7 +8,8 @@
     "Em",
     "DS",
     "$",
-    "moment"
+    "moment",
+    "ic"
   ],
   "node" : false,
   "browser" : false,
