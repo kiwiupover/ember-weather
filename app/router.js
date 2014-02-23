@@ -7,13 +7,7 @@ Router.map(function() {
 });
 
 Router.reopen({
-  // Define the way urls work and look
   location: 'history'
-  // Supports three types:
-  //
-  // location: 'hash'    => example.com/#/locations/seattle
-  // location: 'history' => example.com/locations/seattle
-  // location: 'none'    => example.com
 });
 
 export default Router;
