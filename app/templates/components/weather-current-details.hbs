@@ -12,9 +12,13 @@
     <div class="large-icon">
       {{icon-name weather.icon}}
     </div>
-    <div class="text-center">
-      {{weather-vane windDegrees=weather.windDegrees}}
-      {{weather.windGustMph}}mph
+    <div class="wind-direction">
+      <span class='speed'>
+        {{weather.windGustMph}}mph
+      </span>
+      <span class='direction'>
+        {{weather-vane windDegrees=weather.windDegrees}}
+      </span>
     </div>
   </div>
 </div>

@@ -1,16 +1,14 @@
-$width: 70px;
-$height: 70px;
+$width: 20px;
+$height: 20px;
 $arrow-length: 20px;
 $arrow-width: 5px;
 $gray: #eee;
 $border: 4px;
 
 .weather-vane {
-  margin-top: 50px;
   position: relative;
   width: $width;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   .text {
     position: absolute;
     top: 26px;
@@ -29,24 +27,21 @@ $border: 4px;
     position: relative;
     width: $width;
     height: $height;
-    border: $border solid #ddd;
+    border: $border solid $gray;
     border-radius: 999px;
     background: #333;
-    transform: rotate(300deg);
-    -webkit-transform:rotate(130deg);
   }
 
   .arrow {
     position: absolute;
-    top: -28px;
-    right: 35px;
+    top: -26px;
+    right: 0;
+    left: 0;
     height: 0px;
     border: $arrow-width solid transparent;
     display:inline-block;
     border-bottom-color: $gray;
     border-bottom-width: $arrow-length;
-    transition: transform 2s;
-    -webkit-transition: transform 2s; /* Safari */
   }
 
   .arrow:hover{
