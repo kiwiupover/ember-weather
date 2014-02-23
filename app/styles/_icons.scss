@@ -27,6 +27,9 @@
 }
 
 // icons based off wunderground gifs
+.icon-weathervane:before {
+  content: "\e602";
+}
 
 .icon-chanceflurries:before {
   content: "\e621";
@@ -86,5 +89,5 @@
   content: "\e60b";
 }
 .icon-partlycloudy:before {
-  content: "\e60a"; 
+  content: "\e60a";
 }
