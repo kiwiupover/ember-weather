@@ -49,7 +49,7 @@
 .icon-chancetstorms:before {
   content: "\e60d";
 }
-.icon-clear:before {
+.icon-clear:before, .icon-clear-day:before {
   content: "\e613";
 }
 .icon-flurries:before {
@@ -88,6 +88,6 @@
 .icon-cloudy:before {
   content: "\e60b";
 }
-.icon-partlycloudy:before {
+.icon-partlycloudy:before, .icon-partly-cloudy-day:before {
   content: "\e60a";
 }
