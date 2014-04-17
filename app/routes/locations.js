@@ -9,7 +9,7 @@ export default Ember.Route.extend({
           totalSavedLocations = locations.get('length'),
           id = weather.get('name').split(", ").join('-').toLowerCase();
 
-      if (totalSavedLocations < 2) {
+      if (totalSavedLocations < 7) {
         var createdLocation = this.store.createRecord('location', {
           id: id,
           name: weather.get('name'),
@@ -18,7 +18,7 @@ export default Ember.Route.extend({
 
         createdLocation.save();
       } else {
-        window.alert('You can only save two locations. ' +
+        window.alert('You can only save seven locations. ' +
                       'Please remove one before saving again.');
       }
     },
