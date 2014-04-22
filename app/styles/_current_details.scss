@@ -20,7 +20,7 @@
         @include label($padding: 7px 16px 9px, $radius: $global-rounded, $bg: #999, $text-size: 16px);
       }
     }
-    .icon-wind {
+    .wind-icon {
       @include grid-column(6, $collapse: true);
       padding: 0;
       text-align: center;
