@@ -31,7 +31,6 @@ function normalizeObject(obj) {
       weatherForecast = obj.weatherForecast.daily.data.slice(0,7),
       imageUrl = mungedImageUrl(obj.imageApi.photos),
       photographer = obj.imageApi.photos[0].user;
-
   return {
     id: name.split(", ").join('-').toLowerCase(),
     name: name,
@@ -39,12 +38,12 @@ function normalizeObject(obj) {
     imageUrl: imageUrl,
     photographer: photographer,
     // properties plucked from weatherCurrent object
-    tempF: weatherCurrent.temp_f,
+    temperature: weatherCurrent.temperature,
     tempC: weatherCurrent.temp_c,
     icon: weatherCurrent.icon,
-    windGustMph: weatherCurrent.wind_gust_mph,
-    windDegrees: weatherCurrent.wind_degrees,
-    localEpoch: weatherCurrent.local_epoch
+    windSpeed: weatherCurrent.windSpeed,
+    windBearing: weatherCurrent.windBearing,
+    time: weatherCurrent.time
   };
 }
 

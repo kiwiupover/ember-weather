@@ -36,8 +36,20 @@
       }
     }
   }
-  .forcast {
+  .forecast {
     @include grid-column(8);
+    li {
+      text-align: center;
+      i {
+        float: none;
+      }
+      .high, .low {
+        font-size: 85%;
+      }
+      .low {
+        color: lightblue
+      }
+    }
   }
   .wind-direction {
     text-align: center;
@@ -53,10 +65,6 @@
       &.direction {
         padding-top: 4px;
       }
-
     }
-
-
   }
-
 }
