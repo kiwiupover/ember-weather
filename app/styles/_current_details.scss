@@ -20,7 +20,7 @@
         @include label($padding: 7px 16px 9px, $radius: $global-rounded, $bg: #999, $text-size: 16px);
       }
     }
-    .icon-wind {
+    .wind-icon {
       @include grid-column(6, $collapse: true);
       padding: 0;
       text-align: center;
@@ -36,8 +36,20 @@
       }
     }
   }
-  .forcast {
+  .forecast {
     @include grid-column(8);
+    li {
+      text-align: center;
+      i {
+        float: none;
+      }
+      .high, .low {
+        font-size: 85%;
+      }
+      .low {
+        color: lightblue
+      }
+    }
   }
   .wind-direction {
     text-align: center;
@@ -53,10 +65,6 @@
       &.direction {
         padding-top: 4px;
       }
-
     }
-
-
   }
-
 }

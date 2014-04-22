@@ -19,19 +19,20 @@ function getSearch(query, opts) {
 function fetchPayload(searchResults) {
   var result = searchResults[0]
     , lField = result.l
+    , latField = result.lat
+    , lonField = result.lon
     , nameField = result.name
 
   return RSVP.hash({
-    weatherConditions: asJSON(timedGet(buildWeatherUrl('conditions', lField))),
-    weatherForecast: asJSON(timedGet(buildWeatherUrl('forecast10day', lField))),
+    weatherConditions: asJSON(timedGet(buildWeatherUrl('conditions', latField, lonField))),
+    weatherForecast: asJSON(timedGet(buildWeatherUrl('forecast10day', latField, lonField))),
     imageApi: asJSON(timedGet(build500pxUrl(nameField))),
     locationName: nameField
   })
 
   function buildWeatherUrl (type, lField) {
-    return 'http://api.wunderground.com/api/' +
-            apiKeys.wunderground + '/' + type +
-            lField + '.json'
+    return 'https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/' +
+        latField + ',' + lonField
   }
 
   function build500pxUrl (nameField) {

@@ -1,23 +1,22 @@
 <div class="current-details">
   <div class="temp-date">
     <div class="temp">
-      {{weather.tempF}}
-      &deg;
+      {{weather.temperature}}&deg;
     </div>
     <div class="display-date">
       {{displayDate}}
     </div>
   </div>
-  <div class="icon-wind">
+  <div class="wind-icon">
     <div class="large-icon">
-      {{icon-name weather.icon}}
+       {{icon-name weather.icon}}
     </div>
     <div class="wind-direction">
       <span class='speed'>
-        {{weather.windGustMph}}mph
+        {{weather.windSpeed}}mph
       </span>
       <span class='direction'>
-        {{weather-vane windDegrees=weather.windDegrees}}
+        {{weather-vane windDegrees=weather.windBearing}}
       </span>
     </div>
   </div>
