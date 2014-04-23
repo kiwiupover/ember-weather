@@ -5,8 +5,8 @@
         {{date-formatter time}}
       </div>
       {{icon-name icon}}
-      <span class="high"><small>high</small> {{temperatureMax}}&deg;</span>
-      <span class="low"><small>low</small> {{temperatureMin}}&deg;</span>
+      <span class="high"><small>high</small> {{whole-number temperatureMax}}&deg;</span>
+      <span class="low"><small>low</small> {{whole-number temperatureMin}}&deg;</span>
     </li>
   {{/each}}
 </ul>
