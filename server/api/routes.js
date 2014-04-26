@@ -18,9 +18,9 @@ function getSearch(query, opts) {
 
 function fetchPayload(searchResults) {
   var result = searchResults[0]
-    , lField = result.l
-    , latField = result.lat
-    , lonField = result.lon
+    , latLon = result.ll.split(' ')
+    , latField = latLon[0]
+    , lonField = latLon[1]
     , nameField = result.name
 
   return RSVP.hash({
@@ -30,7 +30,7 @@ function fetchPayload(searchResults) {
     locationName: nameField
   })
 
-  function buildWeatherUrl (type, lField) {
+  function buildWeatherUrl (type, latField, lonField) {
     return 'https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/' +
         latField + ',' + lonField
   }
