@@ -7,6 +7,9 @@
   border: none;
   .current-details {
     @include grid-column(4);
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
     .temp-date {
       @include grid-column(6, $collapse: true);
       text-align: center;
@@ -38,10 +41,30 @@
   }
   .forecast {
     @include grid-column(8);
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
+    ul {
+      @media #{$medium-up} {
+        @include inline-list;
+      }
+    }
     li {
       text-align: center;
+      @media #{$small-only} {
+        padding-bottom: 22px;
+        border-bottom: 1px solid #555;
+        &:last-of-type {
+          border-bottom: none
+        }
+      }
+
       i {
         float: none;
+        @media #{$small-only} {
+          position: relative;
+          top: 15px;
+        }
       }
       .high, .low {
         font-size: 85%;
