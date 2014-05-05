@@ -17,7 +17,7 @@ npm install -g grunt-cli
 npm install -g bower
 ```
 
-Now we can clone the ember-weather repo. You'll want to change into the directory that you store your projects. 
+Now we can clone the ember-weather repo. You'll want to change into the directory that you store your projects.
 
 For example:
 ```sh
@@ -56,11 +56,9 @@ You should now be able to navigate to [http://localhost:8000](http://localhost:8
 
 ## Special Thanks
 
-This project could not have happened without help from 
+This project could not have happened without help from
 - [Erik Trom](https://github.com/trombom)
 - [Gordon Potter](https://github.com/eccegordo)
 - [Josh Williams](https://github.com/tucsonlabs)
 
 Also huge thank you to the ember communty Yehuda, Tom, Stefan, Kris and all the contrubuters to [Ember-app-kit](https://github.com/stefanpenner/ember-app-kit)
-
-

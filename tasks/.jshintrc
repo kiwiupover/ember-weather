@@ -38,7 +38,7 @@
     "startApp",
     "__dirname"
   ],
-  "node" : false,
+  "node" : true,
   "browser" : false,
   "boss" : true,
   "curly": false,

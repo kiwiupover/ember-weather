@@ -7,4 +7,6 @@
 //
 // window.ENV = {FEATURES: {'with-controller': true}};
 
-window.ENV = {};
+window.ENV = window.ENV || {};
+
+window.ENV.MODEL_FACTORY_INJECTIONS = true;
