@@ -1,12 +1,16 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+
 /tmp
+/docs
 
 # dependencies
 /node_modules
 /vendor/*
 !/vendor/loader.js
+!/vendor/ember-shim.js
+!/vendor/qunit-shim.js
 
 # misc
 /.sass-cache
