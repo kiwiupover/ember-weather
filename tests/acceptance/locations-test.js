@@ -13,8 +13,7 @@ test('locations renders', function(){
   expect(1);
 
   visit('/locations').then(function(){
-    var title = find('.title-area h1');
-
+    var title = find('.title-area');
     equal(title.text(), 'Ember Weather');
   });
 });

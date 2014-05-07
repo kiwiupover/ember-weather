@@ -1,14 +1,18 @@
+var icAjax = require('ic-ajax');
+
 var App,
-    weatherUrl = 'http://localhost:8000/weather/vancouver-canada';
+    weatherUrl = 'http://localhost:8000/api/weather/vancouver-canada';
+
 
 module('Acceptances - Weather', {
   setup: function(){
     App = startApp();
-    // ic.ajax.defineFixture(weatherUrl, {
-    //     response: weather,
-    //     jqXHR: {},
-    //     textStatus: 'success'
-    // });
+    var wet = icAjax.defineFixture(weatherUrl, {
+        response: weather,
+        jqXHR: {},
+        textStatus: 'success'
+    });
+    debugger;
 
   },
   teardown: function() {
@@ -31,7 +35,7 @@ test('locations/weather renders', function(){
 
 var weather = {
     "id": "vancouver-canada",
-    "name": "Vancouver, Canada",
+    "name": "Vancouver, Canada, Dave",
     "forecast": [
         {
             "date": {

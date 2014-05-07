@@ -1,9 +1,18 @@
 var Router = Ember.Router.extend();
 
 Router.map(function() {
-  this.resource("locations", {path: 'locations'}, function(){
-      this.resource("weather", {path: ':location_id'}, function(){});
+  this.route('seattle');
+  this.route('auckland');
+  this.resource('locations', function(){
+    this.resource("weather", {path: ':location_id'}, function(){});
+    this.resource('vancouver', function(){
+      this.route('commerical-drive');
+      this.route('portland');
+    });
   });
+  // this.resource("locations", {path: 'locations'}, function(){
+  //   this.resource("weather", {path: ':location_id'}, function(){});
+  // });
 });
 
 Router.reopen({

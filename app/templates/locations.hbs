@@ -1,3 +1,23 @@
-{{partial 'nav'}}
-
-{{outlet}}
+<div class="row panel">
+  <h1>
+    Comming Up to speed
+  </h1>
+  <div class='row'>
+    <div class="column small-4">
+      <ul>
+        <li>
+          {{link-to 'Vancouver' 'vancouver'}}
+        </li>
+        <li>
+          {{link-to 'Commerical Drive' 'vancouver.commerical-drive'}}
+        </li>
+        <li>
+          {{link-to 'Portland' 'vancouver.portland'}}
+        </li>
+      </ul>
+    </div>
+    <div class="column small-8">
+      {{outlet}}
+    </div>
+  </div>
+</div>

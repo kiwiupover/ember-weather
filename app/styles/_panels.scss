@@ -1,0 +1,31 @@
+.controller-wrapper {
+  position: absolute;
+  width: 300px;
+  right: 0;
+  top: 0;
+  .controller {
+    @include panel();
+    color: black;
+    margin-bottom: 0;
+    padding: 4px 30px;
+  }
+}
+
+nav {
+  height: 40px;
+  background: #222;
+  padding: 10px 200px;
+  a {
+    padding: 2px 20px 4px;
+    margin: 0 5px;
+    &.active {
+      background: white;
+      color: #333;
+    }
+  }
+}
+
+ul li > a.active {
+  background: #272727;
+  padding: 3px 6px;
+}
