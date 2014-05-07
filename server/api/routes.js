@@ -4,6 +4,11 @@ var request = require('request')
   , apiKeys = require('./api-keys')
   , Lazy = require('lazy.js')
   , logger = require('./logger')().logger
+  , fixture = {}
+
+fixture.seattle = require('../fixtures/seattle')
+fixture.auckland = require('../fixtures/auckland')
+fixture.vancouver = require('../fixtures/vancouver')
 
 function getSearch(query, opts) {
   var query = query.split('-').join(', ')
@@ -64,10 +69,13 @@ function handleError(e) {
 
 module.exports = function(app) {
   app.get('/api/weather/:location', function (req, res) {
-    getSearch(req.params.location)
-    .then(fetchPayload)
-    .then(res.send.bind(res))
-    .catch(handleError)
+    logger.info("Request params " + req.params.location);
+
+    res.send(fixture[req.params.location]);
+    // getSearch(req.params.location)
+    // .then(fetchPayload)
+    // .then(res.send.bind(res))
+    // .catch(handleError)
   })
 
   app.get('/api/search/:term', function (req, res) {
