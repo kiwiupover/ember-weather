@@ -1,5 +1,6 @@
 export default Ember.Component.extend({
   windDegrees: 0,
+  classNames: 'weather-vane',
   attributeBindings: 'style',
 
   style: function(){

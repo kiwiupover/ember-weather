@@ -21,7 +21,7 @@ function startApp(attrs) {
     location: 'none'
   });
 
-
+  localStorage.clear();
 
   App.reset(); // this shouldn't be needed, i want to be able to "start an app at a specific URL"
 
