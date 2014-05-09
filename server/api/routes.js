@@ -9,6 +9,7 @@ var request = require('request')
 fixture.seattle = require('../fixtures/seattle')
 fixture.auckland = require('../fixtures/auckland')
 fixture.vancouver = require('../fixtures/vancouver')
+fixture.search = require('../fixtures/search')
 
 function getSearch(query, opts) {
   var query = query.split('-').join(', ')
@@ -79,9 +80,10 @@ module.exports = function(app) {
   })
 
   app.get('/api/search/:term', function (req, res) {
-    getSearch(req.params.term, {limit: 5})
-    .then(res.send.bind(res))
-    .catch(handleError)
+    res.send(fixture.search);
+    // getSearch(req.params.term, {limit: 5})
+    // .then(res.send.bind(res))
+    // .catch(handleError)
   })
 
 }
