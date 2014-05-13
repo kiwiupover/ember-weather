@@ -14,7 +14,7 @@
     "ember-resolver": "https://github.com/stefanpenner/ember-jj-abrams-resolver.git#master",
     "ember-testing-httpRespond": "~0.1.1",
     "loader.js": "https://github.com/stefanpenner/loader.js",
-    "ember-load-initializers": "ghttps://github.com/stefanpenner/ember-load-initializers.git#0.0.1",
+    "ember-load-initializers": "https://github.com/stefanpenner/ember-load-initializers.git#0.0.1",
     "ic-ajax": "~1.0.4",
     "ember-testing-httpRespond": "~0.1.1",
     "foundation": "~5.0.2",
