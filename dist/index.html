@@ -3,25 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>App</title>
+  <title>Ember Weather</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="/assets/d0e8c8c5.app.min.css">
+  <link rel="stylesheet" href="/assets/f95cb890.app.min.css">
+
 
   <!-- for more details visit: https://github.com/yeoman/grunt-usemin -->
 
-  <script src="/assets/acb720d0.config.min.js"></script>
+  <script src="/assets/03258c8c.config.min.js"></script>
 
-  <script src="/assets/fa86d150.vendor.min.js"></script>
+  <script src="/assets/4848e5c3.vendor.min.js"></script>
 
-  <script src="/assets/b4673e4d.app.min.js"></script>
+  <script src="/assets/44407fa7.app.min.js"></script>
 
 </head>
 <body>
 <div class="wrapper">
   <div id="main-content">
-
 
   <!--[if lt IE 8]>
     <p class="browsehappy">
@@ -31,9 +31,9 @@
     </p>
   <![endif]-->
 
-  <script>
-    window.App = require('appkit/app')["default"].create();
-  </script>
+    <script>
+      window.App = require('appkit/app')['default'].create(ENV.APP);
+    </script>
   </div> <!-- close main-content -->
 </div><!-- close wrapper -->
 
