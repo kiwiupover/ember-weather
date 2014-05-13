@@ -26,12 +26,13 @@
   "dependencies": {
     "request": "~2.30.0",
     "express": "~3.4.8",
-    "express-namespace": "~0.1.1",
     "lodash": "~2.4.1",
     "rsvp": "~3.0.3",
     "lazy.js": "~0.3.2",
     "winston": "~0.7.2",
-    "mkdirp": "~0.3.5"
+    "mkdirp": "~0.3.5",
+    "express-namespace": "~0.1.1",
+    "bower": "~1.3.2"
   },
   "devDependencies": {
     "express": "~3.4.8",
@@ -55,7 +56,6 @@
     "grunt-rev": "~0.1.0",
     "grunt-ember-templates": "~0.4.18",
     "grunt-contrib-testem": "~0.5.14",
-    "express-namespace": "~0.1.1",
     "request": "~2.33.0",
     "loom-generators-ember-appkit": "~1.0.5",
     "originate": "~0.1.5",
