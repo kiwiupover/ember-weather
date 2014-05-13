@@ -12,7 +12,7 @@ fixture.vancouver = require('../fixtures/vancouver')
 fixture.search = require('../fixtures/search')
 
 function getSearch(query, opts) {
-  var query = query.split('-').join(', ')
+  var query = query.split('-').join(', ').split('_').join(' ')
     , wundergroundQueryUrl = 'http://autocomplete.wunderground.com/aq?query=' + query
     , limit = (opts && opts.limit) || 1
 
