@@ -36,10 +36,11 @@
     "keyEvent",
     "find",
     "wait",
+    "ic",
+    "DS",
     "keyEvent",
     "isolatedContainer",
-    "startApp",
-    "ic"
+    "startApp"
   ],
   "node" : false,
   "browser" : false,
