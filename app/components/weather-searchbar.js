@@ -21,13 +21,13 @@ export default Ember.Component.extend({
 
     typeahead.on("typeahead:selected", function(event, location) {
       Ember.run(function () {
-        self.sendAction("transitionToLocation", location.name);
+        self.sendAction("transitionToLocation", location.name.toLowerCase());
       });
     });
 
     typeahead.on("typeahead:autocompleted", function(event, location) {
       Ember.run(function () {
-        self.sendAction("transitionToLocation", location.name);
+        self.sendAction("transitionToLocation", location.name.toLowerCase());
       });
     });
   }.on('didInsertElement')
