@@ -6,7 +6,7 @@ var request = require('request')
   , logger = require('./logger')().logger
 
 function getSearch(query, opts) {
-  var query = query.split('-').join(', ')
+  var query = query.split('-').join(', ').split('_').join(' ')
     , wundergroundQueryUrl = 'http://autocomplete.wunderground.com/aq?query=' + query
     , limit = (opts && opts.limit) || 1
 

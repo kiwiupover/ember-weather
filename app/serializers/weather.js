@@ -1,3 +1,5 @@
+import dasherizer from "appkit/utils/dasherizer";
+
 export default DS.JSONSerializer.extend({
   extractFind: function(store, type, payload) {
     var ret = normalizeObject(payload);
@@ -32,7 +34,7 @@ function normalizeObject(obj) {
       imageUrl = mungedImageUrl(obj.imageApi.photos),
       photographer = obj.imageApi.photos[0].user;
   return {
-    id: name.split(", ").join('-').toLowerCase(),
+    id: dasherizer(name),
     name: name,
     forecast: weatherForecast,
     imageUrl: imageUrl,

@@ -1,13 +1,19 @@
+import dasherizer from "appkit/utils/dasherizer";
 export default Ember.Route.extend({
   model: function(){
     return  this.store.find('location');
+  },
+
+  serialize: function(model) {
+    debugger;
+    return { post_id: model.id };
   },
 
   actions: {
     saveLocation: function(weather){
       var locations = this.controllerFor('locations'),
           totalSavedLocations = locations.get('length'),
-          id = weather.get('name').split(", ").join('-').toLowerCase();
+          id = dasherizer(weather.get('name'));
 
       if (totalSavedLocations < 7) {
         var createdLocation = this.store.createRecord('location', {
