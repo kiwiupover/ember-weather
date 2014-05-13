@@ -37,7 +37,7 @@ function fetchPayload(searchResults) {
   })
 
   function buildWeatherUrl (type, latField, lonField) {
-    return 'https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/' +
+    return 'https://api.forecast.io/forecast/' + apiKeys.forecast + '/' +
         latField + ',' + lonField
   }
 
@@ -72,18 +72,22 @@ module.exports = function(app) {
   app.get('/api/weather/:location', function (req, res) {
     logger.info("Request params " + req.params.location);
 
-    res.send(fixture[req.params.location]);
-    // getSearch(req.params.location)
-    // .then(fetchPayload)
-    // .then(res.send.bind(res))
-    // .catch(handleError)
+    if (apiKeys.fixture)
+      res.send(fixture[req.params.location]);
+    else
+      getSearch(req.params.location)
+      .then(fetchPayload)
+      .then(res.send.bind(res))
+      .catch(handleError)
   })
 
   app.get('/api/search/:term', function (req, res) {
-    res.send(fixture.search);
-    // getSearch(req.params.term, {limit: 5})
-    // .then(res.send.bind(res))
-    // .catch(handleError)
+    if (apiKeys.fixture)
+      res.send(fixture.search)
+    else
+      getSearch(req.params.term, {limit: 5})
+      .then(res.send.bind(res))
+      .catch(handleError)
   })
 
 }
