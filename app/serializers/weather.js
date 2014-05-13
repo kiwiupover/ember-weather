@@ -19,20 +19,18 @@ export default DS.JSONSerializer.extend({
 
 });
 
-/**
-* Helper to normalize an object returned by server
-*
-* wunderground conditions     -> model.{tempF,icon,windGustMph,localEpoch} (Object)
-* wunderground forecast10day  -> model.weatherForecast (Array)
-* 500px                       -> model.imageUrl (String)
-*
-*/
+
 function normalizeObject(obj) {
   var name = obj.locationName, // TODO: use id only
       weatherCurrent = obj.weatherConditions.currently,
       weatherForecast = obj.weatherForecast.daily.data.slice(0,7),
       imageUrl = mungedImageUrl(obj.imageApi.photos),
-      photographer = obj.imageApi.photos[0].user;
+      photographer = {};
+
+  if (obj.imageApi.photos.length)
+    photographer = obj.imageApi.photos[0].user;
+
+
   return {
     id: dasherizer(name),
     name: name,

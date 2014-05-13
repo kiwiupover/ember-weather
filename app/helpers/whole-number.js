@@ -1,3 +1,3 @@
 export default Ember.Handlebars.makeBoundHelper(function(value) {
-  return new Ember.Handlebars.SafeString(value.toFixed(0));
+  return new Ember.Handlebars.SafeString(parseInt(value, 10).toFixed(0));
 });

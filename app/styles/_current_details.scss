@@ -20,7 +20,7 @@
         margin: 20px 0 30px;
       }
       .display-date {
-        @include label($padding: 7px 16px 9px, $radius: $global-rounded, $bg: #999, $text-size: 16px);
+        @include label($padding: 7px 16px 9px, $radius: $global-rounded, $bg: $primary-color, $text-size: 16px);
       }
     }
     .wind-icon {

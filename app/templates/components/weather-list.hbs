@@ -3,7 +3,9 @@
     <h3>{{location.name}}</h3>
   </div>
   <div class="temp">
-    <h3>{{weather.temperature}}&deg;</h3>
+    {{#if weather.temperature}}
+      <h3>{{whole-number weather.temperature}}&deg;</h3>
+    {{/if}}
   </div>
   <div class="icon">
     {{icon-name weather.icon}}
