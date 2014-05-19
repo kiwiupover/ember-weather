@@ -26,14 +26,13 @@ cd ~/Projects
 
 Then clone the repo:
 ```sh
-git clone git@github.com:kiwiupover/ember-weather.git
+git clone https://github.com/kiwiupover/ember-weather.git
 cd ember-weather
 ```
 
 Install project dependencies with npm and bower:
 ```sh
 npm install
-bower install
 ```
 
 ### Sign up for your API keys.
