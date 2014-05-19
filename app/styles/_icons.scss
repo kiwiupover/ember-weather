@@ -27,7 +27,9 @@
 }
 
 // icons based off wunderground gifs
-
+.icon-weathervane:before {
+  content: "\e602";
+}
 .icon-chanceflurries:before {
   content: "\e621";
 }
@@ -46,8 +48,11 @@
 .icon-chancetstorms:before {
   content: "\e60d";
 }
-.icon-clear:before {
+.icon-clear:before, .icon-clear-day:before  {
   content: "\e613";
+}
+.icon-clear-night:before {
+   content: "\e605";
 }
 .icon-flurries:before {
   content: "\e622";
@@ -85,6 +90,12 @@
 .icon-cloudy:before {
   content: "\e60b";
 }
-.icon-partlycloudy:before {
-  content: "\e60a"; 
+.icon-partlycloudy:before, .icon-partly-cloudy-day:before {
+  content: "\e60a";
+}
+.icon-partly-cloudy-night:before {
+  content: "\e627";
+}
+.icon-wind:before {
+  content: "\e608";
 }

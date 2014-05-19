@@ -1,4 +1,7 @@
-import Resolver from 'resolver';
+
+// import Resolver from 'resolver';
+// import stringUtil from 'appkit/utils/string-util';
+// stringUtil();
 
 /**
  * Canary Features: http://emberjs.com/guides/configuring-ember/feature-flags/
@@ -14,20 +17,27 @@ import Resolver from 'resolver';
  *   window.ENV.ENABLE_ALL_FEATURES = true;
  */
 
-window.ENV.ENABLE_ALL_FEATURES = true;
-window.ENV.FEATURES = {
-  'ember-metal-run-bind': true
-};
-window.console.log("ENV is %o", window.ENV);
+// var App = Ember.Application.extend({
+//   rootElement: '#main-content',
+//   LOG_ACTIVE_GENERATION: true,
+//   LOG_MODULE_RESOLVER: true,
+//   LOG_TRANSITIONS: true,
+//   LOG_TRANSITIONS_INTERNAL: true,
+//   LOG_VIEW_LOOKUPS: true,
+//   LOG_BINDINGS: true,
+//   modulePrefix: 'appkit', // TODO: loaded via config
+//   Resolver: Resolver['default']
+// });
+
+import Resolver from 'ember/resolver';
+import loadInitializers from 'ember/load-initializers';
 
 var App = Ember.Application.extend({
-  LOG_ACTIVE_GENERATION: true,
-  LOG_MODULE_RESOLVER: true,
-  LOG_TRANSITIONS: true,
-  LOG_TRANSITIONS_INTERNAL: true,
-  LOG_VIEW_LOOKUPS: true,
+  rootElement: '#main-content',
   modulePrefix: 'appkit', // TODO: loaded via config
-  Resolver: Resolver['default']
+  Resolver: Resolver
 });
+
+loadInitializers(App, 'appkit');
 
 export default App;

@@ -1,12 +1,18 @@
+@import "vendor/bourbon/app/assets/stylesheets/bourbon";
 @import "vendor/foundation/scss/normalize";
 @import "foundation/foundation";
-@import "icons";
 @import "foundation/foundation_default";
+
+@import "icons";
 @import "forecast";
 @import "current_details";
+@import "weather_vane";
 @import "weather_list";
 @import "dropdowns";
 @import "loading";
 @import "typeahead";
-
 @import "playground";
+
+@import "top-bar";
+@import "footer";
+

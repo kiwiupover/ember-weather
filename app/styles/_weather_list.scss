@@ -12,10 +12,10 @@
     margin: 12px 0;
   }
   .title {
-    @include grid-column(9);
+    @include grid-column(8);
   }
   .temp {
-    @include grid-column(1);
+    @include grid-column(2);
     text-align: right;
   }
   .icon {

@@ -1,6 +1,3 @@
-{{! partial 'nav'}}
-<ul class="no-bullet columns small-8 small-centered">
-  {{#each}}
-    <li>{{weather-preview location=this transitionToLocation="transitionToLocation"}}</li>
-  {{/each}}
-</ul>
+{{partial 'nav'}}
+
+{{outlet}}

@@ -36,9 +36,13 @@
     "keyEvent",
     "find",
     "wait",
+    "ic",
+    "DS",
     "keyEvent",
     "isolatedContainer",
-    "startApp"
+    "startApp",
+    "localStorage",
+    "andThen"
   ],
   "node" : false,
   "browser" : false,

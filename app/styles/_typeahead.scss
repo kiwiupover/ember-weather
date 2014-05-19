@@ -1,13 +1,39 @@
 .search{
   @include grid-row;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
   .twitter-typeahead {
-    @include grid-column($columns:9, $collapse:true);
+    @include grid-column($columns:6, $collapse:true, $center:true);
     margin-bottom: 0;
-    border-radius: 4px 0 0 0;
+    border-radius: 4px;
+    @media #{$small-only} {
+      @include grid-column($columns:10, $collapse:true, $center:true);
+    }
     input {
       margin-bottom: 0;
-      border-radius: 4px 0 0 0;
+      border-radius: 4px;
+      background-color: #333 !important;
+      border: 1px solid darken(#333, 4%) !important;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 100;
+      height: 50px;
+      @media #{$small-only} {
+        font-size: 18px;
+      }
+      .top-bar & {
+        top: 0;
+        height: 34px;
+        background-color: #555 !important;
+        border: 1px solid darken(#555, 4%) !important;
+        color: #eee;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .top-bar & {
+      @include grid-column($columns:12, $collapse:true, $center:false)
     }
   }
   button {
@@ -18,6 +44,14 @@
     padding-bottom: 12px;
     margin-bottom: 0;
     border-radius: 0 4px 0 0;
+  }
+  .top-bar & {
+    width: 350px;
+    max-width: inherit;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: right;
+    padding-right: 20px;
   }
 }
 .typeahead,
@@ -31,7 +65,7 @@
 }
 
 .typeahead {
-  background-color: #fff;
+  background-color: #333 !important;
 }
 
 .typeahead:focus {
@@ -50,11 +84,12 @@
 
 .tt-dropdown-menu {
   color: black;
-  width: 422px;
+  width: 100%;
   margin-top: 0px;
   padding: 8px 0;
   background-color: rgba(#fff, 0.8);
   border-radius: 0 0 4px 4px;
+  text-align: left;
 }
 
 .tt-suggestion {

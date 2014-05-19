@@ -1,7 +1,49 @@
-.loading {
+.loading-wrapper {
   @include panel();
   @include grid-column($columns:6, $center:true);
   margin-top: 100px;
   text-align: center;
   padding: 50px;
+}
+
+.loading{
+  text-align:center;
+  color:#d44e4e;
+}
+
+.loading:before,
+.loading:after{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.7em;
+  width: 10em;
+  border-bottom: 1px solid #d44e4e;
+
+  -moz-animation: loading 3s forwards linear;
+  -webkit-animation: loading 3s forwards linear;
+  animation: loading 3s forwards linear;
+
+  -moz-animation-iteration-count:infinite;
+  -webkit-animation-iteration-count:infinite;
+  animation-iteration-count:infinite;
+}
+
+/*Animation time*/
+@-webkit-keyframes loading {
+  0% {width: 0em; opacity:0.1}
+  70% {width: 8em; opacity:1.0}
+  100% {width: 10em; opacity:0.0}
+}
+
+@-moz-keyframes loading {
+  0% {width: 0em; opacity:0.1}
+  70% {width: 8em; opacity:1.0}
+  100% {width: 10em; opacity:0.0}
+}
+
+@keyframes loading {
+  0% {width: 0em; opacity:0.1}
+  70% {width: 8em; opacity:1.0}
+  100% {width: 10em; opacity:0.0}
 }

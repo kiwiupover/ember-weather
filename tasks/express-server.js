@@ -28,28 +28,34 @@ module.exports = function(grunt) {
       // Load API stub routes
       app.use(express.json());
       app.use(express.urlencoded());
-      require('../server/api/routes')(app); // modified
+      require('../server/api/routes')(app);
     } else if (proxyMethod === 'proxy') {
-      var proxyURL = grunt.config('express-server.options.proxyURL');
-      grunt.log.writeln('Proxying API requests to: ' + proxyURL);
+      var proxyURL = grunt.config('express-server.options.proxyURL'),
+          proxyPath = grunt.config('express-server.options.proxyPath') || '/api';
+      grunt.log.writeln('Proxying API requests matching ' + proxyPath + '/* to: ' + proxyURL);
 
       // Use API proxy
-      app.all('/api/*', passThrough(proxyURL));
+      app.all(proxyPath + '/*', passThrough(proxyURL));
     }
 
     if (target === 'debug') {
       // For `expressServer:debug`
 
-      // Add livereload middlware after lock middleware if enabled
+      // Add livereload middleware after lock middleware if enabled
       if (Helpers.isPackageAvailable("connect-livereload")) {
-        app.use(require("connect-livereload")());
+        var liveReloadPort = grunt.config('watch.options.livereload');
+        app.use(require("connect-livereload")({port: liveReloadPort}));
       }
+
+      // YUIDoc serves static HTML, so just serve the index.html
+      app.all('/docs', function(req, res) { res.redirect(302, '/docs/index.html'); });
+      app.use(static({ urlRoot: '/docs', directory: 'docs' }));
 
       // These three lines simulate what the `copy:assemble` task does
       app.use(static({ urlRoot: '/config', directory: 'config' }));
       app.use(static({ urlRoot: '/vendor', directory: 'vendor' }));
       app.use(static({ directory: 'public' }));
-      app.use(static({ urlRoot: '/tests', directory: 'tests' })); // For test_helper.js and test_loader.js
+      app.use(static({ urlRoot: '/tests', directory: 'tests' })); // For test-helper.js and test-loader.js
       app.use(static({ directory: 'tmp/result' }));
       app.use(static({ file: 'tmp/result/index.html', ignoredFileExtensions: /\.\w{1,5}$/ })); // Gotta catch 'em all
     } else {
@@ -57,7 +63,6 @@ module.exports = function(grunt) {
 
       app.use(lock);
       app.use(static({ directory: 'dist' }));
-      app.use(static({ file: 'dist/index.html' })); // Gotta catch 'em all
       app.use(static({ file: 'dist/index.html', ignoredFileExtensions: /\.\w{1,5}$/ })); // Gotta catch 'em all
     }
 
@@ -118,7 +123,7 @@ module.exports = function(grunt) {
 
   function passThrough(target) {
     return function(req, res) {
-      request(target+req.url).pipe(res);
+      req.pipe(request(target+req.url)).pipe(res);
     };
   }
 };

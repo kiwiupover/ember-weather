@@ -10,8 +10,29 @@
     <!-- Left Nav Section -->
     <ul class="left">
       {{#each}}
-        <li>{{#link-to 'location' id}}{{location}}{{/link-to}}</li>
+        <li>{{#link-to 'weather' this.id}}{{this.name}}{{/link-to}}</li>
       {{/each}}
+    </ul>
+    <ul class='right'>
+      <li>
+        {{weather-searchbar transitionToLocation="transitionToSearchedLocationHandler"
+                            placeholder="Search for a city anywhere"}}
+      </li>
     </ul>
   </section>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

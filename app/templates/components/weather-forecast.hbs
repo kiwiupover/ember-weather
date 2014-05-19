@@ -1,12 +1,12 @@
-<ul class='inline-list right'>
-  {{#each day in forecast}}
+<ul class='no-bullet'>
+  {{#each days}}
     <li>
       <div class="label round">
-        {{day.date.weekday_short}}
+        {{date-formatter time}}
       </div>
-      {{icon-name day.icon}}
-      <span class="text-center">high {{day.high.fahrenheit}}</span>
-      <span class="text-center">low {{day.low.fahrenheit}}</span>
+      {{icon-name icon}}
+      <span class="high"><small>high</small> {{whole-number temperatureMax}}&deg;</span>
+      <span class="low"><small>low</small> {{whole-number temperatureMin}}&deg;</span>
     </li>
   {{/each}}
 </ul>

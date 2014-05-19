@@ -1,7 +1,14 @@
+import dasherizer from "appkit/utils/dasherizer";
+
 export default Ember.Route.extend({
   actions: {
-    transitionToLocationHandler: function (val) {
-      this.transitionTo('location', val);
+    transitionToLocationHandler: function (location) {
+      this.transitionTo('weather', location);
+    },
+
+     transitionToSearchedLocationHandler: function (location) {
+      var serializeLocation = dasherizer(location);
+      this.transitionTo('weather', serializeLocation);
     }
   }
 });
