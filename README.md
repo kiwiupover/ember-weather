@@ -38,7 +38,7 @@ npm install
 ### Sign up for your API keys.
 Weather Underground for fetching weather data. Signup for free developer account.
 
-- [Wunderground API sign up](http://www.wunderground.com/weather/api/d/login.html)
+- [Forecast.io API sign up](http://developer.forecast.io)
 
 500px for stunning background photography. Sign up for free developer account.
 
@@ -47,7 +47,7 @@ Weather Underground for fetching weather data. Signup for free developer account
 ## Running the Ember Weather app
 To start the app, run the grunt server command with your API keys
 ```sh
-WUNDERGROUND_KEY=[your wunderground key] FIVEHUNDRED_PX_KEY=[your 500px key] grunt server
+FORECAST_KEY=[your wunderground key] FIVEHUNDRED_PX_KEY=[your 500px key] grunt server
 ```
 
 ### Launch the app in your web browser
