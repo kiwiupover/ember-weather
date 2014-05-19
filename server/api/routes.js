@@ -17,7 +17,7 @@ function getSearch(query, opts) {
     , limit = (opts && opts.limit) || 1
 
   return timedGet(wundergroundQueryUrl).then(function(response) {
-    var results = JSON.parse(response[1]).RESULTS
+    var results = JSON.parse(response.body).RESULTS
     return Lazy(results).filter({'type': 'city'}).take(limit).toArray()
   })
 }
@@ -82,6 +82,7 @@ module.exports = function(app) {
   })
 
   app.get('/api/search/:term', function (req, res) {
+
     if (apiKeys.fixture)
       res.send(fixture.search)
     else
