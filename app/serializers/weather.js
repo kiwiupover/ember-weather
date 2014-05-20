@@ -43,6 +43,12 @@ function normalizeObject(obj) {
     temperature: weatherCurrent.temperature,
     tempC: weatherCurrent.temp_c,
     icon: weatherCurrent.icon,
+    summary: weatherCurrent.summary,
+    feelsLike: weatherCurrent.apparentTemperature,
+    dewPoint: weatherCurrent.dewPoint,
+    humidity: weatherCurrent.humidity,
+    visibility: weatherCurrent.visibility,
+    pressure: weatherCurrent.pressure,
     windSpeed: weatherCurrent.windSpeed,
     windBearing: weatherCurrent.windBearing,
     time: weatherCurrent.time

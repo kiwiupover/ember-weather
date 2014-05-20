@@ -1,0 +1,43 @@
+<div class="playground">
+  <div class="panel"><h3>Auckland, New Zealand</h3></div>
+  <div class="panel">
+    <h2>Right Now <span class="add-remove-button">+</span></h2>
+    <div class="row">
+      <div class="icon">
+        <i aria-hidden="true" class="icon-rain"></i>
+      </div>
+      <div class="temperature">
+        59°
+      </div>
+      <div class="current-summary">
+        <b>Light Rain</b> - feels like: 59°
+      </div>
+      <div class="weather-comment">
+        <div class="comment">
+          Add a weather comment here
+        </div>
+        <button class="edit-button right tiny">Edit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Right Now <span class="add-remove-button">-</span></h2> {{!-- notice the minus sign for the remove button --}}
+    <div class="row">
+      <ul class="current-details">
+        <li><span>Wind speed:</span> 10.01 mph</li>
+        <li><span>Wind bearing:</span> 315</li>
+        <li><span>Dew point:</span> 58.3</li>
+        <li><span>Humidity:</span> 0.96%</li>
+        <li><span>Visibility:</span> 6.21 mi</li>
+        <li><span>Pressure:</span> 1012 mp</li>
+      </ul>
+      <div class="weather-comment">
+        <div class="comment editing">
+          <input id="ember519" class="ember-view ember-text-field" placeholder="What is the weather like?" type="text">
+        </div>
+        <button class="edit-button right tiny">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

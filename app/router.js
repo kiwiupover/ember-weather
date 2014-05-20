@@ -1,7 +1,7 @@
 var Router = Ember.Router.extend();
 
 Router.map(function() {
-
+  this.resource('weather', {path: 'weather/:weather_id'});
 });
 
 Router.reopen({
