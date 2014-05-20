@@ -3,8 +3,15 @@
   @include grid-column(8, $center:true);
   float: none !important;
   padding-top: 50px;
+  color: white;
+  h1, h2, h3, h4, h5, p {
+    color: white;
+  }
   .panel {
     color: black;
+    h1, h2, h3, h4, h5, p {
+      color: black;
+    }
     &.callout, &.hot {
       background: #d35400;
       border: 1px solid darken(#d35400, 5%);
