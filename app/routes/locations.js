@@ -4,11 +4,6 @@ export default Ember.Route.extend({
     return  this.store.find('location');
   },
 
-  serialize: function(model) {
-    debugger;
-    return { post_id: model.id };
-  },
-
   actions: {
     saveLocation: function(weather){
       var locations = this.controllerFor('locations'),
