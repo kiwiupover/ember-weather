@@ -1,11 +1,14 @@
 .playground {
   @include grid-row;
   @include grid-column(8, $center:true);
+  float: none !important;
   padding-top: 50px;
   .panel {
     color: black;
-    &.callout {
-      background: $primary-color;
+    &.callout, &.hot {
+      background: #d35400;
+      border: 1px solid darken(#d35400, 5%);
+      color: white;
     }
   }
 }
