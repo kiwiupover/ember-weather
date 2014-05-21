@@ -5,19 +5,34 @@ Ember Weather is an application built with [Ember JS](http://emberjs.com/) and [
 ## Getting Started
 There are a few dependencies you will need installed on your computer if you haven't already.
 
-
-- [Node.js](http://nodejs.org/)
+### Dependencies
+- [Node.js](http://nodejs.org/) 
 - [Git (Version Control Software)](http://git-scm.com)
-- [Grunt.js](http://gruntjs.com/)
+
+To install Node follow the link above and click on the green button in the middle of the page. 
+
+To install Git follow the link above and find the download link on the right side of the page.
+
+### External Node Modules
+You will need to install Grunt and Bower in order to manage the build process andassets dependencies.
+
+- [Grunt.js](http://gruntjs.com/) Information about grunt
 - [Bower.js](http://bower.io)
 
-To install Grunt and Bower using following commands:
+To install Grunt and Bower use following commands on the command line / terminal:
+
 ```sh
 npm install -g grunt-cli
+```
+
+```sh
 npm install -g bower
 ```
 
-Now we can clone the ember-weather repo. You'll want to change into the directory that you store your projects.
+I wouldn't recommend installing `grunt-cli` or `bower` under `sudo`. [A Solution here.](http://stackoverflow.com/a/18414606/1013679)
+
+## Cloning Ember Weather
+Now we can clone the ember-weather repo. You'll want to change into the directory where you store your projects, IE "Projects".
 
 For example:
 ```sh
@@ -30,25 +45,28 @@ git clone https://github.com/kiwiupover/ember-weather.git
 cd ember-weather
 ```
 
-Install project dependencies with npm and bower:
+Install project npm and bower dependencies:
+
 ```sh
 npm install
 ```
 
 ### Sign up for your API keys.
-Weather Underground for fetching weather data. Signup for free developer account.
+Forecast.io for fetching weather data. Signup for free developer account.
 
-- [Forecast.io API sign up](http://developer.forecast.io)
+- [Forecast.io API sign up](https://developer.forecast.io/register)
 
 500px for stunning background photography. Sign up for free developer account.
 
 - [500px API](https://500px.com/signup)
 
+
 ## Running the Ember Weather app
 To start the app, run the grunt server command with your API keys
 ```sh
-FORECAST_KEY=[your wunderground key] FIVEHUNDRED_PX_KEY=[your 500px key] grunt server
+FORECAST_KEY=[your forecast.io key] FIVEHUNDRED_PX_KEY=[your 500px key] grunt server
 ```
+note: window users you may need to use `set FORECAST_KEY=[your forecast.io key]`
 
 ### Launch the app in your web browser
 You should now be able to navigate to [http://localhost:8000](http://localhost:8000) to see the app.
@@ -59,5 +77,6 @@ This project could not have happened without help from
 - [Erik Trom](https://github.com/trombom)
 - [Gordon Potter](https://github.com/eccegordo)
 - [Josh Williams](https://github.com/tucsonlabs)
+- [Joe Heth](https://github.com/jheth)
 
 Also huge thank you to the ember communty Yehuda, Tom, Stefan, Kris and all the contrubuters to [Ember-app-kit](https://github.com/stefanpenner/ember-app-kit)
