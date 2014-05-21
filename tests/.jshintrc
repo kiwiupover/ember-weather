@@ -40,7 +40,9 @@
     "DS",
     "keyEvent",
     "isolatedContainer",
-    "startApp"
+    "startApp",
+    "andThen",
+    "localStorage"
   ],
   "node" : false,
   "browser" : false,
