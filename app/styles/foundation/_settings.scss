@@ -51,9 +51,9 @@ $body-font-color: white;
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #2980b9;
 // $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
+$alert-color: #e74c3c;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
@@ -339,7 +339,7 @@ $body-font-color: white;
 // $input-bg-color: #fff;
 // $input-focus-bg-color: darken(#fff, 2%);
 // $input-border-color: darken(#fff, 20%);
-$input-focus-border-color: darken(#fff, 25%);
+$input-focus-border-color: darken(#fff, 10%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-disabled-bg: #ddd;
