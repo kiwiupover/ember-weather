@@ -78,6 +78,9 @@
   }
 }
 
+.signup h1 {
+  font-weight: 100;
+}
 .input {
   position: relative;
   display: block;
@@ -95,11 +98,17 @@ input.balloon {
   border: 1px solid #ddd;
   border-radius: 3px;
   outline: 0;
-  text-indent: 60px; // Arbitrary.
-  transition: all .3s ease-in-out;
+  text-indent: 100px; // Arbitrary.
+  transition: all .3s ease-in;
+
+  &::-moz-placeholder {
+    color: rgba(#efefef, 0);
+    text-indent: 0;
+    font-weight: 300;
+  }
 
   &::-webkit-input-placeholder {
-    color: #efefef;
+    color: rgba(#efefef, 0);
     text-indent: 0;
     font-weight: 300;
   }
@@ -135,7 +144,7 @@ input.balloon {
       border-left: 3px solid transparent;
       border-right: 3px solid transparent;
       border-top: 3px solid rgba($primary-color ,0);
-      transition: all .3s ease-in-out;
+      transition: all .2s ease-in-out;
     }
   }
 }
@@ -145,8 +154,12 @@ input.balloon {
   text-indent: 0;
   background: #fff;
 
+  &::-moz-placeholder {
+    color: rgba(#aaa, 1);
+  }
+
   &::-webkit-input-placeholder {
-    color: #aaa;
+    color: rgba(#aaa, 1);
   }
   + label {
     color: #fff;
