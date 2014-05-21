@@ -1,4 +1,6 @@
 import Application from 'appkit/app';
+import Router from 'appkit/router';
+
 
 function startApp(attrs) {
   var App;
@@ -17,6 +19,12 @@ function startApp(attrs) {
   });
 
   App.reset(); // this shouldn't be needed, i want to be able to "start an app at a specific URL"
+
+  localStorage.clear();
+
+  Router.reopen({
+    location: 'none'
+  });
 
   return App;
 }
