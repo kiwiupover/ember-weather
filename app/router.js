@@ -1,18 +1,7 @@
 var Router = Ember.Router.extend();
 
 Router.map(function() {
-  this.route('seattle');
-  this.route('auckland');
-  this.resource('locations', function(){
-    this.resource("weather", {path: ':location_id'}, function(){});
-    this.resource('vancouver', function(){
-      this.route('commerical-drive');
-      this.route('portland');
-    });
-  });
-  // this.resource("locations", {path: 'locations'}, function(){
-  //   this.resource("weather", {path: ':location_id'}, function(){});
-  // });
+
 });
 
 Router.reopen({
@@ -97,18 +86,8 @@ Router.map(function() {
     this.resource("locations", {path: 'locations'}, function(){
         this.resource("weather", {path: ':location_id'}, function(){});
     });
-
 });
 
-Router.reopen({
-  // Define the way urls work and look
-  location: 'history'
-  // Supports three types:
-  //
-  // location: 'hash'    => example.com/#/locations/seattle
-  // location: 'history' => example.com/locations/seattle
-  // location: 'none'    => example.com
-});
 
 export default Router;
 
