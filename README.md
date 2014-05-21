@@ -6,24 +6,30 @@ Ember Weather is an application built with [Ember JS](http://emberjs.com/) and [
 There are a few dependencies you will need installed on your computer if you haven't already.
 
 ### Dependencies
-- [Node.js](http://nodejs.org/)
+- [Node.js](http://nodejs.org/) 
 - [Git (Version Control Software)](http://git-scm.com)
 
-### External Node Modules
-You will need to install Grunt and Bower for managing the build process and manage assets dependencies.
+To install Node follow the link above and click on the green button in the middle of the page. 
 
-- [Grunt.js](http://gruntjs.com/)
+To install Git follow the link above and find the download link on the right side of the page.
+
+### External Node Modules
+You will need to install Grunt and Bower in order to manage the build process andassets dependencies.
+
+- [Grunt.js](http://gruntjs.com/) Information about grunt
 - [Bower.js](http://bower.io)
 
-To install Grunt and Bower using following commands:
-On the command line / in terminal:
+To install Grunt and Bower use following commands on the command line / terminal:
 
 ```sh
 npm install -g grunt-cli
+```
+
+```sh
 npm install -g bower
 ```
 
-I would not recommend install in `grunt-cli` or `bower` under `sudo`. [A Solution here.](http://stackoverflow.com/a/18414606/1013679)
+I wouldn't recommend installing `grunt-cli` or `bower` under `sudo`. [A Solution here.](http://stackoverflow.com/a/18414606/1013679)
 
 ## Cloning Ember Weather
 Now we can clone the ember-weather repo. You'll want to change into the directory where you store your projects, IE "Projects".
