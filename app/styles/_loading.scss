@@ -1,6 +1,7 @@
 .loading-wrapper {
   @include panel();
   @include grid-column($columns:6, $center:true);
+  float: none !important;
   margin-top: 100px;
   text-align: center;
   padding: 50px;

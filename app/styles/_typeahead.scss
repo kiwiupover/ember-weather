@@ -7,6 +7,7 @@
     @include grid-column($columns:6, $collapse:true, $center:true);
     margin-bottom: 0;
     border-radius: 4px;
+    float: none !important;
     @media #{$small-only} {
       @include grid-column($columns:10, $collapse:true, $center:true);
     }

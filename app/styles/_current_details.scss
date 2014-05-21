@@ -47,10 +47,14 @@
     ul {
       @media #{$medium-up} {
         @include inline-list;
+        > li {
+          margin-left: 18px;
+        }
       }
     }
     li {
       text-align: center;
+
       @media #{$small-only} {
         padding-bottom: 22px;
         border-bottom: 1px solid #555;
