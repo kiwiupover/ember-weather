@@ -11,9 +11,7 @@
     "moment": true,
     "ic": true,
     "module": true,
-    "require": true,
-    "andThen": true,
-    "localStorage": true
+    "require": true
   },
   "node" : false,
   "browser" : false,
