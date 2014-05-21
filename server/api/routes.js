@@ -4,10 +4,16 @@ var request = require('request')
   , apiKeys = require('./api-keys')
   , Lazy = require('lazy.js')
   , logger = require('./logger')().logger
+  , fixture = {}
+
+fixture.seattle = require('../fixtures/seattle')
+fixture.auckland = require('../fixtures/auckland')
+fixture.vancouver = require('../fixtures/vancouver')
+fixture.search = require('../fixtures/search')
 
 function getSearch(query, opts) {
-  var query = query.split('-').join(', ').split('_').join(' ')
-    , wundergroundQueryUrl = 'http://autocomplete.wunderground.com/aq?query=' + query
+  var dasherizedQuery = query.split('-').join(', ').split('_').join(' ')
+    , wundergroundQueryUrl = 'http://autocomplete.wunderground.com/aq?query=' + dasherizedQuery
     , limit = (opts && opts.limit) || 1
 
   return timedGet(wundergroundQueryUrl).then(function(response) {
@@ -66,16 +72,23 @@ module.exports = function(app) {
   app.get('/api/weather/:location', function (req, res) {
     logger.info("Request params " + req.params.location);
 
-    getSearch(req.params.location)
-    .then(fetchPayload)
-    .then(res.send.bind(res))
-    .catch(handleError)
+    if (apiKeys.fixture)
+      res.send(fixture[req.params.location]);
+    else
+      getSearch(req.params.location)
+      .then(fetchPayload)
+      .then(res.send.bind(res))
+      .catch(handleError)
   })
 
   app.get('/api/search/:term', function (req, res) {
-    getSearch(req.params.term, {limit: 5})
-    .then(res.send.bind(res))
-    .catch(handleError)
+
+    if (apiKeys.fixture)
+      res.send(fixture.search)
+    else
+      getSearch(req.params.term, {limit: 5})
+      .then(res.send.bind(res))
+      .catch(handleError)
   })
 
 }
