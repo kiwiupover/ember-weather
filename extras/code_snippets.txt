@@ -2,7 +2,7 @@ ROUTER
 -------------------------
 app/router.js
 
-var Router = Ember.Router.extend(); 
+var Router = Ember.Router.extend();
 
 Router.map(function() {
     this.resource('static', {path: 'static'}, function(){
