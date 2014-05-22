@@ -21,9 +21,38 @@ h1, h2, h3, h4, h5, p {
   color: white;
 }
 
+nav {
+  a {
+    display: inline-block;
+    margin-right: 20px;
+    &.active {
+      background: lighten($primary-color, 20%);
+    }
+  }
+}
+
 .main {
   padding-top: 20px;
   @include grid-row;
   font-size: 30px;
   font-weight: 100;
+}
+.sidebar {
+  @include grid-column(4);
+  background: #f39c12;
+  min-height: 200px;
+  a {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 3px 6px;
+    margin-bottom: 10px;
+    display: block;
+    &.active {
+      background:white;
+
+    }
+  }
+}
+.main-body {
+  @include grid-column(8);
 }

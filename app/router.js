@@ -78,16 +78,16 @@ export default Router;
 var Router = Ember.Router.extend();
 
 Router.map(function() {
-    this.resource('static', {path: 'static'}, function(){
-        this.route('seattle');
-        this.route('honolulu');
+  this.route('seattle');
+  this.route('auckland');
+  this.resource('locations', function(){
+    this.route('vancouver');
+    this.route('richmond');
+    this.resource('news', function(){
+      this.route('wahoo');
     });
-
-    this.resource("locations", {path: 'locations'}, function(){
-        this.resource("weather", {path: ':location_id'}, function(){});
-    });
+  });
 });
-
 
 export default Router;
 
