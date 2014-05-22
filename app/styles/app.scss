@@ -15,3 +15,15 @@
 @import "footer";
 
 @import "panels";
+
+
+h1, h2, h3, h4, h5, p {
+  color: white;
+}
+
+.main {
+  padding-top: 20px;
+  @include grid-row;
+  font-size: 30px;
+  font-weight: 100;
+}
