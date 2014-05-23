@@ -11,7 +11,8 @@
     "moment": true,
     "ic": true,
     "module": true,
-    "require": true
+    "require": true,
+    "Promise": true
   },
   "node" : false,
   "browser" : false,

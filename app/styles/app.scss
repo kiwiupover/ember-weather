@@ -56,3 +56,8 @@ nav {
 .main-body {
   @include grid-column(8);
 }
+
+.loading-wrapper {
+  float: none !important;
+  font-size: 15px;
+}
