@@ -1,6 +1,6 @@
 module.exports =
 {
-  "locationName": "Seattle, Washington",
+  "locationName": "Seattle",
   "imageApi": {
     "current_page": 5,
     "total_pages": 2761,
