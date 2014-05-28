@@ -4,12 +4,12 @@ html, body, .perspective {
 }
 
 .perspective {
-  background: #444;
+  // background: #444;
   position: relative;
 }
 
 .container {
-  background: #fff;
+  // background: #fff;
   min-height: 100%;
   position: relative;
   outline: 1px solid rgba(0,0,0,0);
@@ -165,7 +165,7 @@ html, body, .perspective {
 
 /* Effect airbnb */
 .effect-airbnb {
-  background: #b8b6b4;
+  // background: #b8b6b4;
 }
 
 .effect-airbnb .container {
@@ -198,32 +198,32 @@ html, body, .perspective {
   transform: translateX(0);
 }
 
-.effect-airbnb.animate .outer-nav a:nth-child(2) {
+.effect-airbnb.animate .outer-nav a:nth-of-type(2) {
   -webkit-transition-delay: 0.04s;
   transition-delay: 0.04s;
 }
 
-.effect-airbnb.animate .outer-nav a:nth-child(3) {
+.effect-airbnb.animate .outer-nav a:nth-of-type(3) {
   -webkit-transition-delay: 0.08s;
   transition-delay: 0.08s;
 }
 
-.effect-airbnb.animate .outer-nav a:nth-child(4) {
+.effect-airbnb.animate .outer-nav a:nth-of-type(4) {
   -webkit-transition-delay: 0.12s;
   transition-delay: 0.12s;
 }
 
-.effect-airbnb.animate .outer-nav a:nth-child(5) {
+.effect-airbnb.animate .outer-nav a:nth-of-type(5) {
   -webkit-transition-delay: 0.16s;
   transition-delay: 0.16s;
 }
 
-.effect-airbnb.animate .outer-nav a:nth-child(6) {
+.effect-airbnb.animate .outer-nav a:nth-of-type(6) {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
 
-.effect-airbnb.animate .outer-nav a:nth-child(7) {
+.effect-airbnb.animate .outer-nav a:nth-of-type(7) {
   -webkit-transition-delay: 0.24s;
   transition-delay: 0.24s;
 }
