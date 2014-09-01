@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default function getJSON (url) {
   return new Ember.RSVP.Promise(function(resolve, reject) {
     Ember.$.ajax({ // jquery + runloop + promises = fun times

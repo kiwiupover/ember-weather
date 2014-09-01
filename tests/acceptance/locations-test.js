@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 var App;
 
 module('Acceptances - Locations', {

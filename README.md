@@ -1,82 +1,51 @@
-# Ember Weather
+# App-kit
 
-Ember Weather is an application built with [Ember JS](http://emberjs.com/) and [Ember App Kit](https://github.com/stefanpenner/ember-app-kit).
+This README outlines the details of collaborating on this Ember application.
 
-## Getting Started
-There are a few dependencies you will need installed on your computer if you haven't already.
+A short introduction of this app could easily go here.
 
-### Dependencies
-- [Node.js](http://nodejs.org/) 
-- [Git (Version Control Software)](http://git-scm.com)
+## Prerequisites
 
-To install Node follow the link above and click on the green button in the middle of the page. 
+You will need the following things properly installed on your computer.
 
-To install Git follow the link above and find the download link on the right side of the page.
+* [Git](http://git-scm.com/)
+* [Node.js](http://nodejs.org/) (with NPM) and [Bower](http://bower.io/)
 
-### External Node Modules
-You will need to install Grunt and Bower in order to manage the build process andassets dependencies.
+## Installation
 
-- [Grunt.js](http://gruntjs.com/) Information about grunt
-- [Bower.js](http://bower.io)
+* `git clone <repository-url>` this repository
+* change into the new directory
+* `npm install`
+* `bower install`
 
-To install Grunt and Bower use following commands on the command line / terminal:
+## Running / Development
 
-```sh
-npm install -g grunt-cli
-```
+* `ember server`
+* Visit your app at http://localhost:4200.
 
-```sh
-npm install -g bower
-```
+### Code Generators
 
-I wouldn't recommend installing `grunt-cli` or `bower` under `sudo`. [A Solution here.](http://stackoverflow.com/a/18414606/1013679)
+Make use of the many generators for code, try `ember help generate` for more details
 
-## Cloning Ember Weather
-Now we can clone the ember-weather repo. You'll want to change into the directory where you store your projects, IE "Projects".
+### Running Tests
 
-For example:
-```sh
-cd ~/Projects
-```
+* `ember test`
+* `ember test --server`
 
-Then clone the repo:
-```sh
-git clone https://github.com/kiwiupover/ember-weather.git
-cd ember-weather
-```
+### Building
 
-Install project npm and bower dependencies:
+* `ember build` (development)
+* `ember build --environment production` (production)
 
-```sh
-npm install
-```
+### Deploying
 
-### Sign up for your API keys.
-Forecast.io for fetching weather data. Signup for free developer account.
+Specify what it takes to deploy your app.
 
-- [Forecast.io API sign up](https://developer.forecast.io/register)
+## Further Reading / Useful Links
 
-500px for stunning background photography. Sign up for free developer account.
+* ember: http://emberjs.com/
+* ember-cli: http://www.ember-cli.com/
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
-- [500px API](https://500px.com/signup)
-
-
-## Running the Ember Weather app
-To start the app, run the grunt server command with your API keys
-```sh
-FORECAST_KEY=[your forecast.io key] FIVEHUNDRED_PX_KEY=[your 500px key] grunt server
-```
-note: window users you may need to use `set FORECAST_KEY=[your forecast.io key]`
-
-### Launch the app in your web browser
-You should now be able to navigate to [http://localhost:8000](http://localhost:8000) to see the app.
-
-## Special Thanks
-
-This project could not have happened without help from
-- [Erik Trom](https://github.com/trombom)
-- [Gordon Potter](https://github.com/eccegordo)
-- [Josh Williams](https://github.com/tucsonlabs)
-- [Joe Heth](https://github.com/jheth)
-
-Also huge thank you to the ember communty Yehuda, Tom, Stefan, Kris and all the contrubuters to [Ember-app-kit](https://github.com/stefanpenner/ember-app-kit)

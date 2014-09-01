@@ -1,18 +1,23 @@
-import Application from 'appkit/app';
-import Router from 'appkit/router';
+/* global require */
+var Application = require('app-kit/app')['default'];
+var Router = require('app-kit/router')['default'];
+import Ember from 'ember';
 
-
-function startApp(attrs) {
+export default function startApp(attrs) {
   var App;
 
   var attributes = Ember.merge({
     // useful Test defaults
     rootElement: '#ember-testing',
-    LOG_ACTIVE_GENERATION:false,
+    LOG_ACTIVE_GENERATION: false,
     LOG_VIEW_LOOKUPS: false
   }, attrs); // but you can override;
 
-  Ember.run(function(){
+  Router.reopen({
+    location: 'none'
+  });
+
+  Ember.run(function() {
     App = Application.create(attributes);
     App.setupForTesting();
     App.injectTestHelpers();
@@ -20,13 +25,5 @@ function startApp(attrs) {
 
   App.reset(); // this shouldn't be needed, i want to be able to "start an app at a specific URL"
 
-  localStorage.clear();
-
-  Router.reopen({
-    location: 'none'
-  });
-
   return App;
 }
-
-export default startApp;

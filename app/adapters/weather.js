@@ -1,5 +1,5 @@
-/*global localStorage*/
-import getJSON from "appkit/utils/get-json";
+import DS from 'ember-data';
+import getJSON from "ember-weather/utils/get-json";
 
 export default DS.Adapter.extend({
   find: function (store, type, id) {

@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 var App,
     weatherUrl = 'http://localhost:8000/weather/vancouver-canada';
 

@@ -1,3 +1,4 @@
+import Ember from 'ember';
 import {test, moduleForComponent} from 'ember-qunit';
 
 moduleForComponent('weather-vane', "Unit - Component - Weather Vane");

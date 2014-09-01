@@ -1,4 +1,7 @@
-import dasherizer from "appkit/utils/dasherizer";
+import Ember from 'ember';
+import dasherizer from "ember-weather/utils/dasherizer";
+
+import DS from 'ember-data';
 
 export default DS.JSONSerializer.extend({
   extractFind: function(store, type, payload) {
@@ -27,8 +30,9 @@ function normalizeObject(obj) {
       imageUrl = mungedImageUrl(obj.imageApi.photos),
       photographer = {};
 
-  if (obj.imageApi.photos.length)
+  if (obj.imageApi.photos.length){
     photographer = obj.imageApi.photos[0].user;
+  }
 
 
   return {

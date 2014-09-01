@@ -1,6 +1,6 @@
 import { test, moduleFor } from 'ember-qunit';
 
-import Locations from 'appkit/routes/locations';
+import Locations from 'ember-weather/routes/locations';
 
 moduleFor('route:locations', "Unit - LocationsRoute");
 
