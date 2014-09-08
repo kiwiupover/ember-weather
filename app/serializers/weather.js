@@ -61,10 +61,20 @@ function mungedImageUrl(images) {
   var ret;
   if (images.length > 0) {
     var splitApart = images[0].image_url.split('/');
-    splitApart[5] = '5.jpg';
+    splitApart[splitApart.length - 1] = mungImageSize(splitApart[splitApart.length - 1]);
     ret = splitApart.join('/');
   } else {
     ret = '/assets/images/earth.jpg';
   }
   return ret;
 }
+
+function mungImageSize(suffix){
+  // Need to change the size of the image
+  // from 2 to 5
+  var splitSuffix = suffix.split('');
+  splitSuffix[0] = "5";
+  return splitSuffix.join('');
+}
+
+
