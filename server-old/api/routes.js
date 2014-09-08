@@ -17,7 +17,7 @@ function getSearch(query, opts) {
     , limit = (opts && opts.limit) || 1
 
   return timedGet(wundergroundQueryUrl).then(function(response) {
-    var results = JSON.parse(response[1]).RESULTS
+    var results = JSON.parse(response.body).RESULTS
     return Lazy(results).filter({'type': 'city'}).take(limit).toArray()
   })
 }
@@ -51,7 +51,7 @@ function fetchPayload(searchResults) {
 
   function asJSON (responsePromise) {
     return responsePromise.then(function (response) {
-      return JSON.parse(response[0].body)
+      return JSON.parse(response.body)
     })
   }
 }
@@ -86,6 +86,7 @@ module.exports = function(app) {
     if (!apiKeys.fiveHundredPX && !apiKeys.forecast || apiKeys.fixture)
       res.send(fixture.search)
     else
+      console.log("term: " + req.params.term);
       getSearch(req.params.term, {limit: 5})
       .then(res.send.bind(res))
       .catch(handleError)
