@@ -61,7 +61,9 @@ function mungedImageUrl(images) {
   var ret;
   if (images.length > 0) {
     var splitApart = images[0].image_url.split('/');
+
     splitApart[splitApart.length - 1] = mungImageSize(splitApart[splitApart.length - 1]);
+
     ret = splitApart.join('/');
   } else {
     ret = '/assets/images/earth.jpg';
