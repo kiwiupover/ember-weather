@@ -3,7 +3,7 @@
     "document": true,
     "window": true,
     "-Promise": true,
-    "AppKitENV": true,
+    "EmberWeatherENV": true,
     "moment": true
   },
   "browser" : true,

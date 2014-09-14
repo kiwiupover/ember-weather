@@ -45,13 +45,13 @@ function fetchPayload(searchResults) {
     var rand = Math.floor((Math.random()*5)+1)
     return 'https://api.500px.com/v1/photos/search?term=' +
            nameField +
-           '&only=landscapes&sort=favorites_count&rpp=1&page='+rand+'&consumer_key=' +
+           '&only=landscapes&sort=favorites_count&rpp=1&image_size=5&page='+rand+'&consumer_key=' +
            apiKeys.fiveHundredPX
   }
 
   function asJSON (responsePromise) {
     return responsePromise.then(function (response) {
-      return JSON.parse(response[0].body)
+      return JSON.parse(response.body)
     })
   }
 }

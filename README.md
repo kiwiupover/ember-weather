@@ -1,4 +1,4 @@
-# App-kit
+# Ember-weather
 
 This README outlines the details of collaborating on this Ember application.
 

@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="assets/ember-weather.css">
   </head>
   <body>
+    <script>
+      window.EmberWeatherENV = {"environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
+      window.EmberENV = window.EmberWeatherENV.EmberENV;
+    </script>
     <div class="wrapper">
       <div id="main-content">
 
@@ -21,9 +25,7 @@
     <script src="assets/vendor.js"></script>
     <script src="assets/ember-weather.js"></script>
     <script>
-      window.AppKitENV = require('ember-weather/config/environment')['default'];
-      window.EmberENV = window.AppKitENV.EmberENV;
-      window.AppKit = require('ember-weather/app')['default'].create(AppKitENV.APP);
+      window.EmberWeather = require('ember-weather/app')['default'].create(EmberWeatherENV.APP);
     </script>
   </body>
 </html>

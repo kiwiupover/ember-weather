@@ -5,10 +5,11 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp();
 
 app.import('bower_components/typeahead.js/dist/typeahead.min.js');
-// app.import("bower_components/ember-data-localstorage-adapter/index.js");
-// app.import("bower_components/foggy/jquery.foggy.js");
-// app.import("bower_components/foundation/js/foundation/foundation.js");
-// app.import("bower_components/foundation/js/foundation/foundation.topbar.js");
+app.import("bower_components/ember-data-localstorage-adapter/index.js");
+app.import("bower_components/momentjs/moment.js");
+app.import("bower_components/foggy/jquery.foggy.js");
+app.import("bower_components/foundation/js/foundation/foundation.js");
+app.import("bower_components/foundation/js/foundation/foundation.topbar.js");
 
 
 // Use `app.import` to add additional libraries to the generated

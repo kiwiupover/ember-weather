@@ -1,7 +1,6 @@
-/* global require */
-var Application = require('app-kit/app')['default'];
-var Router = require('app-kit/router')['default'];
 import Ember from 'ember';
+import Application from 'ember-weather/app';
+import Router from 'ember-weather/router';
 
 export default function startApp(attrs) {
   var App;
