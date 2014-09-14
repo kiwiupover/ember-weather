@@ -51,7 +51,7 @@ function fetchPayload(searchResults) {
 
   function asJSON (responsePromise) {
     return responsePromise.then(function (response) {
-      return JSON.parse(response.body)
+      return JSON.parse(response[0].body)
     })
   }
 }

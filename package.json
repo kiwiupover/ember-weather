@@ -17,6 +17,18 @@
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.8.1",
+    "express": "~3.4.8",
+    "express-namespace": "~0.1.1",
+    "lazy.js": "~0.3.2",
+    "lodash": "~2.4.1",
+    "method-override": "^2.2.0",
+    "mkdirp": "~0.3.5",
+    "request": "~2.30.0",
+    "rsvp": "~3.0.3",
+    "winston": "~0.7.2"
+  },
   "devDependencies": {
     "body-parser": "^1.2.0",
     "broccoli-asset-rev": "0.0.17",

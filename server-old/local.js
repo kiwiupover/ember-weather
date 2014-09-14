@@ -17,10 +17,14 @@ TODO: refactor so there is only one server
 var express = require('express')
   , server = express()
   , port = process.env.PORT || 5000
+  , bodyParser = require('body-parser')
+  , methodOverride = require('method-override')
+  , logger = require('./api/logger')().logger
 
-server.use(express.logger('dev'));
-server.use(express.bodyParser());
-server.use(express.methodOverride());
+// server.use(logger('dev'));
+
+server.use(bodyParser());
+server.use(methodOverride());
 require('./api/routes')(server);
 
 server.listen(port, function () {
