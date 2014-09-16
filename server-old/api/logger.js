@@ -3,7 +3,7 @@ var winston = require('winston')
   , mkdirp = require('mkdirp')
   , path = require('path')
   , env = process.env.NODE_ENV || 'development' // TODO: fixme for heroku
-  , filename = 'server/log/' + env + '.log'
+  , filename = 'server-old/log/' + env + '.log'
   , filepath = path.dirname(filename)
 
 var logger = new (winston.Logger)({
