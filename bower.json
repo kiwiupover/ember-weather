@@ -23,8 +23,5 @@
     "ember-data-localstorage-adapter": "https://raw.github.com/rpflorence/ember-localstorage-adapter/master/localstorage_adapter.js",
     "typeahead.js": "~0.9.3",
     "bourbon": "~3.1.0"
-  },
-  "resolutions": {
-    "jquery": "~1.9.1"
   }
 }

@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       this.transitionTo('weather', location);
     },
 
-     transitionToSearchedLocationHandler: function (location) {
+    transitionToSearchedLocationHandler: function (location) {
       var serializeLocation = dasherizer(location);
       this.transitionTo('weather', serializeLocation);
     }

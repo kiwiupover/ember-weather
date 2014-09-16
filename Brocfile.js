@@ -4,7 +4,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
-app.import('bower_components/typeahead.js/dist/typeahead.min.js');
+app.import("bower_components/typeahead.js/dist/typeahead.min.js");
 app.import("bower_components/ember-data-localstorage-adapter/index.js");
 app.import("bower_components/momentjs/moment.js");
 app.import("bower_components/foggy/jquery.foggy.js");
