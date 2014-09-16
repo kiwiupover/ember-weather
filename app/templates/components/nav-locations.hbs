@@ -1,0 +1,17 @@
+
+{{partial 'nav'}}
+<nav class="outer-nav left vertical">
+
+  {{#each model}}
+    <a {{action 'link' this}}>{{this.name}}</a>
+  {{/each}}
+
+  {{weather-searchbar transitionToLocation="transitionToLocationHandler"
+                      placeholder="Search for a city anywhere"}}
+
+</nav>
+
+<div class="container">
+  {{yield}}
+</div>
+
