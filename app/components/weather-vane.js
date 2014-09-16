@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default Ember.Component.extend({
   windDegrees: 0,
   attributeBindings: 'style',

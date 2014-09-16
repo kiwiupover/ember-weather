@@ -1,4 +1,6 @@
-import dasherizer from "appkit/utils/dasherizer";
+import Ember from 'ember';
+import dasherizer from "ember-weather/utils/dasherizer";
+
 export default Ember.Route.extend({
   model: function(){
     return  this.store.find('location');

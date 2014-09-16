@@ -1,16 +1,22 @@
-import Application from 'appkit/app';
+import Ember from 'ember';
+import Application from 'ember-weather/app';
+import Router from 'ember-weather/router';
 
-function startApp(attrs) {
+export default function startApp(attrs) {
   var App;
 
   var attributes = Ember.merge({
     // useful Test defaults
     rootElement: '#ember-testing',
-    LOG_ACTIVE_GENERATION:false,
+    LOG_ACTIVE_GENERATION: false,
     LOG_VIEW_LOOKUPS: false
   }, attrs); // but you can override;
 
-  Ember.run(function(){
+  Router.reopen({
+    location: 'none'
+  });
+
+  Ember.run(function() {
     App = Application.create(attributes);
     App.setupForTesting();
     App.injectTestHelpers();
@@ -20,5 +26,3 @@ function startApp(attrs) {
 
   return App;
 }
-
-export default startApp;

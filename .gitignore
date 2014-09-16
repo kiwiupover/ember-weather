@@ -3,20 +3,15 @@
 # compiled output
 
 /tmp
-/docs
 
 # dependencies
 /node_modules
-/vendor/*
-!/vendor/loader.js
-!/vendor/ember-shim.js
-!/vendor/qunit-shim.js
+/bower_components/*
 
 # misc
 /.sass-cache
 /connect.lock
-/libpeerconnection.log
-.DS_Store
-Thumbs.db
 /coverage/*
-/server/log
+/libpeerconnection.log
+npm-debug.log
+testem.log

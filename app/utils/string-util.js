@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 // Mega Hax: TODO: remove on next beta release, straight up copied from /packages/ember-runtime/lib/system/string.js
 
 var STRING_PARAMETERIZE_REGEXP_1 = (/[_|\/|\s]+/g);

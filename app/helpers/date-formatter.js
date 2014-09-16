@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default Ember.Handlebars.makeBoundHelper(function(date) {
-  return new Ember.Handlebars.SafeString(moment.unix(date).format('MMM DD'));
+  return new Ember.Handlebars.SafeString(moment.unix(date).format('ddd MMM DD'));
 });

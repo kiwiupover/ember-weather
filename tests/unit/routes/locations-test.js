@@ -1,21 +1,11 @@
-import Locations from 'appkit/routes/locations';
+import { test, moduleFor } from 'ember-qunit';
 
-var route;
-module("Unit - LocationsRoute", {
-  setup: function(){
-    var container = isolatedContainer([
-      'route:locations'
-    ]);
+import Locations from 'ember-weather/routes/locations';
 
-    route = container.lookup('route:locations');
-  }
-});
+moduleFor('route:locations', "Unit - LocationsRoute");
 
 test("it exists", function(){
+  var route = this.subject();
   ok(route);
   ok(route instanceof Locations);
 });
-
-// test("#model", function(){
-//   deepEqual(route.model(), ['red', 'yellow', 'blue']);
-// });

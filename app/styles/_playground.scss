@@ -1,0 +1,181 @@
+.playground {
+  @include grid-row;
+  @include grid-column(4, $center:true);
+  float: none !important;
+  padding-top: 50px;
+  color: white;
+  h1, h2, h3, h4, h5, p {
+    color: white;
+  }
+  .panel {
+    color: black;
+    h1, h2, h3, h4, h5, p {
+      color: black;
+    }
+    &.callout, &.hot {
+      background: #d35400;
+      border: 1px solid darken(#d35400, 5%);
+      color: white;
+    }
+  }
+  .add-remove-button {
+    border: 3px solid;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.74;
+    font-size: 25px;
+    background: #333;
+    color: white;
+    position: relative;
+    top: -5px;
+  }
+
+  .icon {
+    @include grid-column(6);
+    text-align: center;
+    i {
+      font-size: 80px;
+      float: none;
+    }
+  }
+  .temperature {
+    @include grid-column(6);
+    font-size: 80px;
+    font-weight: 100;
+  }
+  .current-summary {
+    @include grid-column(12, $collapse: true);
+    font-size: 26px;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 100;
+  }
+  .current-details {
+    @include block-grid(2);
+    font-size: 20px;
+    span {
+      font-size: 85%;
+      font-weight: bold;
+    }
+  }
+  .weather-comment {
+    @include grid-column(12, $collapse: true);
+    font-style: italic;
+    .comment {
+      @include grid-column(8, $collapse: true);
+      padding-top: 8px;
+      &.editing {
+        padding-top: 0;
+      }
+    }
+    .edit-button {
+      @include grid-column(3);
+      margin-bottom: 0;
+    }
+  }
+}
+
+.signup h1 {
+  font-weight: 100;
+}
+.signup .input {
+  position: relative;
+  display: block;
+  small.error {
+    border-radius: 0 0 3px 3px;
+  }
+}
+input.balloon {
+  // As suggested by https://twitter.com/dbox/status/365888496486985728
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  color: #333;
+  background: #efefef;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 100px; // Arbitrary.
+  transition: all .3s ease-in;
+
+  &::-moz-placeholder {
+    color: rgba(#efefef, 0);
+    text-indent: 0;
+    font-weight: 300;
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba(#efefef, 0);
+    text-indent: 0;
+    font-weight: 300;
+  }
+  .error & {
+    border-color: lighten( $alert-color, 20%);
+  }
+
+  + label {
+    display: inline-block;
+    position: absolute;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    padding: 7px 15px;
+    color: #333;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(19,74,70,0);
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+    background: rgba(122,184,147,0);
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: 100%;
+      left: 50%;
+      margin-left: -3px;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 3px solid rgba($primary-color ,0);
+      transition: all .2s ease-in-out;
+    }
+  }
+}
+.balloon:focus,
+.balloon:active {
+  color: #333;
+  text-indent: 0;
+  background: #fff;
+
+  &::-moz-placeholder {
+    color: rgba(#aaa, 1);
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba(#aaa, 1);
+  }
+  + label {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(19,74,70,.4);
+    background: $primary-color;
+    @include transform(translateY(-40px));
+    .error & {
+      background: $alert-color;
+    }
+
+    &:after {
+      border-top: 4px solid $primary-color;
+      .error & {
+        border-top: 4px solid $alert-color;
+      }
+    }
+  }
+}
+

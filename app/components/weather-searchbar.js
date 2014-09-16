@@ -1,4 +1,4 @@
-import getJSON from "appkit/utils/get-json";
+import Ember from 'ember';
 
 export default Ember.Component.extend({
   classNames: 'search',
@@ -13,7 +13,7 @@ export default Ember.Component.extend({
 
     var self = this;
 
-    typeahead.on("typeahead:initialized", function(event, prefetchedData) {
+    typeahead.on("typeahead:initialized", function() {
       Ember.run(function () {
         self.$('input').focus();
       });

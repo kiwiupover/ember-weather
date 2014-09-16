@@ -1,4 +1,7 @@
-import dasherizer from "appkit/utils/dasherizer";
+import Ember from 'ember';
+import dasherizer from "ember-weather/utils/dasherizer";
+
+import DS from 'ember-data';
 
 export default DS.JSONSerializer.extend({
   extractFind: function(store, type, payload) {
@@ -16,20 +19,18 @@ export default DS.JSONSerializer.extend({
     window.console.log("location findAll serializer data", ret);
     return ret;
   }
-
 });
-
 
 function normalizeObject(obj) {
   var name = obj.locationName, // TODO: use id only
       weatherCurrent = obj.weatherConditions.currently,
       weatherForecast = obj.weatherForecast.daily.data.slice(0,7),
-      imageUrl = mungedImageUrl(obj.imageApi.photos),
+      imageUrl = makeImageUrl(obj.imageApi.photos),
       photographer = {};
 
-  if (obj.imageApi.photos.length)
+  if (obj.imageApi.photos.length){
     photographer = obj.imageApi.photos[0].user;
-
+  }
 
   return {
     id: dasherizer(name),
@@ -47,22 +48,10 @@ function normalizeObject(obj) {
   };
 }
 
-/*
-Hack to change the last part of the image url to /5.jpg, e.g:
-
-http://ppcdn.500px.org/54543406/aedfc61af4e3ac7c62a6ce08ebf694b6d7fae7ab/2.jpg
--> becomes
-http://ppcdn.500px.org/54543406/aedfc61af4e3ac7c62a6ce08ebf694b6d7fae7ab/5.jpg
-
-TODO: re-investigate a better solution, does the api must provide a query for
-      returning high res images?
- */
-function mungedImageUrl(images) {
+function makeImageUrl(images) {
   var ret;
   if (images.length > 0) {
-    var splitApart = images[0].image_url.split('/');
-    splitApart[5] = '5.jpg';
-    ret = splitApart.join('/');
+    ret = images[0].image_url;
   } else {
     ret = '/assets/images/earth.jpg';
   }
