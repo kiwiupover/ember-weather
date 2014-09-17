@@ -15,3 +15,25 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+
+# dist tests
+dist/tests/
+dist/testem.js
+dist/assets/passed.png
+dist/assets/test-loader.js
+dist/assets/test-support.css
+dist/assets/test-support.js
+dist/assets/failed.png
+dist/assets/passed.png
+dist/assets/ember-weather.css.map
+
+# these are a maybe
+dist/assets/ember-weather.css
+dist/assets/ember-weather.js
+dist/assets/images/earth.jpg
+dist/assets/images/ember-weather.jpg
+dist/assets/images/reo-2048.jpg
+dist/assets/vendor.css
+dist/assets/vendor.js
+
+

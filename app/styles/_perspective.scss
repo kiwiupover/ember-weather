@@ -188,7 +188,7 @@ html, body, .perspective {
   left: 75%;
 }
 
-.effect-airbnb .outer-nav a {
+.effect-airbnb .outer-nav a, .effect-airbnb .outer-nav .search  {
   opacity: 0;
   -webkit-transform: translateX(-150px);
   transform: translateX(-150px);
@@ -196,10 +196,15 @@ html, body, .perspective {
   transition: transform 0.4s, opacity 0.4s;
 }
 
-.effect-airbnb.animate .outer-nav a {
+.effect-airbnb.animate .outer-nav a, .effect-airbnb.animate .outer-nav .search {
   opacity: 1;
   -webkit-transform: translateX(0);
   transform: translateX(0);
+}
+
+.effect-airbnb.animate .outer-nav .search  {
+  -webkit-transition-delay: 0.03s;
+  transition-delay: 0.03s;
 }
 
 .effect-airbnb.animate .outer-nav a:nth-child(2) {

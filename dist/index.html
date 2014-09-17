@@ -10,12 +10,12 @@
 
     <base href="/">
 
-    <link rel="stylesheet" href="assets/vendor-600a0a6289b0cbf34b9c6aaa10bfa1ec.css">
-    <link rel="stylesheet" href="assets/ember-weather-9c821329fe0f9f260904fdb4851e61de.css">
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ember-weather.css">
   </head>
   <body>
     <script>
-      window.EmberWeatherENV = {"environment":"production","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{}};
+      window.EmberWeatherENV = {"environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
       window.EmberENV = window.EmberWeatherENV.EmberENV;
     </script>
     <div class="wrapper">
@@ -23,8 +23,8 @@
 
       </div>
     </div>
-    <script src="assets/vendor-27e1b9d3e01a1f9f1f4201148885d5c0.js"></script>
-    <script src="assets/ember-weather-4b54cbc8e64387990d182fd19a2f0af3.js"></script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ember-weather.js"></script>
     <script>
       window.EmberWeather = require('ember-weather/app')['default'].create(EmberWeatherENV.APP);
     </script>
