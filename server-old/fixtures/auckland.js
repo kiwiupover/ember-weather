@@ -1,6 +1,6 @@
 module.exports =
 {
-  "locationName": "Auckland, New Zealand",
+  "locationName": "Auckland",
   "imageApi": {
     "current_page": 2,
     "total_pages": 3609,

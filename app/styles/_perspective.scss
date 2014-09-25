@@ -1,0 +1,211 @@
+html, body, .perspective {
+  width: 100%;
+  height: 100%;
+}
+
+.perspective {
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+  outline: 1px solid rgba(0,0,0,0);
+  z-index: 10;
+  -webkit-transform: translateZ(0) translateX(0) rotateY(0deg); /* reset transforms (Chrome bug) */
+  transform: translateZ(0) translateX(0) rotateY(0deg);
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+  /* the transition delay of the height needs to be synced with the container transition time */
+  -webkit-transition: opacity 0.4s, height 0s 0.4s;
+  transition: opacity 0.4s, height 0s 0.4s;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.component {
+  margin: 0 auto;
+  width: 60%;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+/* Modal view */
+.perspective.modalview {
+  position: fixed;
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+}
+
+.modalview .container {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.modalview .wrapper {
+  -webkit-transform: translateZ(-1px); /* solves a rendering bug in Chrome on Windows */
+}
+
+.animate .container::after {
+  opacity: 1;
+  height: 101%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+
+/* Individual Effects */
+
+/* Effect airbnb */
+
+.effect-airbnb .container {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.effect-airbnb.animate .container {
+  -webkit-transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+  transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+}
+
+.no-csstransforms3d .effect-airbnb.animate .container {
+  left: 75%;
+}
+
+.effect-airbnb .outer-nav ul li, .effect-airbnb .outer-nav .search  {
+  opacity: 0;
+  -webkit-transform: translateX(-150px);
+  transform: translateX(-150px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.effect-airbnb.animate .outer-nav ul li, .effect-airbnb.animate .outer-nav .search {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.effect-airbnb.animate .outer-nav .search  {
+  -webkit-transition-delay: 0.03s;
+  transition-delay: 0.03s;
+}
+
+.effect-airbnb.animate .outer-nav ul li:nth-child(2) {
+  -webkit-transition-delay: 0.04s;
+  transition-delay: 0.04s;
+}
+
+.effect-airbnb.animate .outer-nav ul li:nth-child(3) {
+  -webkit-transition-delay: 0.08s;
+  transition-delay: 0.08s;
+}
+
+.effect-airbnb.animate .outer-nav ul li:nth-child(4) {
+  -webkit-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+}
+
+.effect-airbnb.animate .outer-nav ul li:nth-child(5) {
+  -webkit-transition-delay: 0.16s;
+  transition-delay: 0.16s;
+}
+
+.effect-airbnb.animate .outer-nav ul li:nth-child(6) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.effect-airbnb.animate .outer-nav ul li:nth-child(7) {
+  -webkit-transition-delay: 0.24s;
+  transition-delay: 0.24s;
+}
+
+.no-csstransforms3d .effect-movedown.animate .container {
+  top: 75%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 77em) {
+
+  .outer-nav.top {
+    top: 15%;
+  }
+
+  .outer-nav.bottom {
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 36.625em), screen and (max-height: 41.75em) {
+
+  .outer-nav.top {
+    top: 5%;
+  }
+
+  .outer-nav.bottom {
+    bottom: 5%;
+  }
+
+  .outer-nav.horizontal {
+    font-size: 1.7em;
+    width: 6.2em;
+  }
+
+  .outer-nav.horizontal a {
+    display: block;
+    text-align: left;
+  }
+
+  /* Special Case */
+  .effect-rotatetop .outer-nav.horizontal {
+    width: 95%;
+    bottom: auto;
+    top: 50%;
+  }
+
+  .effect-rotatetop .outer-nav.horizontal a {
+    display: inline-block;
+  }
+
+}
+
+@media screen and (max-width: 31em), screen and (max-height: 36.2em) {
+  .outer-nav.horizontal,
+  .outer-nav.vertical {
+    font-size: 1em;
+    width: 70%;
+  }
+
+  .outer-nav.right {
+    right: auto;
+    left: 50%;
+  }
+}
+
+@media screen and (max-height: 31.6em) {
+  .outer-nav a {
+    margin-bottom: 20px;
+  }
+}

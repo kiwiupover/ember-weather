@@ -22,15 +22,31 @@ export default Ember.Component.extend({
     typeahead.on("typeahead:selected", function(event, location) {
       Ember.run(function () {
         self.sendAction("transitionToLocation", location.name);
+        self.resetValue();
+        self.resetList();
       });
     });
 
     typeahead.on("typeahead:autocompleted", function(event, location) {
       Ember.run(function () {
         self.sendAction("transitionToLocation", location.name);
+        self.resetValue();
+        self.resetList();
       });
     });
-  }.on('didInsertElement')
+  }.on('didInsertElement'),
+
+  willDestroyElement: function(){
+    this.$('input:first').typeahead('destroy');
+  },
+
+  resetList: function(){
+    this.$('.tt-dropdown-menu').empty();
+  },
+
+  resetValue: function(){
+    this.$('input.tt-query').blur().val('');
+  }
 
 });
 

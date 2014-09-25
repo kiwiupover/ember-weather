@@ -10,6 +10,10 @@ app.import("bower_components/momentjs/moment.js");
 app.import("bower_components/foggy/jquery.foggy.js");
 app.import("bower_components/foundation/js/foundation/foundation.js");
 app.import("bower_components/foundation/js/foundation/foundation.topbar.js");
+app.import("bower_components/fastclick/lib/fastclick.js");
+
+
+app.import("vendor/fastclick.js");
 
 
 // Use `app.import` to add additional libraries to the generated

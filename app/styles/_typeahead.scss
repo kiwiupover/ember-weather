@@ -88,8 +88,8 @@
   width: 100%;
   margin-top: 0px;
   padding: 8px 0;
-  background-color: rgba(#fff, 0.8);
-  border-radius: 0 0 4px 4px;
+  background-color: #ddd;
+  border-radius: 0 0 2px 2px;
   text-align: left;
 }
 
@@ -107,5 +107,8 @@
 
 .tt-suggestion p {
   margin: 0;
+  @media #{$small-only} {
+    font-size: 15px;
+  }
 }
 

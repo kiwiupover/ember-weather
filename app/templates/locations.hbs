@@ -1,3 +1,4 @@
-{{partial 'nav'}}
-
-{{outlet}}
+{{#nav-locations model=content transitionToLocation="transitionToLocationHandler" transitionToSeachLocation="transitionToSearchedLocationHandler"}}
+  {{outlet}}
+{{/nav-locations}}
+<section id='bg' class='bg'></section>

@@ -18,8 +18,8 @@ export default Ember.Component.extend({
   },
 
   _setImageBackGround: function(image){
-    this.$('.bg').css('background-image', 'url(' + image + ')');
-    this.$('#bg').foggy({
+    $('.bg, #bg.bg').css('background-image', 'url(' + image + ')');
+    $('#bg').foggy({
       blurRadius: 12,
       opacity: 1
     });
