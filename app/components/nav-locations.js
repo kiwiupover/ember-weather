@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default Ember.Component.extend({
 
   showMenu: false,
@@ -17,6 +19,12 @@ export default Ember.Component.extend({
     transitionToLocationHandler: function(location){
       this._doPageAnimation();
       this.sendAction("transitionToSeachLocation", location);
+    },
+
+    menuClose: function(){
+      if ( this.get('showMenu') ) {
+        this._doPageAnimation();
+      }
     }
   },
 
@@ -28,7 +36,7 @@ export default Ember.Component.extend({
     if (animateMenu) {
       Ember.run.later( function(){
         self.toggleProperty('animateMenu');
-      }, 350);
+      }, 450);
     } else {
       self.toggleProperty('animateMenu');
     }
