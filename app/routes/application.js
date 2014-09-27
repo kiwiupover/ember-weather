@@ -4,7 +4,7 @@ import dasherizer from "ember-weather/utils/dasherizer";
 export default Ember.Route.extend({
   actions: {
     transitionToLocationHandler: function (location) {
-      this.transitionTo('weather', location.id);
+      this.transitionTo('weather', location.get('id'));
     },
 
     transitionToSearchedLocationHandler: function (location) {
