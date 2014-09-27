@@ -11,6 +11,7 @@ export default Ember.Component.extend({
     menu: function(){
       this._doPageAnimation();
     },
+
     link: function(link) {
       this._doPageAnimation();
       this.sendAction("transitionToLocation", link);
@@ -18,6 +19,10 @@ export default Ember.Component.extend({
 
     transitionToLocationHandler: function(location){
       this._doPageAnimation();
+      this.sendAction("transitionToSeachLocation", location);
+    },
+
+    transitionToSearchedLocationHandler: function(location){
       this.sendAction("transitionToSeachLocation", location);
     },
 
