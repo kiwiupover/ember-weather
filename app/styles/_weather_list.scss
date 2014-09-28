@@ -1,8 +1,10 @@
 .weather-list {
   @include grid-row();
   margin-top: 10px;
-  background: $primary-color;
   cursor: pointer;
+  @media #{$small-only} {
+    background:none;
+  }
   h3, .icon {
     color: white;
     font-weight: 100;
@@ -10,20 +12,38 @@
   h3 {
     font-size: rem-calc(30);
     margin: 12px 0;
+    @media #{$small-only} {
+      margin: 0;
+      font-size: rem-calc(18);
+    }
   }
   .title {
     @include grid-column(8);
+    @media #{$small-only} {
+      padding: 3px 0 0;
+    }
   }
   .temp {
     @include grid-column(2);
     text-align: right;
+    @media #{$small-only} {
+      padding: 3px 0 0;
+    }
   }
   .icon {
     @include grid-column(2);
     text-align: center;
     padding-top: 6px;
+    @media #{$small-only} {
+      padding: 0;
+      text-align: right;
+    }
     [class^="icon-"] {
       float: none;
+      @media #{$small-only} {
+        padding: 0;
+        font-size: rem-calc(26);
+      }
     }
   }
 }

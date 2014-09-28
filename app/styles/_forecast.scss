@@ -16,6 +16,7 @@
   -ms-transform: translatez(0);
   -o-transform: translatez(0);
   transform: translatez(0);
+  opacity: 0.4;
 }
 
 .weather-panel {
@@ -28,11 +29,11 @@
   h1, h2, h3, h4, h5 ,h6 {
     color: white;
     font-weight: 100;
-    text-shadow: 0 0 0 black;
+    text-shadow: 0 0 6px black;
   }
   @media #{$small-only} {
     h1 {
-      font-size: 1.6em;
+      font-size: 1.3em;
     }
   }
   @media #{$medium-up} {
