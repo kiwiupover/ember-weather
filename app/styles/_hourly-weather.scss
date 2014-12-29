@@ -1,0 +1,28 @@
+$unit-gutter: 10px;
+$unit-width: 50px;
+$unit-total-width: $unit-gutter + $unit-width;
+
+.hourly-weather {
+  overflow: auto;
+  ul {
+    margin-left: 0 !important;
+    width: 24 * $unit-total-width;
+  }
+  ul > li {
+    width: $unit-width;
+    margin-left: $unit-gutter !important;
+    i {
+      font-size: 32px;
+      padding: 5px;
+    }
+    .hour {
+      font-size: 12px;
+    }
+    .temperature {
+      font-size: 14px;
+    }
+    &:first-of-type {
+      margin-left: 0 !important;
+    }
+  }
+}

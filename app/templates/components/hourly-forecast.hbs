@@ -1,0 +1,13 @@
+<div class="hourly-weather">
+  <ul class='no-bullet'>
+    {{#each h in hourlyWeather}}
+      <li>
+        <div class="hour">
+          {{time-formatter h.time timezone}}
+        </div>
+        {{icon-name h.icon}}
+        <span class="temperature">{{whole-number h.apparentTemperature}}&deg;</span>
+      </li>
+    {{/each}}
+  </ul>
+</div>

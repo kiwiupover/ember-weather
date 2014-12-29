@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ember Weather</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>EmberWeather</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{BASE_TAG}}
+  {{content-for 'head'}}
 
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/ember-weather.css">
-  </head>
-  <body>
-    <script>
-      window.EmberWeatherENV = {{ENV}};
-      window.EmberENV = window.EmberWeatherENV.EmberENV;
-    </script>
-    <div class="wrapper">
-      <div id="main-content">
+  <link rel="stylesheet" href="assets/vendor.css">
+  <link rel="stylesheet" href="assets/ember-weather.css">
 
-      </div>
+  {{content-for 'head-footer'}}
+</head>
+<body>
+  <div class="wrapper">
+    <div id="main-content">
+
     </div>
-    <script src="assets/vendor.js"></script>
-    <script src="assets/ember-weather.js"></script>
-    <script>
-      window.EmberWeather = require('ember-weather/app')['default'].create(EmberWeatherENV.APP);
-    </script>
-  </body>
+  </div>
+  {{content-for 'body'}}
+
+  <script src="assets/vendor.js"></script>
+  <script src="assets/ember-weather.js"></script>
+
+  {{content-for 'body-footer'}}
+</body>
 </html>

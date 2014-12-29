@@ -3,7 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   displayDate: function () {
-    return moment.unix(this.get('weather.time')).format('MMM DD');
+    var time      = this.get('weather.time');
+    var timezone  = this.get('weather.timezone');
+    return moment.unix(time).tz(timezone).format('MMM DD');
   }.property('weather.time')
 
 

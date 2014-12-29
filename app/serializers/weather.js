@@ -25,6 +25,7 @@ function normalizeObject(obj) {
   var name = obj.locationName, // TODO: use id only
       weatherCurrent = obj.weatherConditions.currently,
       weatherForecast = obj.weatherForecast.daily.data.slice(0,7),
+      hourlyForecast = obj.weatherForecast.hourly.data.slice(0,24),
       imageUrl = makeImageUrl(obj.imageApi.photos),
       photographer = {};
 
@@ -36,6 +37,7 @@ function normalizeObject(obj) {
     id: dasherizer(name),
     name: name,
     forecast: weatherForecast,
+    hourlyForecast: hourlyForecast,
     imageUrl: imageUrl,
     photographer: photographer,
     // properties plucked from weatherCurrent object
@@ -44,7 +46,8 @@ function normalizeObject(obj) {
     icon: weatherCurrent.icon,
     windSpeed: weatherCurrent.windSpeed,
     windBearing: weatherCurrent.windBearing,
-    time: weatherCurrent.time
+    time: weatherCurrent.time,
+    timezone: obj.weatherForecast.timezone
   };
 }
 

@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    modulePrefix: 'ember-weather',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

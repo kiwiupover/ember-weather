@@ -1,0 +1,1026 @@
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:05:19.930Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Seattle took 10299 ms ","timestamp":"2014-12-18T00:05:30.422Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T00:05:30.423Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=a took 13608 ms ","timestamp":"2014-12-18T00:05:30.425Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T00:05:30.425Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=au took 13239 ms ","timestamp":"2014-12-18T00:05:30.427Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T00:05:30.428Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:12:26.995Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seat took 1327 ms ","timestamp":"2014-12-18T00:12:30.987Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T00:12:30.987Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:12:31.359Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Auckland took 7641 ms ","timestamp":"2014-12-18T00:12:39.191Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T00:12:39.191Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:16:14.548Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:16:14.791Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:16:22.850Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:16:22.866Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:16:38.927Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:16:38.939Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:19:30.728Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:19:30.819Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:19:36.485Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:19:55.621Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:19:55.655Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:21:20.182Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:21:20.345Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:22:05.550Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:22:05.593Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:22:21.847Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:22:30.482Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:23:10.051Z"}
+{"code":"ETIMEDOUT","errno":"ETIMEDOUT","syscall":"read","level":"info","message":"there was an error","timestamp":"2014-12-18T00:23:28.118Z"}
+{"code":"ETIMEDOUT","errno":"ETIMEDOUT","syscall":"read","level":"info","message":"there was an error","timestamp":"2014-12-18T00:23:28.118Z"}
+{"code":"ETIMEDOUT","errno":"ETIMEDOUT","syscall":"read","level":"info","message":"there was an error","timestamp":"2014-12-18T00:23:29.125Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:25:26.194Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:25:26.215Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:25:26.364Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:25:26.932Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:26:27.242Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-18T00:26:27.316Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:27:27.109Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:27:32.683Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:28:04.420Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:29:46.218Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:29:46.296Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:30:29.590Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:30:29.788Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:31:21.731Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:31:21.922Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:31:47.928Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:32:06.728Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:32:06.949Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:32:20.358Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:32:20.591Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:32:29.127Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:32:29.395Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:33:02.205Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:33:02.430Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:33:21.698Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:33:21.914Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:33:26.529Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:34:05.307Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:34:05.578Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:34:45.871Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:35:24.218Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:35:35.621Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:35:42.841Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:35:46.796Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:36:13.908Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:36:13.975Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:36:41.812Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:36:41.947Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:37:56.620Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:37:56.761Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:38:27.460Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:38:27.464Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:38:27.968Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:38:28.435Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:38:45.064Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:38:45.077Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:41:03.105Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:41:03.201Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:41:21.270Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:41:21.351Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:41:53.711Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:41:53.887Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:42:14.714Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:42:14.826Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:44:08.886Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:44:09.159Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:44:27.319Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:44:27.443Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:45:20.125Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:45:20.324Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:45:32.192Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:45:32.394Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:45:37.856Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:45:38.048Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:46:21.925Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:46:22.116Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:47:19.947Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:47:20.160Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:48:13.962Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:48:14.161Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:56:02.767Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T00:56:03.071Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T19:08:56.726Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sea took 570 ms ","timestamp":"2014-12-18T19:09:03.830Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T19:09:03.831Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T19:09:07.173Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=se took 124 ms ","timestamp":"2014-12-18T19:09:15.013Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T19:09:15.013Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=s took 116 ms ","timestamp":"2014-12-18T19:09:16.699Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T19:09:16.699Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sea took 108 ms ","timestamp":"2014-12-18T19:09:51.526Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T19:09:51.527Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Seattle took 95 ms ","timestamp":"2014-12-18T19:09:52.712Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T19:09:52.712Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-18T19:10:02.260Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=d took 600 ms ","timestamp":"2014-12-18T19:10:44.290Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-18T19:10:44.290Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T05:53:06.649Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 535 ms ","timestamp":"2014-12-21T05:53:07.186Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-21T05:53:07.187Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=s took 127 ms ","timestamp":"2014-12-21T05:53:38.509Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-21T05:53:38.509Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sea took 101 ms ","timestamp":"2014-12-21T05:53:40.841Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-21T05:53:40.841Z"}
+{"date":"Sat Dec 20 2014 21:54:18 GMT-0800 (PST)","process":{"pid":32823,"uid":1103652848,"gid":386085923,"cwd":"/Users/dlaird/Projects/ember-weather","execPath":"/Users/dlaird/.nvm/v0.10.33/bin/node","version":"v0.10.33","argv":["node","/Users/dlaird/Projects/ember-weather/server-old/local.js"],"memoryUsage":{"rss":32382976,"heapTotal":29087488,"heapUsed":12617232}},"os":{"loadavg":[1.57763671875,8.8837890625,8.48779296875],"uptime":740012},"trace":[{"column":11,"file":"net.js","function":"errnoException","line":904,"method":null,"native":false},{"column":14,"file":"net.js","function":"Server._listen2","line":1042,"method":"_listen2","native":false},{"column":10,"file":"net.js","function":"listen","line":1064,"method":null,"native":false},{"column":5,"file":"net.js","function":"Server.listen","line":1138,"method":"listen","native":false},{"column":24,"file":"/Users/dlaird/Projects/ember-weather/node_modules/express/lib/application.js","function":"Function.app.listen","line":533,"method":"app.listen","native":false},{"column":8,"file":"/Users/dlaird/Projects/ember-weather/server-old/local.js","function":"","line":30,"method":null,"native":false},{"column":26,"file":"module.js","function":"Module._compile","line":456,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Object.Module._extensions..js","line":474,"method":"Module._extensions..js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":356,"method":"load","native":false},{"column":12,"file":"module.js","function":"Function.Module._load","line":312,"method":"Module._load","native":false}],"stack":["Error: listen EADDRINUSE","    at errnoException (net.js:904:11)","    at Server._listen2 (net.js:1042:14)","    at listen (net.js:1064:10)","    at Server.listen (net.js:1138:5)","    at Function.app.listen (/Users/dlaird/Projects/ember-weather/node_modules/express/lib/application.js:533:24)","    at Object.<anonymous> (/Users/dlaird/Projects/ember-weather/server-old/local.js:30:8)","    at Module._compile (module.js:456:26)","    at Object.Module._extensions..js (module.js:474:10)","    at Module.load (module.js:356:32)","    at Function.Module._load (module.js:312:12)"],"level":"error","message":"uncaughtException: listen EADDRINUSE","timestamp":"2014-12-21T05:54:18.292Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=se took 664 ms ","timestamp":"2014-12-21T05:57:07.762Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T05:57:09.477Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 80 ms ","timestamp":"2014-12-21T05:57:09.558Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Seattle, Washington took 64 ms ","timestamp":"2014-12-21T05:57:09.710Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 661 ms ","timestamp":"2014-12-21T05:57:10.221Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1224 ms ","timestamp":"2014-12-21T05:57:10.784Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1534 ms ","timestamp":"2014-12-21T05:57:11.092Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:01:14.736Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:01:14.911Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 354 ms ","timestamp":"2014-12-21T06:01:15.265Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 533 ms ","timestamp":"2014-12-21T06:01:15.269Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 798 ms ","timestamp":"2014-12-21T06:01:16.068Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 863 ms ","timestamp":"2014-12-21T06:01:16.132Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 892 ms ","timestamp":"2014-12-21T06:01:16.157Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1095 ms ","timestamp":"2014-12-21T06:01:16.365Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1121 ms ","timestamp":"2014-12-21T06:01:16.386Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1313 ms ","timestamp":"2014-12-21T06:01:16.578Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:01:41.002Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 143 ms ","timestamp":"2014-12-21T06:01:41.146Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:01:41.201Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 61 ms ","timestamp":"2014-12-21T06:01:41.262Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 643 ms ","timestamp":"2014-12-21T06:01:41.790Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 787 ms ","timestamp":"2014-12-21T06:01:41.934Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 719 ms ","timestamp":"2014-12-21T06:01:41.983Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 843 ms ","timestamp":"2014-12-21T06:01:41.989Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 733 ms ","timestamp":"2014-12-21T06:01:41.995Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1401 ms ","timestamp":"2014-12-21T06:01:42.663Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:02:33.145Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:02:33.457Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 168 ms ","timestamp":"2014-12-21T06:02:33.625Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 521 ms ","timestamp":"2014-12-21T06:02:33.667Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 754 ms ","timestamp":"2014-12-21T06:02:34.379Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 727 ms ","timestamp":"2014-12-21T06:02:34.394Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 921 ms ","timestamp":"2014-12-21T06:02:34.546Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 988 ms ","timestamp":"2014-12-21T06:02:34.655Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1059 ms ","timestamp":"2014-12-21T06:02:34.684Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1023 ms ","timestamp":"2014-12-21T06:02:34.690Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:05:01.756Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:05:01.929Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 384 ms ","timestamp":"2014-12-21T06:05:02.313Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 587 ms ","timestamp":"2014-12-21T06:05:02.344Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 795 ms ","timestamp":"2014-12-21T06:05:03.109Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 769 ms ","timestamp":"2014-12-21T06:05:03.114Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 807 ms ","timestamp":"2014-12-21T06:05:03.151Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 985 ms ","timestamp":"2014-12-21T06:05:03.300Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1108 ms ","timestamp":"2014-12-21T06:05:03.422Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1244 ms ","timestamp":"2014-12-21T06:05:03.588Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:08:16.509Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:08:16.665Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 530 ms ","timestamp":"2014-12-21T06:08:17.195Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 721 ms ","timestamp":"2014-12-21T06:08:17.230Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 750 ms ","timestamp":"2014-12-21T06:08:17.980Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 823 ms ","timestamp":"2014-12-21T06:08:18.018Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 848 ms ","timestamp":"2014-12-21T06:08:18.043Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 860 ms ","timestamp":"2014-12-21T06:08:18.090Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 972 ms ","timestamp":"2014-12-21T06:08:18.202Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1041 ms ","timestamp":"2014-12-21T06:08:18.237Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:09:12.469Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:09:12.673Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 359 ms ","timestamp":"2014-12-21T06:09:13.033Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 594 ms ","timestamp":"2014-12-21T06:09:13.063Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 606 ms ","timestamp":"2014-12-21T06:09:13.639Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 613 ms ","timestamp":"2014-12-21T06:09:13.676Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 741 ms ","timestamp":"2014-12-21T06:09:13.774Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 769 ms ","timestamp":"2014-12-21T06:09:13.802Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 779 ms ","timestamp":"2014-12-21T06:09:13.842Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 871 ms ","timestamp":"2014-12-21T06:09:13.935Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:10:45.480Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:10:45.629Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 3306 ms ","timestamp":"2014-12-21T06:10:48.935Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 3554 ms ","timestamp":"2014-12-21T06:10:49.034Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 991 ms ","timestamp":"2014-12-21T06:10:49.927Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1023 ms ","timestamp":"2014-12-21T06:10:49.958Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 957 ms ","timestamp":"2014-12-21T06:10:49.991Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1050 ms ","timestamp":"2014-12-21T06:10:50.084Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 2569 ms ","timestamp":"2014-12-21T06:10:51.505Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 2881 ms ","timestamp":"2014-12-21T06:10:51.915Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:11:18.069Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:11:18.252Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 212 ms ","timestamp":"2014-12-21T06:11:18.464Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 410 ms ","timestamp":"2014-12-21T06:11:18.479Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 905 ms ","timestamp":"2014-12-21T06:11:19.369Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 923 ms ","timestamp":"2014-12-21T06:11:19.403Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1063 ms ","timestamp":"2014-12-21T06:11:19.527Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1069 ms ","timestamp":"2014-12-21T06:11:19.533Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1060 ms ","timestamp":"2014-12-21T06:11:19.539Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1159 ms ","timestamp":"2014-12-21T06:11:19.638Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:11:22.183Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:11:22.208Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 63 ms ","timestamp":"2014-12-21T06:11:22.246Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 100 ms ","timestamp":"2014-12-21T06:11:22.308Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 661 ms ","timestamp":"2014-12-21T06:11:22.907Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 642 ms ","timestamp":"2014-12-21T06:11:22.950Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 736 ms ","timestamp":"2014-12-21T06:11:22.983Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 842 ms ","timestamp":"2014-12-21T06:11:23.088Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 785 ms ","timestamp":"2014-12-21T06:11:23.093Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1099 ms ","timestamp":"2014-12-21T06:11:23.407Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:13:18.998Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:13:19.100Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 73 ms ","timestamp":"2014-12-21T06:13:19.173Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 202 ms ","timestamp":"2014-12-21T06:13:19.200Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 789 ms ","timestamp":"2014-12-21T06:13:19.963Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 809 ms ","timestamp":"2014-12-21T06:13:19.982Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 791 ms ","timestamp":"2014-12-21T06:13:19.991Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 859 ms ","timestamp":"2014-12-21T06:13:20.059Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 900 ms ","timestamp":"2014-12-21T06:13:20.074Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1608 ms ","timestamp":"2014-12-21T06:13:20.809Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:13:38.094Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 94 ms ","timestamp":"2014-12-21T06:13:38.189Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:13:38.296Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 75 ms ","timestamp":"2014-12-21T06:13:38.372Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 641 ms ","timestamp":"2014-12-21T06:13:39.014Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 830 ms ","timestamp":"2014-12-21T06:13:39.019Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 835 ms ","timestamp":"2014-12-21T06:13:39.024Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 840 ms ","timestamp":"2014-12-21T06:13:39.212Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1051 ms ","timestamp":"2014-12-21T06:13:39.240Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 870 ms ","timestamp":"2014-12-21T06:13:39.243Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:14:03.183Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:14:03.267Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 185 ms ","timestamp":"2014-12-21T06:14:03.452Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 294 ms ","timestamp":"2014-12-21T06:14:03.477Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 718 ms ","timestamp":"2014-12-21T06:14:04.195Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 784 ms ","timestamp":"2014-12-21T06:14:04.236Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 773 ms ","timestamp":"2014-12-21T06:14:04.250Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 814 ms ","timestamp":"2014-12-21T06:14:04.266Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 846 ms ","timestamp":"2014-12-21T06:14:04.298Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 862 ms ","timestamp":"2014-12-21T06:14:04.339Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:27:46.129Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:27:46.302Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 541 ms ","timestamp":"2014-12-21T06:27:46.670Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 371 ms ","timestamp":"2014-12-21T06:27:46.673Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 694 ms ","timestamp":"2014-12-21T06:27:47.368Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 699 ms ","timestamp":"2014-12-21T06:27:47.372Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 730 ms ","timestamp":"2014-12-21T06:27:47.401Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 737 ms ","timestamp":"2014-12-21T06:27:47.408Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1063 ms ","timestamp":"2014-12-21T06:27:47.737Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1097 ms ","timestamp":"2014-12-21T06:27:47.768Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:30:58.094Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:30:58.158Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 469 ms ","timestamp":"2014-12-21T06:30:58.627Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 539 ms ","timestamp":"2014-12-21T06:30:58.633Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 728 ms ","timestamp":"2014-12-21T06:30:59.356Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 736 ms ","timestamp":"2014-12-21T06:30:59.364Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 808 ms ","timestamp":"2014-12-21T06:30:59.443Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 816 ms ","timestamp":"2014-12-21T06:30:59.449Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1039 ms ","timestamp":"2014-12-21T06:30:59.673Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1058 ms ","timestamp":"2014-12-21T06:30:59.686Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:31:51.780Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 92 ms ","timestamp":"2014-12-21T06:31:51.872Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:31:51.903Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 61 ms ","timestamp":"2014-12-21T06:31:51.965Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 552 ms ","timestamp":"2014-12-21T06:31:52.424Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 609 ms ","timestamp":"2014-12-21T06:31:52.574Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 704 ms ","timestamp":"2014-12-21T06:31:52.576Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 783 ms ","timestamp":"2014-12-21T06:31:52.655Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 700 ms ","timestamp":"2014-12-21T06:31:52.665Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 744 ms ","timestamp":"2014-12-21T06:31:52.709Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T06:34:50.973Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 142 ms ","timestamp":"2014-12-21T06:34:51.115Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T06:34:51.298Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 67 ms ","timestamp":"2014-12-21T06:34:51.365Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 717 ms ","timestamp":"2014-12-21T06:34:51.833Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 760 ms ","timestamp":"2014-12-21T06:34:51.876Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 998 ms ","timestamp":"2014-12-21T06:34:52.114Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 787 ms ","timestamp":"2014-12-21T06:34:52.152Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 791 ms ","timestamp":"2014-12-21T06:34:52.158Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 793 ms ","timestamp":"2014-12-21T06:34:52.160Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:20:38.524Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T07:20:38.702Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 435 ms ","timestamp":"2014-12-21T07:20:39.137Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 648 ms ","timestamp":"2014-12-21T07:20:39.172Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 580 ms ","timestamp":"2014-12-21T07:20:39.718Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 604 ms ","timestamp":"2014-12-21T07:20:39.776Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 728 ms ","timestamp":"2014-12-21T07:20:39.866Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 736 ms ","timestamp":"2014-12-21T07:20:39.874Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 713 ms ","timestamp":"2014-12-21T07:20:39.886Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 720 ms ","timestamp":"2014-12-21T07:20:39.892Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:27:51.814Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T07:27:52.050Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 252 ms ","timestamp":"2014-12-21T07:27:52.302Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 518 ms ","timestamp":"2014-12-21T07:27:52.332Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 741 ms ","timestamp":"2014-12-21T07:27:53.043Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 752 ms ","timestamp":"2014-12-21T07:27:53.055Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 748 ms ","timestamp":"2014-12-21T07:27:53.081Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 755 ms ","timestamp":"2014-12-21T07:27:53.088Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1023 ms ","timestamp":"2014-12-21T07:27:53.326Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1000 ms ","timestamp":"2014-12-21T07:27:53.333Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:28:03.849Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 123 ms ","timestamp":"2014-12-21T07:28:03.972Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T07:28:04.094Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 59 ms ","timestamp":"2014-12-21T07:28:04.153Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 613 ms ","timestamp":"2014-12-21T07:28:04.586Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 744 ms ","timestamp":"2014-12-21T07:28:04.716Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 804 ms ","timestamp":"2014-12-21T07:28:04.776Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 652 ms ","timestamp":"2014-12-21T07:28:04.807Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 779 ms ","timestamp":"2014-12-21T07:28:04.933Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 780 ms ","timestamp":"2014-12-21T07:28:04.934Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:28:40.760Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 66 ms ","timestamp":"2014-12-21T07:28:40.826Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T07:28:40.917Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 93 ms ","timestamp":"2014-12-21T07:28:41.011Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 630 ms ","timestamp":"2014-12-21T07:28:41.457Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 773 ms ","timestamp":"2014-12-21T07:28:41.600Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 594 ms ","timestamp":"2014-12-21T07:28:41.605Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 821 ms ","timestamp":"2014-12-21T07:28:41.649Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 720 ms ","timestamp":"2014-12-21T07:28:41.731Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 735 ms ","timestamp":"2014-12-21T07:28:41.746Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:29:05.375Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 143 ms ","timestamp":"2014-12-21T07:29:05.519Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T07:29:05.578Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 59 ms ","timestamp":"2014-12-21T07:29:05.637Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 722 ms ","timestamp":"2014-12-21T07:29:06.241Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 729 ms ","timestamp":"2014-12-21T07:29:06.248Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 730 ms ","timestamp":"2014-12-21T07:29:06.368Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 805 ms ","timestamp":"2014-12-21T07:29:06.442Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1044 ms ","timestamp":"2014-12-21T07:29:06.563Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 931 ms ","timestamp":"2014-12-21T07:29:06.569Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:29:17.556Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 95 ms ","timestamp":"2014-12-21T07:29:17.651Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T07:29:17.668Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 59 ms ","timestamp":"2014-12-21T07:29:17.727Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 551 ms ","timestamp":"2014-12-21T07:29:18.202Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 610 ms ","timestamp":"2014-12-21T07:29:18.338Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 736 ms ","timestamp":"2014-12-21T07:29:18.387Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 710 ms ","timestamp":"2014-12-21T07:29:18.437Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 827 ms ","timestamp":"2014-12-21T07:29:18.478Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 856 ms ","timestamp":"2014-12-21T07:29:18.583Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T07:30:00.137Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 481 ms ","timestamp":"2014-12-21T07:30:00.618Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 592 ms ","timestamp":"2014-12-21T07:30:01.210Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 721 ms ","timestamp":"2014-12-21T07:30:01.339Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 746 ms ","timestamp":"2014-12-21T07:30:01.364Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=ca took 542 ms ","timestamp":"2014-12-21T07:30:47.550Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=carls took 64 ms ","timestamp":"2014-12-21T07:30:48.046Z"}
+{"level":"info","message":"Request params carlsbad-california","timestamp":"2014-12-21T07:30:49.123Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=carlsbad, california took 63 ms ","timestamp":"2014-12-21T07:30:49.186Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Carlsbad, California took 61 ms ","timestamp":"2014-12-21T07:30:49.450Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/33.148056,-117.305481 took 682 ms ","timestamp":"2014-12-21T07:30:49.868Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/33.148056,-117.305481 took 687 ms ","timestamp":"2014-12-21T07:30:49.873Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Carlsbad, California&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 944 ms ","timestamp":"2014-12-21T07:30:50.130Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:33:08.637Z"}
+{"level":"info","message":"Request params carlsbad-california","timestamp":"2014-12-21T07:33:08.811Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=carlsbad, california took 337 ms ","timestamp":"2014-12-21T07:33:09.148Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 541 ms ","timestamp":"2014-12-21T07:33:09.178Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/33.148056,-117.305481 took 663 ms ","timestamp":"2014-12-21T07:33:09.811Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/33.148056,-117.305481 took 667 ms ","timestamp":"2014-12-21T07:33:09.815Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 735 ms ","timestamp":"2014-12-21T07:33:09.914Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 741 ms ","timestamp":"2014-12-21T07:33:09.920Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 975 ms ","timestamp":"2014-12-21T07:33:10.154Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Carlsbad, California&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1045 ms ","timestamp":"2014-12-21T07:33:10.193Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:33:54.782Z"}
+{"level":"info","message":"Request params carlsbad-california","timestamp":"2014-12-21T07:33:54.897Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 151 ms ","timestamp":"2014-12-21T07:33:54.933Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=carlsbad, california took 59 ms ","timestamp":"2014-12-21T07:33:54.956Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 603 ms ","timestamp":"2014-12-21T07:33:55.537Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Carlsbad, California&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 588 ms ","timestamp":"2014-12-21T07:33:55.545Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/33.148056,-117.305481 took 689 ms ","timestamp":"2014-12-21T07:33:55.646Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 715 ms ","timestamp":"2014-12-21T07:33:55.648Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/33.148056,-117.305481 took 694 ms ","timestamp":"2014-12-21T07:33:55.650Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 793 ms ","timestamp":"2014-12-21T07:33:55.727Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sea took 142 ms ","timestamp":"2014-12-21T07:34:59.695Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-21T07:35:00.476Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 64 ms ","timestamp":"2014-12-21T07:35:00.541Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Seattle, Washington took 63 ms ","timestamp":"2014-12-21T07:35:00.807Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 782 ms ","timestamp":"2014-12-21T07:35:01.323Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 839 ms ","timestamp":"2014-12-21T07:35:01.380Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1038 ms ","timestamp":"2014-12-21T07:35:01.579Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=se took 94 ms ","timestamp":"2014-12-21T07:35:05.310Z"}
+{"level":"info","message":"Request params seaside-california","timestamp":"2014-12-21T07:35:06.318Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seaside, california took 69 ms ","timestamp":"2014-12-21T07:35:06.388Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Seaside, California took 64 ms ","timestamp":"2014-12-21T07:35:06.654Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seaside, California&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 629 ms ","timestamp":"2014-12-21T07:35:07.017Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/36.609482,-121.836723 took 705 ms ","timestamp":"2014-12-21T07:35:07.093Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/36.609482,-121.836723 took 712 ms ","timestamp":"2014-12-21T07:35:07.100Z"}
+{"level":"info","message":"Request params seaside-california","timestamp":"2014-12-21T07:35:15.468Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seaside, california took 62 ms ","timestamp":"2014-12-21T07:35:15.531Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seaside, California&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 613 ms ","timestamp":"2014-12-21T07:35:16.146Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/36.609482,-121.836723 took 744 ms ","timestamp":"2014-12-21T07:35:16.276Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/36.609482,-121.836723 took 768 ms ","timestamp":"2014-12-21T07:35:16.299Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=se took 94 ms ","timestamp":"2014-12-21T07:35:30.850Z"}
+{"level":"info","message":"Request params semarang-indonesia","timestamp":"2014-12-21T07:35:33.173Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=semarang, indonesia took 62 ms ","timestamp":"2014-12-21T07:35:33.235Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Semarang, Indonesia took 75 ms ","timestamp":"2014-12-21T07:35:33.514Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Semarang, Indonesia&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 612 ms ","timestamp":"2014-12-21T07:35:33.848Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-6.970000,110.419998 took 652 ms ","timestamp":"2014-12-21T07:35:33.887Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-6.970000,110.419998 took 657 ms ","timestamp":"2014-12-21T07:35:33.893Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sy took 138 ms ","timestamp":"2014-12-21T07:36:10.845Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:36:12.027Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 63 ms ","timestamp":"2014-12-21T07:36:12.090Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Sydney, Australia took 60 ms ","timestamp":"2014-12-21T07:36:12.356Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 616 ms ","timestamp":"2014-12-21T07:36:12.706Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 635 ms ","timestamp":"2014-12-21T07:36:12.725Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 717 ms ","timestamp":"2014-12-21T07:36:12.807Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:42:27.891Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:42:27.892Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 481 ms ","timestamp":"2014-12-21T07:42:28.372Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 515 ms ","timestamp":"2014-12-21T07:42:28.407Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 624 ms ","timestamp":"2014-12-21T07:42:28.997Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 639 ms ","timestamp":"2014-12-21T07:42:29.011Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 790 ms ","timestamp":"2014-12-21T07:42:29.198Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 806 ms ","timestamp":"2014-12-21T07:42:29.214Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 945 ms ","timestamp":"2014-12-21T07:42:29.353Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1046 ms ","timestamp":"2014-12-21T07:42:29.418Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:42:43.213Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 90 ms ","timestamp":"2014-12-21T07:42:43.304Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:42:43.451Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 67 ms ","timestamp":"2014-12-21T07:42:43.519Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 591 ms ","timestamp":"2014-12-21T07:42:43.895Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 733 ms ","timestamp":"2014-12-21T07:42:44.037Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 770 ms ","timestamp":"2014-12-21T07:42:44.074Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 587 ms ","timestamp":"2014-12-21T07:42:44.106Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 628 ms ","timestamp":"2014-12-21T07:42:44.147Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 708 ms ","timestamp":"2014-12-21T07:42:44.227Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:44:01.267Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:44:01.547Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 210 ms ","timestamp":"2014-12-21T07:44:01.757Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 493 ms ","timestamp":"2014-12-21T07:44:01.760Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 643 ms ","timestamp":"2014-12-21T07:44:02.400Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 691 ms ","timestamp":"2014-12-21T07:44:02.448Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 768 ms ","timestamp":"2014-12-21T07:44:02.528Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 793 ms ","timestamp":"2014-12-21T07:44:02.553Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 982 ms ","timestamp":"2014-12-21T07:44:02.742Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1016 ms ","timestamp":"2014-12-21T07:44:02.773Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:44:59.692Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:44:59.705Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 487 ms ","timestamp":"2014-12-21T07:45:00.179Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 510 ms ","timestamp":"2014-12-21T07:45:00.215Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 555 ms ","timestamp":"2014-12-21T07:45:00.771Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 597 ms ","timestamp":"2014-12-21T07:45:00.776Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 674 ms ","timestamp":"2014-12-21T07:45:00.853Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 700 ms ","timestamp":"2014-12-21T07:45:00.879Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 739 ms ","timestamp":"2014-12-21T07:45:00.954Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 835 ms ","timestamp":"2014-12-21T07:45:01.051Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:47:01.231Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:47:01.387Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 368 ms ","timestamp":"2014-12-21T07:47:01.755Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 534 ms ","timestamp":"2014-12-21T07:47:01.765Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 654 ms ","timestamp":"2014-12-21T07:47:02.409Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 707 ms ","timestamp":"2014-12-21T07:47:02.462Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 753 ms ","timestamp":"2014-12-21T07:47:02.519Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 756 ms ","timestamp":"2014-12-21T07:47:02.521Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1152 ms ","timestamp":"2014-12-21T07:47:02.918Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1168 ms ","timestamp":"2014-12-21T07:47:02.923Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:47:25.817Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 99 ms ","timestamp":"2014-12-21T07:47:25.916Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:47:26.080Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 65 ms ","timestamp":"2014-12-21T07:47:26.145Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 584 ms ","timestamp":"2014-12-21T07:47:26.500Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 753 ms ","timestamp":"2014-12-21T07:47:26.669Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 763 ms ","timestamp":"2014-12-21T07:47:26.679Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 565 ms ","timestamp":"2014-12-21T07:47:26.711Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 640 ms ","timestamp":"2014-12-21T07:47:26.785Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 735 ms ","timestamp":"2014-12-21T07:47:26.881Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:47:40.670Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 66 ms ","timestamp":"2014-12-21T07:47:40.736Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:47:40.905Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 66 ms ","timestamp":"2014-12-21T07:47:40.972Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 565 ms ","timestamp":"2014-12-21T07:47:41.301Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 801 ms ","timestamp":"2014-12-21T07:47:41.538Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 836 ms ","timestamp":"2014-12-21T07:47:41.572Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 652 ms ","timestamp":"2014-12-21T07:47:41.624Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 660 ms ","timestamp":"2014-12-21T07:47:41.632Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 669 ms ","timestamp":"2014-12-21T07:47:41.642Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:48:04.346Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 122 ms ","timestamp":"2014-12-21T07:48:04.468Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:48:04.671Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 74 ms ","timestamp":"2014-12-21T07:48:04.745Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 845 ms ","timestamp":"2014-12-21T07:48:05.314Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 887 ms ","timestamp":"2014-12-21T07:48:05.355Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 637 ms ","timestamp":"2014-12-21T07:48:05.382Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 695 ms ","timestamp":"2014-12-21T07:48:05.440Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 705 ms ","timestamp":"2014-12-21T07:48:05.450Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 990 ms ","timestamp":"2014-12-21T07:48:05.458Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:48:31.760Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 98 ms ","timestamp":"2014-12-21T07:48:31.858Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:48:32.039Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 67 ms ","timestamp":"2014-12-21T07:48:32.106Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 616 ms ","timestamp":"2014-12-21T07:48:32.475Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 746 ms ","timestamp":"2014-12-21T07:48:32.605Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 817 ms ","timestamp":"2014-12-21T07:48:32.675Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 625 ms ","timestamp":"2014-12-21T07:48:32.733Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 681 ms ","timestamp":"2014-12-21T07:48:32.788Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 708 ms ","timestamp":"2014-12-21T07:48:32.815Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:49:11.389Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 170 ms ","timestamp":"2014-12-21T07:49:11.560Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:49:11.657Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 59 ms ","timestamp":"2014-12-21T07:49:11.716Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 606 ms ","timestamp":"2014-12-21T07:49:12.166Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 757 ms ","timestamp":"2014-12-21T07:49:12.317Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 782 ms ","timestamp":"2014-12-21T07:49:12.342Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 644 ms ","timestamp":"2014-12-21T07:49:12.360Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 655 ms ","timestamp":"2014-12-21T07:49:12.371Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 731 ms ","timestamp":"2014-12-21T07:49:12.448Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:49:45.251Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 100 ms ","timestamp":"2014-12-21T07:49:45.352Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:49:45.433Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 64 ms ","timestamp":"2014-12-21T07:49:45.497Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 575 ms ","timestamp":"2014-12-21T07:49:45.928Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 585 ms ","timestamp":"2014-12-21T07:49:46.083Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 739 ms ","timestamp":"2014-12-21T07:49:46.092Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 629 ms ","timestamp":"2014-12-21T07:49:46.126Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 671 ms ","timestamp":"2014-12-21T07:49:46.168Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 835 ms ","timestamp":"2014-12-21T07:49:46.188Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:49:55.148Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 102 ms ","timestamp":"2014-12-21T07:49:55.250Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:49:55.360Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 66 ms ","timestamp":"2014-12-21T07:49:55.426Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 580 ms ","timestamp":"2014-12-21T07:49:55.830Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 633 ms ","timestamp":"2014-12-21T07:49:56.060Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 836 ms ","timestamp":"2014-12-21T07:49:56.086Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 673 ms ","timestamp":"2014-12-21T07:49:56.099Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 853 ms ","timestamp":"2014-12-21T07:49:56.104Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 754 ms ","timestamp":"2014-12-21T07:49:56.181Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:50:03.995Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 80 ms ","timestamp":"2014-12-21T07:50:04.075Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:50:04.221Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 68 ms ","timestamp":"2014-12-21T07:50:04.289Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 544 ms ","timestamp":"2014-12-21T07:50:04.620Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 762 ms ","timestamp":"2014-12-21T07:50:04.838Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 818 ms ","timestamp":"2014-12-21T07:50:04.894Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 612 ms ","timestamp":"2014-12-21T07:50:04.903Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 635 ms ","timestamp":"2014-12-21T07:50:04.924Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 662 ms ","timestamp":"2014-12-21T07:50:04.951Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:51:12.616Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:51:12.754Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 390 ms ","timestamp":"2014-12-21T07:51:13.145Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 560 ms ","timestamp":"2014-12-21T07:51:13.176Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 629 ms ","timestamp":"2014-12-21T07:51:13.774Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 629 ms ","timestamp":"2014-12-21T07:51:13.774Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 739 ms ","timestamp":"2014-12-21T07:51:13.916Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 790 ms ","timestamp":"2014-12-21T07:51:13.966Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 998 ms ","timestamp":"2014-12-21T07:51:14.143Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1009 ms ","timestamp":"2014-12-21T07:51:14.186Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:51:34.402Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 82 ms ","timestamp":"2014-12-21T07:51:34.484Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:51:34.509Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 94 ms ","timestamp":"2014-12-21T07:51:34.603Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 627 ms ","timestamp":"2014-12-21T07:51:35.111Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 631 ms ","timestamp":"2014-12-21T07:51:35.115Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 647 ms ","timestamp":"2014-12-21T07:51:35.131Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 553 ms ","timestamp":"2014-12-21T07:51:35.156Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 740 ms ","timestamp":"2014-12-21T07:51:35.343Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 755 ms ","timestamp":"2014-12-21T07:51:35.358Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:51:47.957Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 80 ms ","timestamp":"2014-12-21T07:51:48.037Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:51:48.084Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 63 ms ","timestamp":"2014-12-21T07:51:48.147Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 603 ms ","timestamp":"2014-12-21T07:51:48.640Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 585 ms ","timestamp":"2014-12-21T07:51:48.732Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 743 ms ","timestamp":"2014-12-21T07:51:48.780Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 634 ms ","timestamp":"2014-12-21T07:51:48.781Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 757 ms ","timestamp":"2014-12-21T07:51:48.794Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 664 ms ","timestamp":"2014-12-21T07:51:48.811Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:52:07.327Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 97 ms ","timestamp":"2014-12-21T07:52:07.425Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:52:07.534Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 63 ms ","timestamp":"2014-12-21T07:52:07.597Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 573 ms ","timestamp":"2014-12-21T07:52:07.998Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 550 ms ","timestamp":"2014-12-21T07:52:08.148Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 735 ms ","timestamp":"2014-12-21T07:52:08.160Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 799 ms ","timestamp":"2014-12-21T07:52:08.224Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 735 ms ","timestamp":"2014-12-21T07:52:08.332Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 736 ms ","timestamp":"2014-12-21T07:52:08.333Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:52:10.695Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:52:10.731Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 92 ms ","timestamp":"2014-12-21T07:52:10.787Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 62 ms ","timestamp":"2014-12-21T07:52:10.794Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 567 ms ","timestamp":"2014-12-21T07:52:11.361Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 628 ms ","timestamp":"2014-12-21T07:52:11.416Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 632 ms ","timestamp":"2014-12-21T07:52:11.426Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 696 ms ","timestamp":"2014-12-21T07:52:11.490Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 773 ms ","timestamp":"2014-12-21T07:52:11.560Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 835 ms ","timestamp":"2014-12-21T07:52:11.622Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:52:39.060Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:52:39.311Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 279 ms ","timestamp":"2014-12-21T07:52:39.590Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 561 ms ","timestamp":"2014-12-21T07:52:39.621Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 670 ms ","timestamp":"2014-12-21T07:52:40.260Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 679 ms ","timestamp":"2014-12-21T07:52:40.269Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 757 ms ","timestamp":"2014-12-21T07:52:40.378Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 776 ms ","timestamp":"2014-12-21T07:52:40.398Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 941 ms ","timestamp":"2014-12-21T07:52:40.563Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 991 ms ","timestamp":"2014-12-21T07:52:40.581Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:53:46.479Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 327 ms ","timestamp":"2014-12-21T07:53:46.806Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:53:47.030Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 65 ms ","timestamp":"2014-12-21T07:53:47.095Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 658 ms ","timestamp":"2014-12-21T07:53:47.464Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 726 ms ","timestamp":"2014-12-21T07:53:47.532Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 757 ms ","timestamp":"2014-12-21T07:53:47.563Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 645 ms ","timestamp":"2014-12-21T07:53:47.740Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 703 ms ","timestamp":"2014-12-21T07:53:47.798Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 734 ms ","timestamp":"2014-12-21T07:53:47.829Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:54:19.347Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:54:19.441Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 104 ms ","timestamp":"2014-12-21T07:54:19.451Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 65 ms ","timestamp":"2014-12-21T07:54:19.506Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 560 ms ","timestamp":"2014-12-21T07:54:20.012Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 645 ms ","timestamp":"2014-12-21T07:54:20.151Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 665 ms ","timestamp":"2014-12-21T07:54:20.171Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 703 ms ","timestamp":"2014-12-21T07:54:20.209Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 758 ms ","timestamp":"2014-12-21T07:54:20.210Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 785 ms ","timestamp":"2014-12-21T07:54:20.236Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:55:00.072Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:55:00.224Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 63 ms ","timestamp":"2014-12-21T07:55:00.287Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 238 ms ","timestamp":"2014-12-21T07:55:00.310Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 610 ms ","timestamp":"2014-12-21T07:55:00.920Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 642 ms ","timestamp":"2014-12-21T07:55:00.930Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 667 ms ","timestamp":"2014-12-21T07:55:00.955Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 687 ms ","timestamp":"2014-12-21T07:55:00.974Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 760 ms ","timestamp":"2014-12-21T07:55:01.070Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 767 ms ","timestamp":"2014-12-21T07:55:01.077Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:55:30.533Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:55:30.632Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 116 ms ","timestamp":"2014-12-21T07:55:30.650Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 63 ms ","timestamp":"2014-12-21T07:55:30.695Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 559 ms ","timestamp":"2014-12-21T07:55:31.209Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 599 ms ","timestamp":"2014-12-21T07:55:31.295Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 638 ms ","timestamp":"2014-12-21T07:55:31.334Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 639 ms ","timestamp":"2014-12-21T07:55:31.335Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 898 ms ","timestamp":"2014-12-21T07:55:31.548Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 954 ms ","timestamp":"2014-12-21T07:55:31.604Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:56:08.386Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 150 ms ","timestamp":"2014-12-21T07:56:08.536Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:56:08.801Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 58 ms ","timestamp":"2014-12-21T07:56:08.859Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 560 ms ","timestamp":"2014-12-21T07:56:09.096Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 840 ms ","timestamp":"2014-12-21T07:56:09.377Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 860 ms ","timestamp":"2014-12-21T07:56:09.397Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 563 ms ","timestamp":"2014-12-21T07:56:09.422Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 627 ms ","timestamp":"2014-12-21T07:56:09.486Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 632 ms ","timestamp":"2014-12-21T07:56:09.491Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:56:37.743Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 103 ms ","timestamp":"2014-12-21T07:56:37.846Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:56:38.037Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 68 ms ","timestamp":"2014-12-21T07:56:38.105Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 585 ms ","timestamp":"2014-12-21T07:56:38.431Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 553 ms ","timestamp":"2014-12-21T07:56:38.659Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 857 ms ","timestamp":"2014-12-21T07:56:38.703Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 632 ms ","timestamp":"2014-12-21T07:56:38.737Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 641 ms ","timestamp":"2014-12-21T07:56:38.746Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 954 ms ","timestamp":"2014-12-21T07:56:38.800Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:56:46.668Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 516 ms ","timestamp":"2014-12-21T07:56:47.184Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 548 ms ","timestamp":"2014-12-21T07:56:47.732Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 915 ms ","timestamp":"2014-12-21T07:56:48.099Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 930 ms ","timestamp":"2014-12-21T07:56:48.114Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:56:48.216Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 68 ms ","timestamp":"2014-12-21T07:56:48.285Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 707 ms ","timestamp":"2014-12-21T07:56:48.992Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 732 ms ","timestamp":"2014-12-21T07:56:49.017Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 746 ms ","timestamp":"2014-12-21T07:56:49.031Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:57:20.977Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:57:21.034Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 84 ms ","timestamp":"2014-12-21T07:57:21.118Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 144 ms ","timestamp":"2014-12-21T07:57:21.122Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 650 ms ","timestamp":"2014-12-21T07:57:21.768Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 744 ms ","timestamp":"2014-12-21T07:57:21.862Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 974 ms ","timestamp":"2014-12-21T07:57:22.092Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 984 ms ","timestamp":"2014-12-21T07:57:22.106Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1000 ms ","timestamp":"2014-12-21T07:57:22.122Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1048 ms ","timestamp":"2014-12-21T07:57:22.170Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:57:26.270Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 68 ms ","timestamp":"2014-12-21T07:57:26.338Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 549 ms ","timestamp":"2014-12-21T07:57:26.888Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 643 ms ","timestamp":"2014-12-21T07:57:26.981Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 658 ms ","timestamp":"2014-12-21T07:57:26.997Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:58:09.559Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:58:09.730Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 240 ms ","timestamp":"2014-12-21T07:58:09.970Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 440 ms ","timestamp":"2014-12-21T07:58:09.999Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 593 ms ","timestamp":"2014-12-21T07:58:10.564Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 630 ms ","timestamp":"2014-12-21T07:58:10.600Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 618 ms ","timestamp":"2014-12-21T07:58:10.618Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 649 ms ","timestamp":"2014-12-21T07:58:10.620Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 861 ms ","timestamp":"2014-12-21T07:58:10.860Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 883 ms ","timestamp":"2014-12-21T07:58:10.883Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:59:44.957Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 360 ms ","timestamp":"2014-12-21T07:59:45.317Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 707 ms ","timestamp":"2014-12-21T07:59:46.025Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 733 ms ","timestamp":"2014-12-21T07:59:46.050Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1384 ms ","timestamp":"2014-12-21T07:59:46.703Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T07:59:56.853Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 97 ms ","timestamp":"2014-12-21T07:59:56.950Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 545 ms ","timestamp":"2014-12-21T07:59:57.495Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 691 ms ","timestamp":"2014-12-21T07:59:57.641Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 709 ms ","timestamp":"2014-12-21T07:59:57.660Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T07:59:58.996Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 67 ms ","timestamp":"2014-12-21T07:59:59.063Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 627 ms ","timestamp":"2014-12-21T07:59:59.690Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 716 ms ","timestamp":"2014-12-21T07:59:59.779Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 761 ms ","timestamp":"2014-12-21T07:59:59.824Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:00:04.089Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 96 ms ","timestamp":"2014-12-21T08:00:04.186Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 595 ms ","timestamp":"2014-12-21T08:00:04.782Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 705 ms ","timestamp":"2014-12-21T08:00:04.891Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 712 ms ","timestamp":"2014-12-21T08:00:04.898Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:00:06.301Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 63 ms ","timestamp":"2014-12-21T08:00:06.365Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 566 ms ","timestamp":"2014-12-21T08:00:06.931Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 622 ms ","timestamp":"2014-12-21T08:00:06.987Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 629 ms ","timestamp":"2014-12-21T08:00:06.994Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:00:36.639Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 69 ms ","timestamp":"2014-12-21T08:00:36.708Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:00:36.756Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 60 ms ","timestamp":"2014-12-21T08:00:36.816Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 563 ms ","timestamp":"2014-12-21T08:00:37.273Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 711 ms ","timestamp":"2014-12-21T08:00:37.420Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 614 ms ","timestamp":"2014-12-21T08:00:37.431Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 653 ms ","timestamp":"2014-12-21T08:00:37.470Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 787 ms ","timestamp":"2014-12-21T08:00:37.497Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 706 ms ","timestamp":"2014-12-21T08:00:37.523Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:00:57.567Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:00:57.725Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 162 ms ","timestamp":"2014-12-21T08:00:57.729Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 61 ms ","timestamp":"2014-12-21T08:00:57.787Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 561 ms ","timestamp":"2014-12-21T08:00:58.290Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 560 ms ","timestamp":"2014-12-21T08:00:58.347Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 641 ms ","timestamp":"2014-12-21T08:00:58.428Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 777 ms ","timestamp":"2014-12-21T08:00:58.506Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 788 ms ","timestamp":"2014-12-21T08:00:58.517Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 738 ms ","timestamp":"2014-12-21T08:00:58.525Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:01:11.528Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 66 ms ","timestamp":"2014-12-21T08:01:11.594Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:01:11.695Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 61 ms ","timestamp":"2014-12-21T08:01:11.756Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 590 ms ","timestamp":"2014-12-21T08:01:12.184Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 721 ms ","timestamp":"2014-12-21T08:01:12.315Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 736 ms ","timestamp":"2014-12-21T08:01:12.331Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 643 ms ","timestamp":"2014-12-21T08:01:12.399Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 660 ms ","timestamp":"2014-12-21T08:01:12.416Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 700 ms ","timestamp":"2014-12-21T08:01:12.456Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:01:34.441Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 60 ms ","timestamp":"2014-12-21T08:01:34.501Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:01:34.569Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 121 ms ","timestamp":"2014-12-21T08:01:34.690Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 641 ms ","timestamp":"2014-12-21T08:01:35.142Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 687 ms ","timestamp":"2014-12-21T08:01:35.188Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 734 ms ","timestamp":"2014-12-21T08:01:35.235Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 687 ms ","timestamp":"2014-12-21T08:01:35.377Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 754 ms ","timestamp":"2014-12-21T08:01:35.444Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 763 ms ","timestamp":"2014-12-21T08:01:35.453Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:01:53.930Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 66 ms ","timestamp":"2014-12-21T08:01:53.996Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 592 ms ","timestamp":"2014-12-21T08:01:54.589Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 656 ms ","timestamp":"2014-12-21T08:01:54.653Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 692 ms ","timestamp":"2014-12-21T08:01:54.688Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:04:34.876Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 561 ms ","timestamp":"2014-12-21T08:04:35.437Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 753 ms ","timestamp":"2014-12-21T08:04:36.191Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 766 ms ","timestamp":"2014-12-21T08:04:36.203Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 911 ms ","timestamp":"2014-12-21T08:04:36.349Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:04:44.825Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 68 ms ","timestamp":"2014-12-21T08:04:44.893Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 604 ms ","timestamp":"2014-12-21T08:04:45.498Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 631 ms ","timestamp":"2014-12-21T08:04:45.524Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 662 ms ","timestamp":"2014-12-21T08:04:45.556Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:05:11.870Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 98 ms ","timestamp":"2014-12-21T08:05:11.968Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:05:12.157Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 65 ms ","timestamp":"2014-12-21T08:05:12.223Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 641 ms ","timestamp":"2014-12-21T08:05:12.610Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 714 ms ","timestamp":"2014-12-21T08:05:12.683Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 763 ms ","timestamp":"2014-12-21T08:05:12.731Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 577 ms ","timestamp":"2014-12-21T08:05:12.800Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 643 ms ","timestamp":"2014-12-21T08:05:12.866Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 663 ms ","timestamp":"2014-12-21T08:05:12.886Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:05:29.820Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 80 ms ","timestamp":"2014-12-21T08:05:29.900Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 649 ms ","timestamp":"2014-12-21T08:05:30.550Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 695 ms ","timestamp":"2014-12-21T08:05:30.596Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 717 ms ","timestamp":"2014-12-21T08:05:30.617Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:05:38.350Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 108 ms ","timestamp":"2014-12-21T08:05:38.459Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 616 ms ","timestamp":"2014-12-21T08:05:39.076Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 644 ms ","timestamp":"2014-12-21T08:05:39.104Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 645 ms ","timestamp":"2014-12-21T08:05:39.105Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:12:35.534Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 176 ms ","timestamp":"2014-12-21T08:12:35.710Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 630 ms ","timestamp":"2014-12-21T08:12:36.340Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 708 ms ","timestamp":"2014-12-21T08:12:36.418Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1036 ms ","timestamp":"2014-12-21T08:12:36.746Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:15:32.101Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 552 ms ","timestamp":"2014-12-21T08:15:32.654Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 648 ms ","timestamp":"2014-12-21T08:15:33.302Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 662 ms ","timestamp":"2014-12-21T08:15:33.316Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 966 ms ","timestamp":"2014-12-21T08:15:33.620Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:16:05.773Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 98 ms ","timestamp":"2014-12-21T08:16:05.871Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 554 ms ","timestamp":"2014-12-21T08:16:06.425Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 875 ms ","timestamp":"2014-12-21T08:16:06.746Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 894 ms ","timestamp":"2014-12-21T08:16:06.765Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:16:10.119Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 95 ms ","timestamp":"2014-12-21T08:16:10.214Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 563 ms ","timestamp":"2014-12-21T08:16:10.777Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 880 ms ","timestamp":"2014-12-21T08:16:11.094Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 1015 ms ","timestamp":"2014-12-21T08:16:11.229Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:16:22.318Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 94 ms ","timestamp":"2014-12-21T08:16:22.412Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 586 ms ","timestamp":"2014-12-21T08:16:22.998Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 849 ms ","timestamp":"2014-12-21T08:16:23.261Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 861 ms ","timestamp":"2014-12-21T08:16:23.273Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:16:29.715Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 96 ms ","timestamp":"2014-12-21T08:16:29.811Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 667 ms ","timestamp":"2014-12-21T08:16:30.480Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 889 ms ","timestamp":"2014-12-21T08:16:30.701Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 901 ms ","timestamp":"2014-12-21T08:16:30.713Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:16:36.679Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 196 ms ","timestamp":"2014-12-21T08:16:36.875Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 628 ms ","timestamp":"2014-12-21T08:16:37.503Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 834 ms ","timestamp":"2014-12-21T08:16:37.709Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 852 ms ","timestamp":"2014-12-21T08:16:37.727Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:16:39.890Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 64 ms ","timestamp":"2014-12-21T08:16:39.954Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 633 ms ","timestamp":"2014-12-21T08:16:40.588Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 634 ms ","timestamp":"2014-12-21T08:16:40.589Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 684 ms ","timestamp":"2014-12-21T08:16:40.639Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:20:22.451Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:20:22.589Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 267 ms ","timestamp":"2014-12-21T08:20:22.856Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 433 ms ","timestamp":"2014-12-21T08:20:22.884Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 631 ms ","timestamp":"2014-12-21T08:20:23.488Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 650 ms ","timestamp":"2014-12-21T08:20:23.508Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 710 ms ","timestamp":"2014-12-21T08:20:23.595Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 717 ms ","timestamp":"2014-12-21T08:20:23.601Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1060 ms ","timestamp":"2014-12-21T08:20:23.944Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1091 ms ","timestamp":"2014-12-21T08:20:23.948Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:20:33.820Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 99 ms ","timestamp":"2014-12-21T08:20:33.919Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:20:34.008Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 64 ms ","timestamp":"2014-12-21T08:20:34.072Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 622 ms ","timestamp":"2014-12-21T08:20:34.541Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 697 ms ","timestamp":"2014-12-21T08:20:34.616Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 715 ms ","timestamp":"2014-12-21T08:20:34.634Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 624 ms ","timestamp":"2014-12-21T08:20:34.696Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 736 ms ","timestamp":"2014-12-21T08:20:34.808Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 792 ms ","timestamp":"2014-12-21T08:20:34.864Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-21T08:21:15.928Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 67 ms ","timestamp":"2014-12-21T08:21:15.995Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:21:16.120Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 67 ms ","timestamp":"2014-12-21T08:21:16.187Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 562 ms ","timestamp":"2014-12-21T08:21:16.557Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 710 ms ","timestamp":"2014-12-21T08:21:16.705Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 712 ms ","timestamp":"2014-12-21T08:21:16.707Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 574 ms ","timestamp":"2014-12-21T08:21:16.761Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 640 ms ","timestamp":"2014-12-21T08:21:16.827Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 647 ms ","timestamp":"2014-12-21T08:21:16.834Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-21T08:21:33.756Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 182 ms ","timestamp":"2014-12-21T08:21:33.939Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 574 ms ","timestamp":"2014-12-21T08:21:34.514Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 700 ms ","timestamp":"2014-12-21T08:21:34.639Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 706 ms ","timestamp":"2014-12-21T08:21:34.645Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-26T19:08:44.742Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-26T19:08:54.082Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-26T19:09:35.285Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-26T19:09:39.046Z"}
+{"level":"info","message":"Request params sydney","timestamp":"2014-12-26T19:09:43.130Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:10:01.697Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Seattle took 4478 ms ","timestamp":"2014-12-26T19:10:06.369Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-26T19:10:06.369Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=se took 6293 ms ","timestamp":"2014-12-26T19:10:07.003Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-26T19:10:07.004Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:12:45.926Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:13:00.597Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:13:44.661Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:14:56.780Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:14:58.649Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:15:35.857Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:16:06.358Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:17:23.159Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:17:59.848Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:18:17.045Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:19:47.421Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-26T19:20:36.175Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T22:47:19.247Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T22:55:53.867Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T22:57:20.387Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T22:57:25.557Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T22:57:38.574Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T22:57:45.155Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T22:57:59.920Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T22:58:49.881Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T22:59:10.350Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:00:18.885Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:00:48.361Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:03:14.553Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:03:30.678Z"}
+{"code":"ENOTFOUND","errno":"ENOTFOUND","syscall":"getaddrinfo","level":"info","message":"there was an error","timestamp":"2014-12-28T23:03:40.831Z"}
+{"code":"ENOTFOUND","errno":"ENOTFOUND","syscall":"getaddrinfo","level":"info","message":"there was an error","timestamp":"2014-12-28T23:03:40.831Z"}
+{"code":"ENOTFOUND","errno":"ENOTFOUND","syscall":"getaddrinfo","level":"info","message":"there was an error","timestamp":"2014-12-28T23:03:44.877Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:04:00.186Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:04:12.214Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:07:54.524Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:09:10.628Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:09:35.983Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:09:51.254Z"}
+{"level":"info","message":"Request params seattle","timestamp":"2014-12-28T23:13:26.296Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=a took 570 ms ","timestamp":"2014-12-28T23:13:37.108Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=au took 202 ms ","timestamp":"2014-12-28T23:13:37.173Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-28T23:13:38.060Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Auckland took 211 ms ","timestamp":"2014-12-28T23:13:38.550Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-28T23:14:11.561Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 146 ms ","timestamp":"2014-12-28T23:14:11.708Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 1284 ms ","timestamp":"2014-12-28T23:14:12.994Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 3231 ms ","timestamp":"2014-12-28T23:14:14.942Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 3455 ms ","timestamp":"2014-12-28T23:14:15.164Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Auck took 4452 ms ","timestamp":"2014-12-28T23:19:16.775Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=A took 1354 ms ","timestamp":"2014-12-28T23:19:18.009Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Au took 914 ms ","timestamp":"2014-12-28T23:19:18.539Z"}
+{"level":"info","message":"Request params auckland-new_zealand","timestamp":"2014-12-28T23:19:19.186Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=auckland, new zealand took 2370 ms ","timestamp":"2014-12-28T23:19:21.556Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Auckland, New Zealand took 3091 ms ","timestamp":"2014-12-28T23:19:22.538Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Auckland, New Zealand&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 6368 ms ","timestamp":"2014-12-28T23:19:27.924Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 7099 ms ","timestamp":"2014-12-28T23:19:28.655Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Auc took 10894 ms ","timestamp":"2014-12-28T23:19:28.870Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 9057 ms ","timestamp":"2014-12-28T23:19:30.613Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=lon took 3929 ms ","timestamp":"2014-12-28T23:21:57.874Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=london took 3889 ms ","timestamp":"2014-12-28T23:21:58.576Z"}
+{"level":"info","message":"Request params london-united_kingdom","timestamp":"2014-12-28T23:21:59.571Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=london, united kingdom took 1655 ms ","timestamp":"2014-12-28T23:22:01.226Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=London, United Kingdom took 2551 ms ","timestamp":"2014-12-28T23:22:02.389Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/51.480000,-0.450000 took 4376 ms ","timestamp":"2014-12-28T23:22:05.602Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=London, United Kingdom&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 11004 ms ","timestamp":"2014-12-28T23:22:12.232Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/51.480000,-0.450000 took 18137 ms ","timestamp":"2014-12-28T23:22:19.364Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydn took 25370 ms ","timestamp":"2014-12-28T23:31:09.308Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sy took 49544 ms ","timestamp":"2014-12-28T23:31:32.763Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-28T23:32:11.517Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Sydney, Australia took 6218 ms ","timestamp":"2014-12-28T23:32:18.007Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 6944 ms ","timestamp":"2014-12-28T23:32:18.461Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 18235 ms ","timestamp":"2014-12-28T23:32:36.696Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 19016 ms ","timestamp":"2014-12-28T23:32:37.478Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 35711 ms ","timestamp":"2014-12-28T23:32:54.172Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-28T23:39:12.614Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 4411 ms ","timestamp":"2014-12-28T23:39:17.025Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=3&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 15873 ms ","timestamp":"2014-12-28T23:39:32.898Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 24232 ms ","timestamp":"2014-12-28T23:39:41.257Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 28831 ms ","timestamp":"2014-12-28T23:39:45.856Z"}
+{"level":"info","message":"Request params sydney","timestamp":"2014-12-28T23:41:08.967Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-28T23:41:21.001Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=se took 4846 ms ","timestamp":"2014-12-28T23:41:24.558Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-28T23:41:24.559Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Auckland took 3956 ms ","timestamp":"2014-12-28T23:41:25.240Z"}
+{"level":"info","message":"there was an error","timestamp":"2014-12-28T23:41:25.241Z"}
+{"level":"info","message":"Request params auckland","timestamp":"2014-12-28T23:42:56.929Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=auckland took 3644 ms ","timestamp":"2014-12-28T23:43:00.575Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 5406 ms ","timestamp":"2014-12-28T23:43:05.982Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 6056 ms ","timestamp":"2014-12-28T23:43:06.632Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Auckland, New Zealand&only=landscapes&sort=rating&rpp=1&image_size=5&page=5&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 8231 ms ","timestamp":"2014-12-28T23:43:08.808Z"}
+{"date":"Sun Dec 28 2014 15:43:20 GMT-0800 (PST)","process":{"pid":38404,"uid":1103652848,"gid":386085923,"cwd":"/Users/dlaird/Projects/ember-weather","execPath":"/Users/dlaird/.nvm/v0.10.33/bin/node","version":"v0.10.33","argv":["node","/Users/dlaird/Projects/ember-weather/server-old/local.js"],"memoryUsage":{"rss":32411648,"heapTotal":30107392,"heapUsed":13019808}},"os":{"loadavg":[2.248046875,2.09716796875,3.33251953125],"uptime":1408954},"trace":[{"column":11,"file":"net.js","function":"errnoException","line":904,"method":null,"native":false},{"column":14,"file":"net.js","function":"Server._listen2","line":1042,"method":"_listen2","native":false},{"column":10,"file":"net.js","function":"listen","line":1064,"method":null,"native":false},{"column":5,"file":"net.js","function":"Server.listen","line":1138,"method":"listen","native":false},{"column":24,"file":"/Users/dlaird/Projects/ember-weather/node_modules/express/lib/application.js","function":"Function.app.listen","line":533,"method":"app.listen","native":false},{"column":8,"file":"/Users/dlaird/Projects/ember-weather/server-old/local.js","function":"","line":30,"method":null,"native":false},{"column":26,"file":"module.js","function":"Module._compile","line":456,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Object.Module._extensions..js","line":474,"method":"Module._extensions..js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":356,"method":"load","native":false},{"column":12,"file":"module.js","function":"Function.Module._load","line":312,"method":"Module._load","native":false}],"stack":["Error: listen EADDRINUSE","    at errnoException (net.js:904:11)","    at Server._listen2 (net.js:1042:14)","    at listen (net.js:1064:10)","    at Server.listen (net.js:1138:5)","    at Function.app.listen (/Users/dlaird/Projects/ember-weather/node_modules/express/lib/application.js:533:24)","    at Object.<anonymous> (/Users/dlaird/Projects/ember-weather/server-old/local.js:30:8)","    at Module._compile (module.js:456:26)","    at Object.Module._extensions..js (module.js:474:10)","    at Module.load (module.js:356:32)","    at Function.Module._load (module.js:312:12)"],"level":"error","message":"uncaughtException: listen EADDRINUSE","timestamp":"2014-12-28T23:43:20.651Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-28T23:44:17.566Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 1169 ms ","timestamp":"2014-12-28T23:44:18.736Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 6892 ms ","timestamp":"2014-12-28T23:44:25.628Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 9911 ms ","timestamp":"2014-12-28T23:44:28.647Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 33866 ms ","timestamp":"2014-12-28T23:44:52.602Z"}
+{"level":"info","message":"Request params sydney-australia","timestamp":"2014-12-28T23:46:36.090Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sydney, australia took 8946 ms ","timestamp":"2014-12-28T23:46:45.036Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 11904 ms ","timestamp":"2014-12-28T23:46:56.941Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Sydney, Australia&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 32328 ms ","timestamp":"2014-12-28T23:47:17.365Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-33.950001,151.179993 took 55880 ms ","timestamp":"2014-12-28T23:47:40.917Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=auckland took 2253 ms ","timestamp":"2014-12-28T23:47:59.504Z"}
+{"level":"info","message":"Request params auckland-new_zealand","timestamp":"2014-12-28T23:48:16.516Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Auckland, New Zealand took 2646 ms ","timestamp":"2014-12-28T23:48:19.433Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=auckland, new zealand took 4817 ms ","timestamp":"2014-12-28T23:48:21.333Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Auckland, New Zealand&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 5596 ms ","timestamp":"2014-12-28T23:48:26.930Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 13460 ms ","timestamp":"2014-12-28T23:48:34.793Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 32348 ms ","timestamp":"2014-12-28T23:48:53.681Z"}
+{"level":"info","message":"Request params auckland-new_zealand","timestamp":"2014-12-29T02:56:52.076Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=auckland, new zealand took 545 ms ","timestamp":"2014-12-29T02:56:52.621Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Auckland, New Zealand&only=landscapes&sort=rating&rpp=1&image_size=5&page=1&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 465 ms ","timestamp":"2014-12-29T02:56:53.087Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 980 ms ","timestamp":"2014-12-29T02:56:53.602Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 982 ms ","timestamp":"2014-12-29T02:56:53.603Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=sea took 228 ms ","timestamp":"2014-12-29T02:58:04.710Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle took 60 ms ","timestamp":"2014-12-29T02:58:05.639Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-29T02:58:07.192Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 38 ms ","timestamp":"2014-12-29T02:58:07.230Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Seattle, Washington took 40 ms ","timestamp":"2014-12-29T02:58:07.497Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 558 ms ","timestamp":"2014-12-29T02:58:07.788Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 568 ms ","timestamp":"2014-12-29T02:58:07.798Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 574 ms ","timestamp":"2014-12-29T02:58:07.804Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=auck took 223 ms ","timestamp":"2014-12-29T02:58:58.066Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=Auckland, New Zealand took 39 ms ","timestamp":"2014-12-29T02:58:59.248Z"}
+{"level":"info","message":"Request params auckland-new_zealand","timestamp":"2014-12-29T03:00:47.428Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=auckland, new zealand took 595 ms ","timestamp":"2014-12-29T03:00:48.023Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 632 ms ","timestamp":"2014-12-29T03:00:48.656Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 646 ms ","timestamp":"2014-12-29T03:00:48.670Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Auckland, New Zealand&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 818 ms ","timestamp":"2014-12-29T03:00:48.841Z"}
+{"level":"info","message":"Request params auckland-new_zealand","timestamp":"2014-12-29T03:02:26.276Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=auckland, new zealand took 554 ms ","timestamp":"2014-12-29T03:02:26.831Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 574 ms ","timestamp":"2014-12-29T03:02:27.405Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/-37.020000,174.800003 took 634 ms ","timestamp":"2014-12-29T03:02:27.466Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Auckland, New Zealand&only=landscapes&sort=rating&rpp=1&image_size=5&page=2&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 851 ms ","timestamp":"2014-12-29T03:02:27.683Z"}
+{"level":"info","message":"Request params seattle-washington","timestamp":"2014-12-29T03:02:52.390Z"}
+{"level":"info","message":"Request to http://autocomplete.wunderground.com/aq?query=seattle, washington took 1360 ms ","timestamp":"2014-12-29T03:02:53.751Z"}
+{"level":"info","message":"Request to https://api.500px.com/v1/photos/search?term=Seattle, Washington&only=landscapes&sort=rating&rpp=1&image_size=5&page=4&consumer_key=DhbTTmWU8YhxvMxHRkNe9mRjYgmacI7zPi0ELX3t took 484 ms ","timestamp":"2014-12-29T03:02:54.236Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 604 ms ","timestamp":"2014-12-29T03:02:54.356Z"}
+{"level":"info","message":"Request to https://api.forecast.io/forecast/a56a0dc4d7e2785dcb499e94ef9deb2f/47.611679,-122.333260 took 617 ms ","timestamp":"2014-12-29T03:02:54.369Z"}

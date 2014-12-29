@@ -1,12 +1,13 @@
 <ul class='no-bullet'>
-  {{#each days}}
+  {{log weather.timezone}}
+  {{#each d in days}}
     <li>
       <div class="label round">
-        {{date-formatter time}}
+        {{date-formatter d.time timezone}}
       </div>
-      {{icon-name icon}}
-      <span class="high"><small>high</small> {{whole-number temperatureMax}}&deg;</span>
-      <span class="low"><small>low</small> {{whole-number temperatureMin}}&deg;</span>
+      {{icon-name d.icon}}
+      <span class="high"><small>high</small> {{whole-number d.temperatureMax}}&deg;</span>
+      <span class="low"><small>low</small> {{whole-number d.temperatureMin}}&deg;</span>
     </li>
   {{/each}}
 </ul>
