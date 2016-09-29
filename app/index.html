@@ -6,6 +6,7 @@
     <title>EmberWeather</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
 
     {{content-for "head"}}
 
@@ -16,6 +17,15 @@
   </head>
   <body>
     {{content-for "body"}}
+    <script>
+      window.EmberWeatherENV = {{ENV}};
+      window.EmberENV = window.EmberWeatherENV.EmberENV;
+    </script>
+    <div class="wrapper">
+      <div id="main-content">
+
+      </div>
+    </div>
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/ember-weather.js"></script>
