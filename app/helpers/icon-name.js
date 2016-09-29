@@ -1,5 +1,8 @@
-import Ember from 'ember';
+import { htmlSafe } from 'ember-string';
+import { helper } from 'ember-helper';
 
-export default Ember.Handlebars.makeBoundHelper(function(type) {
-  return new Ember.Handlebars.SafeString('<i aria-hidden="true" class="icon-' + type + '"></i>');
-});
+export function iconName(type) {
+ return htmlSafe(`<i aria-hidden="true" class="icon-${type}"></i>`);
+}
+
+export default helper(iconName);

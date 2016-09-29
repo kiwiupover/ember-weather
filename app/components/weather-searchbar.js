@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   classNames: 'search',
   placeholder: "Search for weather around the world",
 
-  setUpTypeahead: function() {
+  setUpTypeahead: Ember.on('didInsertElement', function() {
     var typeahead = this.$('input').typeahead({
       name: 'searchTerm',
       valueKey: 'name',
@@ -34,7 +34,7 @@ export default Ember.Component.extend({
         self.resetList();
       });
     });
-  }.on('didInsertElement'),
+  }),
 
   willDestroyElement: function(){
     this.$('input:first').typeahead('destroy');

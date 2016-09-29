@@ -1,23 +1,13 @@
-import Ember from 'ember';
+import { test } from 'qunit';
+import moduleForAcceptance from 'ember-weather/tests/helpers/module-for-acceptance';
 
-var App;
+moduleForAcceptance('Acceptance | index');
 
-module('Acceptances - Index', {
-  setup: function(){
-    App = startApp();
-  },
-  teardown: function() {
-    Ember.run(App, 'destroy');
-  }
-});
+test('visiting homepage', function(assert) {
+  visit('/');
+  let title = find('h1');
 
-test('index renders', function(){
-  expect(1);
-
-  visit('/').then(function(){
-    var title = find('h1');
-
-    equal(title.text(), 'the weather is world wide');
-
+  andThen(() => {
+    assert.equal(title.text(), 'the weather is world wide');
   });
 });

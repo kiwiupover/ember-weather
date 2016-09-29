@@ -1,28 +1,18 @@
 import Ember from 'ember';
-import Application from 'ember-weather/app';
-import Router from 'ember-weather/router';
+import Application from '../../app';
+import config from '../../config/environment';
 
 export default function startApp(attrs) {
-  var App;
+  let application;
 
-  var attributes = Ember.merge({
-    // useful Test defaults
-    rootElement: '#ember-testing',
-    LOG_ACTIVE_GENERATION: false,
-    LOG_VIEW_LOOKUPS: false
-  }, attrs); // but you can override;
+  let attributes = Ember.merge({}, config.APP);
+  attributes = Ember.merge(attributes, attrs); // use defaults, but you can override;
 
-  Router.reopen({
-    location: 'none'
+  Ember.run(() => {
+    application = Application.create(attributes);
+    application.setupForTesting();
+    application.injectTestHelpers();
   });
 
-  Ember.run(function() {
-    App = Application.create(attributes);
-    App.setupForTesting();
-    App.injectTestHelpers();
-  });
-
-  App.reset(); // this shouldn't be needed, i want to be able to "start an app at a specific URL"
-
-  return App;
+  return application;
 }

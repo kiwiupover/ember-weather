@@ -6,7 +6,8 @@
 
 # dependencies
 /node_modules
-/bower_components/*
+/bower_components
+.log
 
 # misc
 /.sass-cache
@@ -15,6 +16,7 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+server-old/log/*
 
 # dist tests
 dist/tests/
@@ -26,14 +28,17 @@ dist/assets/test-support.js
 dist/assets/failed.png
 dist/assets/passed.png
 dist/assets/ember-weather.css.map
+dist/assets/ember-weather.map
+dist/assets/test-support.map
+dist/assets/tests.js
+dist/assets/tests.map
+dist/assets/vendor.map
 
 # these are a maybe
-dist/assets/ember-weather.css
-dist/assets/ember-weather.js
-dist/assets/images/earth.jpg
-dist/assets/images/ember-weather.jpg
-dist/assets/images/reo-2048.jpg
-dist/assets/vendor.css
-dist/assets/vendor.js
-
-
+!dist/assets/ember-weather.css
+!dist/assets/ember-weather.js
+!dist/assets/images/earth.jpg
+!dist/assets/images/ember-weather.jpg
+!dist/assets/images/reo-2048.jpg
+!dist/assets/vendor.css
+!dist/assets/vendor.js

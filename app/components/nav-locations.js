@@ -7,6 +7,8 @@ export default Ember.Component.extend({
   classNames: "perspective effect-airbnb",
   classNameBindings: ['showMenu:animate', 'animateMenu:modalview' ],
 
+  locations: [],
+
   actions: {
     menu: function(){
       this._doPageAnimation();

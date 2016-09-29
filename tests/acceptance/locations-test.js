@@ -1,27 +1,20 @@
-import Ember from 'ember';
+import { test } from 'qunit';
+import moduleForAcceptance from 'ember-weather/tests/helpers/module-for-acceptance';
 
-var App;
+moduleForAcceptance('Acceptances - Locations');
 
-module('Acceptances - Locations', {
-  setup: function(){
-    App = startApp();
-  },
-  teardown: function() {
-    Ember.run(App, 'destroy');
-  }
-});
-
-test('locations page renders', function(){
+test('locations page renders', function(assert){
   expect(1);
+  visit('/locations')
 
-  visit('/locations').then(function(){
-    var title = find('.title-area h1');
+  andThen(function(){
+    let title = find('.title-area h1');
 
     equal(title.text(), 'Ember Weather');
   });
 });
 
-test('locations renders a list of weather locations', function(){
+test('locations renders a list of weather locations', function(assert){
   expect(3);
 
   // save a location
@@ -31,7 +24,7 @@ test('locations renders a list of weather locations', function(){
   andThen( function(){
     visit('/locations');
     var listLength = $('ul.locations-list li').length;
-    equal( listLength , 1);
+    assert.equal( listLength , 1);
   });
 
   // Add another location
@@ -43,23 +36,19 @@ test('locations renders a list of weather locations', function(){
   andThen(function(){
     visit('/locations');
     var listLength = $('ul.locations-list li').length;
-    equal( listLength , 2);
+    assert.equal( listLength , 2);
   });
 
   // navigate back to the weather location
-  andThen( function(){
-    click($('ul.locations-list li').last());
-  });
+  click($('ul.locations-list li').last());
+
 
   // delete the location
-  andThen( function() {
-    click('.weather-panel a.save-location');
-  });
+  click('.weather-panel a.save-location');
 
   andThen( function(){
     visit('/locations');
     var listLength = $('ul.locations-list li').length;
-    equal( listLength , 1);
+    assert.equal( listLength , 1);
   });
 });
-

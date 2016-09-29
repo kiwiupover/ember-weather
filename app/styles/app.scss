@@ -1,7 +1,11 @@
 @import "../../../bower_components/bourbon/app/assets/stylesheets/bourbon";
-@import "../../../bower_components/foundation/scss/normalize";
+// @import "../../../bower_components/foundation/scss/normalize";
+@import "normalize";
+
 @import "foundation/foundation";
 @import "foundation/foundation_default";
+// @import "foundation/components/top-bar";
+// @import "top-bar";
 
 @import "icons";
 @import "forecast";

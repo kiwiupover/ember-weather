@@ -45,7 +45,7 @@ function fetchPayload(searchResults) {
     var rand = Math.floor((Math.random()*5)+1)
     return 'https://api.500px.com/v1/photos/search?term=' +
            nameField +
-           '&only=landscapes&sort=rating&rpp=1&image_size=5&page='+rand+'&consumer_key=' +
+           '&only=landscapes,City and Architecture,Street,Urban Exploration&sort=rating&rpp=1&image_size=5&page='+rand+'&consumer_key=' +
            apiKeys.fiveHundredPX
   }
 
