@@ -3,30 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ember Weather</title>
+    <title>EmberWeather</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
 
-    {{BASE_TAG}}
+    {{content-for "head"}}
 
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/ember-weather.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/ember-weather.css">
+
+    {{content-for "head-footer"}}
   </head>
   <body>
-    <script>
-      window.EmberWeatherENV = {{ENV}};
-      window.EmberENV = window.EmberWeatherENV.EmberENV;
-    </script>
-    <div class="wrapper">
-      <div id="main-content">
+    {{content-for "body"}}
 
-      </div>
-    </div>
-    <script src="assets/vendor.js"></script>
-    <script src="assets/ember-weather.js"></script>
-    <script>
-      window.EmberWeather = require('ember-weather/app')['default'].create(EmberWeatherENV.APP);
-    </script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/ember-weather.js"></script>
+
+    {{content-for "body-footer"}}
   </body>
 </html>
