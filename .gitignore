@@ -6,7 +6,7 @@
 
 # dependencies
 /node_modules
-/bower_components/*
+/bower_components
 
 # misc
 /.sass-cache
@@ -35,5 +35,3 @@ dist/assets/images/ember-weather.jpg
 dist/assets/images/reo-2048.jpg
 dist/assets/vendor.css
 dist/assets/vendor.js
-
-
