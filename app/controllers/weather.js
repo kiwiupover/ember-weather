@@ -8,11 +8,11 @@ export default Ember.Controller.extend({
 
   isSavedWeather: false,
 
-  savedLocations: function(){
+  savedLocations: Ember.observer('id', 'locations.@each.id', function(){
     if (this.get('locations').filterProperty('id', this.get('id')).length > 0){
       this.set('isSavedWeather', true);
     } else {
       this.set('isSavedWeather', false);
     }
-  }.observes('id', 'locations.@each.id')
+  })
 });

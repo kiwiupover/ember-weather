@@ -28,6 +28,11 @@ dist/assets/test-support.js
 dist/assets/failed.png
 dist/assets/passed.png
 dist/assets/ember-weather.css.map
+dist/assets/ember-weather.map
+dist/assets/test-support.map
+dist/assets/tests.js
+dist/assets/tests.map
+dist/assets/vendor.map
 
 # these are a maybe
 dist/assets/ember-weather.css

@@ -3,9 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   weather: null,
 
-  setupBackGroundImages: function(){
+  setupBackGroundImages: Ember.on('didInsertElement', Ember.observer('weather.imageUrl', function(){
     this._setImageBackGround(this.get('weather.imageUrl'));
-  }.observes('weather.imageUrl').on('didInsertElement'),
+  })),
 
   actions: {
     saveLocation: function (location) {
