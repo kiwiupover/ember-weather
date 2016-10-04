@@ -1,5 +1,5 @@
-import DS from 'ember-data';
+import LSAdapter from 'ember-localstorage-adapter';
 
-export default DS.LSAdapter.extend({
-  namespace: "ember-weather"
+export default LSAdapter.extend({
+  namespace: 'ember-weather'
 });

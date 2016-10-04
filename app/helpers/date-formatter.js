@@ -1,5 +1,8 @@
-import Ember from 'ember';
+import { htmlSafe } from 'ember-string';
+import { helper } from 'ember-helper';
 
-export default Ember.Handlebars.makeBoundHelper(function(date) {
-  return new Ember.Handlebars.SafeString(moment.unix(date).format('ddd MMM DD'));
-});
+export function dateFormat(date) {
+ return htmlSafe(moment.unix(date).format('ddd MMM DD'));
+}
+
+export default helper(dateFormat);

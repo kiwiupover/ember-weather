@@ -4,20 +4,20 @@ import dasherizer from "ember-weather/utils/dasherizer";
 import DS from 'ember-data';
 
 export default DS.JSONSerializer.extend({
-  extractFind: function(store, type, payload) {
+  normalizeFindRecordResponse(store, primaryModelClass, payload, id, requestType) {
     var ret = normalizeObject(payload);
     window.console.log("location serializer data is %o", ret);
-    return ret;
+    return this._super(store, primaryModelClass, ret, id, requestType)
   },
 
-  extractFindAll: function (store, type, payload) {
+  normalizeFindAllResponse(store, primaryModelClass, payload) {
     var a_map = Ember.ArrayPolyfills.map;
     var ret = a_map.call(payload, function (record) {
       return normalizeObject(record);
     });
 
     window.console.log("location findAll serializer data", ret);
-    return ret;
+    return this._super(store, primaryModelClass, ret, id, requestType)
   }
 });
 

@@ -3,7 +3,7 @@ import dasherizer from "ember-weather/utils/dasherizer";
 
 export default Ember.Route.extend({
   model: function(){
-    return  this.store.find('location');
+    return  this.store.findAll('location');
   },
 
   actions: {

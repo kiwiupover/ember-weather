@@ -1,5 +1,8 @@
-import Ember from 'ember';
+import { htmlSafe } from 'ember-string';
+import { helper } from 'ember-helper';
 
-export default Ember.Handlebars.makeBoundHelper(function(value) {
-  return new Ember.Handlebars.SafeString(parseInt(value, 10).toFixed(0));
-});
+export function wholeNumber(value) {
+ return htmlSafe(parseInt(value, 10).toFixed(0));
+}
+
+export default helper(wholeNumber);
