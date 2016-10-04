@@ -5,8 +5,8 @@
                       placeholder="Search for a city anywhere"}}
 
   <ul class="no-bullet">
-    {{#each model}}
-      <li><a {{action 'link' this}}>{{name}}</a></li>
+    {{#each model as |location|}}
+      <li><a {{action 'link' location}}>{{location.name}}</a></li>
     {{/each}}
   </ul>
 
@@ -15,4 +15,3 @@
 <div class="container" {{action 'menuClose' on="click"}}>
   {{yield}}
 </div>
-

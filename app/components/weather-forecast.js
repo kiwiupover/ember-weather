@@ -8,5 +8,4 @@ export default Ember.Component.extend({
     return moment.unix(this.get('weather.weatherForecast.currently.time')).format('MMM DD');
   })
 
-
 });

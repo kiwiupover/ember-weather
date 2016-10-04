@@ -1,12 +1,12 @@
 <ul class='no-bullet'>
-  {{#each days}}
+  {{#each days as |forecast|}}
     <li>
       <div class="label round">
-        {{date-formatter time}}
+        {{date-formatter forecast.time}}
       </div>
-      {{icon-name icon}}
-      <span class="high"><small>high</small> {{whole-number temperatureMax}}&deg;</span>
-      <span class="low"><small>low</small> {{whole-number temperatureMin}}&deg;</span>
+      {{icon-name forecast.icon}}
+      <span class="high"><small>high</small> {{whole-number forecast.temperatureMax}}&deg;</span>
+      <span class="low"><small>low</small> {{whole-number forecast.temperatureMin}}&deg;</span>
     </li>
   {{/each}}
 </ul>
