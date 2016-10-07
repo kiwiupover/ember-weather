@@ -205,7 +205,9 @@ define('ember-weather/components/weather-current-details', ['exports', 'ember'],
   exports['default'] = _ember['default'].Component.extend({
 
     displayDate: _ember['default'].computed('weather.time', function () {
-      return moment.unix(this.get('weather.time')).format('MMM DD');
+      var time = this.get('weather.time');
+      var timezone = this.get('weather.timezone');
+      return moment.unix(time).tz(timezone).format('MMM DD');
     })
 
   });
@@ -2571,7 +2573,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+e6a2805a"});
+  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+0f6daa9d"});
 }
 
 /* jshint ignore:end */
