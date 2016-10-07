@@ -2312,7 +2312,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+ff8bf41a"});
+  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+83ae17cb"});
 }
 
 /* jshint ignore:end */
