@@ -12,7 +12,7 @@ export default Ember.Route.extend({
           totalSavedLocations = locations.get('length'),
           id = dasherizer(weather.get('name'));
 
-      if (totalSavedLocations < 7) {
+      if (typeof (totalSavedLocations) === 'undefined' || totalSavedLocations < 7) {
         var createdLocation = this.store.createRecord('location', {
           id: id,
           name: weather.get('name'),

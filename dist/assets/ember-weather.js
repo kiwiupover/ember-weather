@@ -56,6 +56,8 @@ define('ember-weather/components/nav-locations', ['exports', 'ember'], function 
     classNames: "perspective effect-airbnb",
     classNameBindings: ['showMenu:animate', 'animateMenu:modalview'],
 
+    locations: [],
+
     actions: {
       menu: function menu() {
         this._doPageAnimation();
@@ -475,8 +477,8 @@ define('ember-weather/router', ['exports', 'ember', 'ember-weather/config/enviro
   });
 
   Router.map(function () {
-    this.resource("locations", { path: 'locations' }, function () {
-      this.resource("weather", { path: ':location_id' }, function () {});
+    this.route("locations", { path: 'locations' }, function () {
+      this.route("weather", { path: ':location_id', resetNamespace: true }, function () {});
     });
   });
 
@@ -508,7 +510,7 @@ define('ember-weather/routes/locations', ['exports', 'ember', 'ember-weather/uti
             totalSavedLocations = locations.get('length'),
             id = (0, _emberWeatherUtilsDasherizer['default'])(weather.get('name'));
 
-        if (totalSavedLocations < 7) {
+        if (typeof totalSavedLocations === 'undefined' || totalSavedLocations < 7) {
           var createdLocation = this.store.createRecord('location', {
             id: id,
             name: weather.get('name'),
@@ -838,7 +840,7 @@ define("ember-weather/templates/-nav", ["exports"], function (exports) {
         morphs[3] = dom.createMorphAt(dom.childAt(element3, [5, 1]), 1, 1);
         return morphs;
       },
-      statements: [["block", "link-to", ["locations"], [], 0, null, ["loc", [null, [4, 10], [4, 59]]]], ["element", "action", ["menu"], [], ["loc", [null, [6, 43], [6, 60]]], 0, 0], ["block", "each", [["get", "model", ["loc", [null, [12, 14], [12, 19]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [12, 6], [14, 15]]]], ["inline", "weather-searchbar", [], ["transitionToLocation", "transitionToSearchedLocationHandler", "placeholder", "Search for a city anywhere"], ["loc", [null, [18, 8], [19, 70]]], 0, 0]],
+      statements: [["block", "link-to", ["locations"], [], 0, null, ["loc", [null, [4, 10], [4, 59]]]], ["element", "action", ["menu"], [], ["loc", [null, [6, 43], [6, 60]]], 0, 0], ["block", "each", [["get", "locations", ["loc", [null, [12, 14], [12, 23]]], 0, 0, 0, 0]], [], 1, null, ["loc", [null, [12, 6], [14, 15]]]], ["inline", "weather-searchbar", [], ["transitionToLocation", "transitionToSearchedLocationHandler", "placeholder", "Search for a city anywhere"], ["loc", [null, [18, 8], [19, 70]]], 0, 0]],
       locals: [],
       templates: [child0, child1]
     };
@@ -895,11 +897,11 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
           "loc": {
             "source": null,
             "start": {
-              "line": 8,
+              "line": 9,
               "column": 4
             },
             "end": {
-              "line": 10,
+              "line": 11,
               "column": 4
             }
           },
@@ -915,6 +917,8 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("li");
           var el2 = dom.createElement("a");
+          var el3 = dom.createTextNode("location: ");
+          dom.appendChild(el2, el3);
           var el3 = dom.createComment("");
           dom.appendChild(el2, el3);
           dom.appendChild(el1, el2);
@@ -927,10 +931,10 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
           var element0 = dom.childAt(fragment, [1, 0]);
           var morphs = new Array(2);
           morphs[0] = dom.createElementMorph(element0);
-          morphs[1] = dom.createMorphAt(element0, 0, 0);
+          morphs[1] = dom.createMorphAt(element0, 1, 1);
           return morphs;
         },
-        statements: [["element", "action", ["link", ["get", "location", ["loc", [null, [9, 29], [9, 37]]], 0, 0, 0, 0]], [], ["loc", [null, [9, 13], [9, 39]]], 0, 0], ["content", "location.name", ["loc", [null, [9, 40], [9, 57]]], 0, 0, 0, 0]],
+        statements: [["element", "action", ["link", ["get", "location", ["loc", [null, [10, 29], [10, 37]]], 0, 0, 0, 0]], [], ["loc", [null, [10, 13], [10, 39]]], 0, 0], ["content", "location.name", ["loc", [null, [10, 50], [10, 67]]], 0, 0, 0, 0]],
         locals: ["location"],
         templates: []
       };
@@ -945,7 +949,7 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
             "column": 0
           },
           "end": {
-            "line": 18,
+            "line": 19,
             "column": 0
           }
         },
@@ -971,6 +975,14 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("ul");
         dom.setAttribute(el2, "class", "no-bullet");
+        var el3 = dom.createTextNode("\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("li");
+        var el4 = dom.createTextNode("locations: ");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createComment("");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n");
         dom.appendChild(el2, el3);
         var el3 = dom.createComment("");
@@ -998,17 +1010,19 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var element1 = dom.childAt(fragment, [2]);
-        var element2 = dom.childAt(fragment, [4]);
-        var morphs = new Array(5);
+        var element2 = dom.childAt(element1, [3]);
+        var element3 = dom.childAt(fragment, [4]);
+        var morphs = new Array(6);
         morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
         morphs[1] = dom.createMorphAt(element1, 1, 1);
-        morphs[2] = dom.createMorphAt(dom.childAt(element1, [3]), 1, 1);
-        morphs[3] = dom.createElementMorph(element2);
-        morphs[4] = dom.createMorphAt(element2, 1, 1);
+        morphs[2] = dom.createMorphAt(dom.childAt(element2, [1]), 1, 1);
+        morphs[3] = dom.createMorphAt(element2, 3, 3);
+        morphs[4] = dom.createElementMorph(element3);
+        morphs[5] = dom.createMorphAt(element3, 1, 1);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "partial", ["nav"], [], ["loc", [null, [1, 0], [1, 17]]], 0, 0], ["inline", "weather-searchbar", [], ["transitionToLocation", "transitionToLocationHandler", "placeholder", "Search for a city anywhere"], ["loc", [null, [4, 2], [5, 64]]], 0, 0], ["block", "each", [["get", "model", ["loc", [null, [8, 12], [8, 17]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [8, 4], [10, 13]]]], ["element", "action", ["menuClose"], ["on", "click"], ["loc", [null, [15, 23], [15, 56]]], 0, 0], ["content", "yield", ["loc", [null, [16, 2], [16, 11]]], 0, 0, 0, 0]],
+      statements: [["inline", "partial", ["nav"], [], ["loc", [null, [1, 0], [1, 17]]], 0, 0], ["inline", "weather-searchbar", [], ["transitionToLocation", "transitionToLocationHandler", "placeholder", "Search for a city anywhere"], ["loc", [null, [4, 2], [5, 64]]], 0, 0], ["content", "locations.length", ["loc", [null, [8, 19], [8, 39]]], 0, 0, 0, 0], ["block", "each", [["get", "locations", ["loc", [null, [9, 12], [9, 21]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [9, 4], [11, 13]]]], ["element", "action", ["menuClose"], ["on", "click"], ["loc", [null, [16, 23], [16, 56]]], 0, 0], ["content", "yield", ["loc", [null, [17, 2], [17, 11]]], 0, 0, 0, 0]],
       locals: [],
       templates: [child0]
     };
@@ -1947,7 +1961,7 @@ define("ember-weather/templates/locations", ["exports"], function (exports) {
               "column": 0
             },
             "end": {
-              "line": 3,
+              "line": 6,
               "column": 0
             }
           },
@@ -1972,7 +1986,7 @@ define("ember-weather/templates/locations", ["exports"], function (exports) {
           morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["content", "outlet", ["loc", [null, [2, 2], [2, 12]]], 0, 0, 0, 0]],
+        statements: [["content", "outlet", ["loc", [null, [5, 2], [5, 12]]], 0, 0, 0, 0]],
         locals: [],
         templates: []
       };
@@ -1987,7 +2001,7 @@ define("ember-weather/templates/locations", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 5,
+            "line": 8,
             "column": 0
           }
         },
@@ -2015,7 +2029,7 @@ define("ember-weather/templates/locations", ["exports"], function (exports) {
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["block", "nav-locations", [], ["model", ["subexpr", "@mut", [["get", "content", ["loc", [null, [1, 23], [1, 30]]], 0, 0, 0, 0]], [], [], 0, 0], "transitionToLocation", "transitionToLocationHandler", "transitionToSeachLocation", "transitionToSearchedLocationHandler"], 0, null, ["loc", [null, [1, 0], [3, 18]]]]],
+      statements: [["block", "nav-locations", [], ["locations", ["subexpr", "@mut", [["get", "model", ["loc", [null, [2, 12], [2, 17]]], 0, 0, 0, 0]], [], [], 0, 0], "transitionToLocation", "transitionToLocationHandler", "transitionToSeachLocation", "transitionToSearchedLocationHandler"], 0, null, ["loc", [null, [1, 0], [6, 18]]]]],
       locals: [],
       templates: [child0]
     };
@@ -2041,7 +2055,7 @@ define("ember-weather/templates/locations/index", ["exports"], function (exports
           "moduleName": "ember-weather/templates/locations/index.hbs"
         },
         isEmpty: false,
-        arity: 0,
+        arity: 1,
         cachedFragment: null,
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
@@ -2060,7 +2074,7 @@ define("ember-weather/templates/locations/index", ["exports"], function (exports
           return morphs;
         },
         statements: [["inline", "weather-list", [], ["location", ["subexpr", "@mut", [["get", "location", ["loc", [null, [3, 28], [3, 36]]], 0, 0, 0, 0]], [], [], 0, 0], "transitionToLocation", "transitionToLocationHandler"], ["loc", [null, [3, 4], [3, 89]]], 0, 0]],
-        locals: [],
+        locals: ["location"],
         templates: []
       };
     })();
@@ -2102,7 +2116,7 @@ define("ember-weather/templates/locations/index", ["exports"], function (exports
         morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0]), 1, 1);
         return morphs;
       },
-      statements: [["block", "each", [["get", "location", ["loc", [null, [2, 10], [2, 18]]], 0, 0, 0, 0], ["get", "in", ["loc", [null, [2, 19], [2, 21]]], 0, 0, 0, 0], ["get", "model", ["loc", [null, [2, 22], [2, 27]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [2, 2], [4, 11]]]]],
+      statements: [["block", "each", [["get", "model", ["loc", [null, [2, 10], [2, 15]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [2, 2], [4, 11]]]]],
       locals: [],
       templates: [child0]
     };

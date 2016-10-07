@@ -9,7 +9,7 @@
   <section class="top-bar-section">
     <!-- Left Nav Section -->
     <ul class="left">
-      {{#each model as |location|}}
+      {{#each locations as |location|}}
         <li>{{#link-to 'weather' location.id}}{{location.name}}{{/link-to}}</li>
       {{/each}}
     </ul>

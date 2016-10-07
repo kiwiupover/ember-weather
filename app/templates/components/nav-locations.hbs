@@ -5,8 +5,9 @@
                       placeholder="Search for a city anywhere"}}
 
   <ul class="no-bullet">
-    {{#each model as |location|}}
-      <li><a {{action 'link' location}}>{{location.name}}</a></li>
+    <li>locations: {{locations.length}}</li>
+    {{#each locations as |location|}}
+      <li><a {{action 'link' location}}>location: {{location.name}}</a></li>
     {{/each}}
   </ul>
 
