@@ -44,7 +44,8 @@ function normalizeObject(obj) {
     icon: weatherCurrent.icon,
     windSpeed: weatherCurrent.windSpeed,
     windBearing: weatherCurrent.windBearing,
-    time: weatherCurrent.time
+    time: weatherCurrent.time,
+    timezone: obj.weatherConditions.timezone
   };
 }
 

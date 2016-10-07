@@ -12,5 +12,6 @@ export default DS.Model.extend({
   icon: DS.attr('string'),
   windSpeed: DS.attr('string'),
   windBearing: DS.attr('string'),
-  time: DS.attr('date')
+  time: DS.attr('date'),
+  timezone: DS.attr('string')
 });

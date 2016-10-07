@@ -333,10 +333,17 @@ define('ember-weather/components/weather-vane', ['exports', 'ember'], function (
   });
 });
 define('ember-weather/helpers/date-formatter', ['exports', 'ember-string', 'ember-helper'], function (exports, _emberString, _emberHelper) {
+  var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }; })();
+
   exports.dateFormat = dateFormat;
 
-  function dateFormat(date) {
-    return (0, _emberString.htmlSafe)(moment.unix(date).format('ddd MMM DD'));
+  function dateFormat(_ref) {
+    var _ref2 = _slicedToArray(_ref, 2);
+
+    var date = _ref2[0];
+    var timezone = _ref2[1];
+
+    return (0, _emberString.htmlSafe)(moment.unix(date).tz(timezone).format('ddd MMM DD'));
   }
 
   exports['default'] = (0, _emberHelper.helper)(dateFormat);
@@ -597,7 +604,8 @@ define('ember-weather/models/weather', ['exports', 'ember-data'], function (expo
     icon: _emberData['default'].attr('string'),
     windSpeed: _emberData['default'].attr('string'),
     windBearing: _emberData['default'].attr('string'),
-    time: _emberData['default'].attr('date')
+    time: _emberData['default'].attr('date'),
+    timezone: _emberData['default'].attr('string')
   });
 });
 define('ember-weather/resolver', ['exports', 'ember-resolver'], function (exports, _emberResolver) {
@@ -727,7 +735,8 @@ define('ember-weather/serializers/weather', ['exports', 'ember', 'ember-weather/
       icon: weatherCurrent.icon,
       windSpeed: weatherCurrent.windSpeed,
       windBearing: weatherCurrent.windBearing,
-      time: weatherCurrent.time
+      time: weatherCurrent.time,
+      timezone: obj.weatherConditions.timezone
     };
   }
 
@@ -1490,7 +1499,7 @@ define("ember-weather/templates/components/weather-current", ["exports"], functi
         morphs[4] = dom.createMorphAt(dom.childAt(element4, [3]), 1, 1);
         return morphs;
       },
-      statements: [["content", "weather.name", ["loc", [null, [3, 8], [3, 24]]], 0, 0, 0, 0], ["block", "if", [["get", "saved", ["loc", [null, [5, 10], [5, 15]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [5, 4], [9, 11]]]], ["inline", "photographer-link", [["get", "weather.photographer", ["loc", [null, [12, 34], [12, 54]]], 0, 0, 0, 0]], [], ["loc", [null, [12, 14], [12, 56]]], 0, 0], ["inline", "weather-current-details", [], ["weather", ["subexpr", "@mut", [["get", "weather", ["loc", [null, [17, 36], [17, 43]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [17, 2], [17, 45]]], 0, 0], ["inline", "weather-forecast", [], ["forecast", ["subexpr", "@mut", [["get", "weather.forecast", ["loc", [null, [19, 32], [19, 48]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [19, 4], [19, 50]]], 0, 0]],
+      statements: [["content", "weather.name", ["loc", [null, [3, 8], [3, 24]]], 0, 0, 0, 0], ["block", "if", [["get", "saved", ["loc", [null, [5, 10], [5, 15]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [5, 4], [9, 11]]]], ["inline", "photographer-link", [["get", "weather.photographer", ["loc", [null, [12, 34], [12, 54]]], 0, 0, 0, 0]], [], ["loc", [null, [12, 14], [12, 56]]], 0, 0], ["inline", "weather-current-details", [], ["weather", ["subexpr", "@mut", [["get", "weather", ["loc", [null, [17, 36], [17, 43]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [17, 2], [17, 45]]], 0, 0], ["inline", "weather-forecast", [], ["forecast", ["subexpr", "@mut", [["get", "weather.forecast", ["loc", [null, [19, 32], [19, 48]]], 0, 0, 0, 0]], [], [], 0, 0], "timezone", ["subexpr", "@mut", [["get", "weather.timezone", ["loc", [null, [19, 58], [19, 74]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [19, 4], [19, 76]]], 0, 0]],
       locals: [],
       templates: [child0, child1]
     };
@@ -1585,7 +1594,7 @@ define("ember-weather/templates/components/weather-forecast", ["exports"], funct
           morphs[3] = dom.createMorphAt(dom.childAt(element0, [7]), 2, 2);
           return morphs;
         },
-        statements: [["inline", "date-formatter", [["get", "forecast.time", ["loc", [null, [5, 25], [5, 38]]], 0, 0, 0, 0]], [], ["loc", [null, [5, 8], [5, 40]]], 0, 0], ["inline", "icon-name", [["get", "forecast.icon", ["loc", [null, [7, 18], [7, 31]]], 0, 0, 0, 0]], [], ["loc", [null, [7, 6], [7, 33]]], 0, 0], ["inline", "whole-number", [["get", "forecast.temperatureMax", ["loc", [null, [8, 60], [8, 83]]], 0, 0, 0, 0]], [], ["loc", [null, [8, 45], [8, 85]]], 0, 0], ["inline", "whole-number", [["get", "forecast.temperatureMin", ["loc", [null, [9, 58], [9, 81]]], 0, 0, 0, 0]], [], ["loc", [null, [9, 43], [9, 83]]], 0, 0]],
+        statements: [["inline", "date-formatter", [["get", "forecast.time", ["loc", [null, [5, 25], [5, 38]]], 0, 0, 0, 0], ["get", "timezone", ["loc", [null, [5, 39], [5, 47]]], 0, 0, 0, 0]], [], ["loc", [null, [5, 8], [5, 49]]], 0, 0], ["inline", "icon-name", [["get", "forecast.icon", ["loc", [null, [7, 18], [7, 31]]], 0, 0, 0, 0]], [], ["loc", [null, [7, 6], [7, 33]]], 0, 0], ["inline", "whole-number", [["get", "forecast.temperatureMax", ["loc", [null, [8, 60], [8, 83]]], 0, 0, 0, 0]], [], ["loc", [null, [8, 45], [8, 85]]], 0, 0], ["inline", "whole-number", [["get", "forecast.temperatureMin", ["loc", [null, [9, 58], [9, 81]]], 0, 0, 0, 0]], [], ["loc", [null, [9, 43], [9, 83]]], 0, 0]],
         locals: ["forecast"],
         templates: []
       };
@@ -2573,7 +2582,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+0f6daa9d"});
+  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+4f84c1fc"});
 }
 
 /* jshint ignore:end */

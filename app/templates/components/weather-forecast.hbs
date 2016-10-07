@@ -2,7 +2,7 @@
   {{#each days as |forecast|}}
     <li>
       <div class="label round">
-        {{date-formatter forecast.time}}
+        {{date-formatter forecast.time timezone}}
       </div>
       {{icon-name forecast.icon}}
       <span class="high"><small>high</small> {{whole-number forecast.temperatureMax}}&deg;</span>
