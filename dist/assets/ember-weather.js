@@ -38,6 +38,14 @@ define('ember-weather/app', ['exports', 'ember', 'ember-weather/resolver', 'embe
 
   exports['default'] = App;
 });
+define("ember-weather/components/-lf-get-outlet-state", ["exports", "liquid-fire/components/-lf-get-outlet-state"], function (exports, _liquidFireComponentsLfGetOutletState) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLfGetOutletState["default"];
+    }
+  });
+});
 define('ember-weather/components/app-version', ['exports', 'ember-cli-app-version/components/app-version', 'ember-weather/config/environment'], function (exports, _emberCliAppVersionComponentsAppVersion, _emberWeatherConfigEnvironment) {
 
   var name = _emberWeatherConfigEnvironment['default'].APP.name;
@@ -46,6 +54,100 @@ define('ember-weather/components/app-version', ['exports', 'ember-cli-app-versio
   exports['default'] = _emberCliAppVersionComponentsAppVersion['default'].extend({
     version: version,
     name: name
+  });
+});
+define("ember-weather/components/illiquid-model", ["exports", "liquid-fire/components/illiquid-model"], function (exports, _liquidFireComponentsIlliquidModel) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsIlliquidModel["default"];
+    }
+  });
+});
+define("ember-weather/components/liquid-bind", ["exports", "liquid-fire/components/liquid-bind"], function (exports, _liquidFireComponentsLiquidBind) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidBind["default"];
+    }
+  });
+});
+define("ember-weather/components/liquid-child", ["exports", "liquid-fire/components/liquid-child"], function (exports, _liquidFireComponentsLiquidChild) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidChild["default"];
+    }
+  });
+});
+define("ember-weather/components/liquid-container", ["exports", "liquid-fire/components/liquid-container"], function (exports, _liquidFireComponentsLiquidContainer) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidContainer["default"];
+    }
+  });
+});
+define("ember-weather/components/liquid-if", ["exports", "liquid-fire/components/liquid-if"], function (exports, _liquidFireComponentsLiquidIf) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidIf["default"];
+    }
+  });
+});
+define("ember-weather/components/liquid-measured", ["exports", "liquid-fire/components/liquid-measured"], function (exports, _liquidFireComponentsLiquidMeasured) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidMeasured["default"];
+    }
+  });
+  Object.defineProperty(exports, "measure", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidMeasured.measure;
+    }
+  });
+});
+define("ember-weather/components/liquid-outlet", ["exports", "liquid-fire/components/liquid-outlet"], function (exports, _liquidFireComponentsLiquidOutlet) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidOutlet["default"];
+    }
+  });
+});
+define("ember-weather/components/liquid-spacer", ["exports", "liquid-fire/components/liquid-spacer"], function (exports, _liquidFireComponentsLiquidSpacer) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidSpacer["default"];
+    }
+  });
+});
+define('ember-weather/components/liquid-sync', ['exports', 'liquid-fire/components/liquid-sync'], function (exports, _liquidFireComponentsLiquidSync) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidSync['default'];
+    }
+  });
+});
+define("ember-weather/components/liquid-unless", ["exports", "liquid-fire/components/liquid-unless"], function (exports, _liquidFireComponentsLiquidUnless) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidUnless["default"];
+    }
+  });
+});
+define("ember-weather/components/liquid-versions", ["exports", "liquid-fire/components/liquid-versions"], function (exports, _liquidFireComponentsLiquidVersions) {
+  Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireComponentsLiquidVersions["default"];
+    }
   });
 });
 define('ember-weather/components/nav-locations', ['exports', 'ember'], function (exports, _ember) {
@@ -108,11 +210,21 @@ define('ember-weather/components/weather-current-details', ['exports', 'ember'],
 
   });
 });
-define('ember-weather/components/weather-current', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Component.extend({
+define('ember-weather/components/weather-current', ['exports', 'ember-computed', 'ember-component', 'ember-service/inject'], function (exports, _emberComputed, _emberComponent, _emberServiceInject) {
+  exports['default'] = _emberComponent['default'].extend({
     weather: null,
 
-    setupBackGroundImages: _ember['default'].on('didInsertElement', _ember['default'].observer('weather.imageUrl', function () {
+    locations: (0, _emberServiceInject['default'])(),
+
+    saved: (0, _emberComputed['default'])('locations.savedLocations.[]', 'weather.id', function () {
+      if (this.get('locations.savedLocations').filterBy('id', this.get('weather.id')).length > 0) {
+        return true;
+      }
+
+      return false;
+    }),
+
+    setupBackGroundImages: Ember.on('didInsertElement', Ember.observer('weather.imageUrl', function () {
       this._setImageBackGround(this.get('weather.imageUrl'));
     })),
 
@@ -222,27 +334,6 @@ define('ember-weather/components/weather-vane', ['exports', 'ember'], function (
 
   });
 });
-define('ember-weather/controllers/locations', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Controller.extend();
-});
-define('ember-weather/controllers/weather', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Controller.extend({
-
-    needs: ['locations'],
-
-    locations: _ember['default'].computed.alias('controllers.locations'),
-
-    isSavedWeather: false,
-
-    savedLocations: _ember['default'].observer('id', 'locations.@each.id', function () {
-      if (this.get('locations').filterProperty('id', this.get('id')).length > 0) {
-        this.set('isSavedWeather', true);
-      } else {
-        this.set('isSavedWeather', false);
-      }
-    })
-  });
-});
 define('ember-weather/helpers/date-formatter', ['exports', 'ember-string', 'ember-helper'], function (exports, _emberString, _emberHelper) {
   exports.dateFormat = dateFormat;
 
@@ -260,6 +351,34 @@ define('ember-weather/helpers/icon-name', ['exports', 'ember-string', 'ember-hel
   }
 
   exports['default'] = (0, _emberHelper.helper)(iconName);
+});
+define('ember-weather/helpers/lf-lock-model', ['exports', 'liquid-fire/helpers/lf-lock-model'], function (exports, _liquidFireHelpersLfLockModel) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireHelpersLfLockModel['default'];
+    }
+  });
+  Object.defineProperty(exports, 'lfLockModel', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireHelpersLfLockModel.lfLockModel;
+    }
+  });
+});
+define('ember-weather/helpers/lf-or', ['exports', 'liquid-fire/helpers/lf-or'], function (exports, _liquidFireHelpersLfOr) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireHelpersLfOr['default'];
+    }
+  });
+  Object.defineProperty(exports, 'lfOr', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireHelpersLfOr.lfOr;
+    }
+  });
 });
 define('ember-weather/helpers/photographer-link', ['exports', 'ember-string', 'ember-helper'], function (exports, _emberString, _emberHelper) {
   exports.photographerLink = photographerLink;
@@ -408,6 +527,15 @@ define('ember-weather/initializers/injectStore', ['exports', 'ember'], function 
     initialize: _ember['default'].K
   };
 });
+define("ember-weather/initializers/liquid-fire", ["exports", "liquid-fire/ember-internals"], function (exports, _liquidFireEmberInternals) {
+
+  (0, _liquidFireEmberInternals.initialize)();
+
+  exports["default"] = {
+    name: 'liquid-fire',
+    initialize: function initialize() {}
+  };
+});
 define('ember-weather/initializers/store', ['exports', 'ember'], function (exports, _ember) {
 
   /*
@@ -498,10 +626,17 @@ define('ember-weather/routes/application', ['exports', 'ember', 'ember-weather/u
     }
   });
 });
-define('ember-weather/routes/locations', ['exports', 'ember', 'ember-weather/utils/dasherizer'], function (exports, _ember, _emberWeatherUtilsDasherizer) {
+define('ember-weather/routes/locations', ['exports', 'ember', 'ember-weather/utils/dasherizer', 'ember-service/inject'], function (exports, _ember, _emberWeatherUtilsDasherizer, _emberServiceInject) {
   exports['default'] = _ember['default'].Route.extend({
+    locations: (0, _emberServiceInject['default'])(),
+
     model: function model() {
       return this.store.findAll('location');
+    },
+
+    setupController: function setupController(controller, model) {
+      this._super.apply(this, arguments);
+      this.set('locations.savedLocations', model);
     },
 
     actions: {
@@ -524,8 +659,8 @@ define('ember-weather/routes/locations', ['exports', 'ember', 'ember-weather/uti
       },
 
       removeLocation: function removeLocation(weather) {
-        var locations = this.controllerFor('locations'),
-            locationToBeRemoved = locations.findProperty('id', weather.id);
+        var locations = this.controllerFor('locations').get('model'),
+            locationToBeRemoved = locations.findBy('id', weather.id);
 
         locationToBeRemoved.deleteRecord();
         locationToBeRemoved.save();
@@ -606,6 +741,14 @@ define('ember-weather/services/ajax', ['exports', 'ember-ajax/services/ajax'], f
     get: function get() {
       return _emberAjaxServicesAjax['default'];
     }
+  });
+});
+define("ember-weather/services/liquid-fire-transitions", ["exports", "liquid-fire/transition-map"], function (exports, _liquidFireTransitionMap) {
+  exports["default"] = _liquidFireTransitionMap["default"];
+});
+define('ember-weather/services/locations', ['exports', 'ember-service'], function (exports, _emberService) {
+  exports['default'] = _emberService['default'].extend({
+    savedLocations: []
   });
 });
 define("ember-weather/templates/-nav", ["exports"], function (exports) {
@@ -2176,7 +2319,7 @@ define("ember-weather/templates/weather", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 5,
+            "line": 4,
             "column": 0
           }
         },
@@ -2200,11 +2343,123 @@ define("ember-weather/templates/weather", ["exports"], function (exports) {
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "weather-current", [], ["weather", ["subexpr", "@mut", [["get", "model", ["loc", [null, [1, 26], [1, 31]]], 0, 0, 0, 0]], [], [], 0, 0], "saved", ["subexpr", "@mut", [["get", "isSavedWeather", ["loc", [null, [2, 24], [2, 38]]], 0, 0, 0, 0]], [], [], 0, 0], "saveLocationHandler", "saveLocation", "removeLocationHandler", "removeLocation"], ["loc", [null, [1, 0], [4, 58]]], 0, 0]],
+      statements: [["inline", "weather-current", [], ["weather", ["subexpr", "@mut", [["get", "model", ["loc", [null, [1, 26], [1, 31]]], 0, 0, 0, 0]], [], [], 0, 0], "saveLocationHandler", "saveLocation", "removeLocationHandler", "removeLocation"], ["loc", [null, [1, 0], [3, 58]]], 0, 0]],
       locals: [],
       templates: []
     };
   })());
+});
+define('ember-weather/transitions/cross-fade', ['exports', 'liquid-fire/transitions/cross-fade'], function (exports, _liquidFireTransitionsCrossFade) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsCrossFade['default'];
+    }
+  });
+});
+define('ember-weather/transitions/default', ['exports', 'liquid-fire/transitions/default'], function (exports, _liquidFireTransitionsDefault) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsDefault['default'];
+    }
+  });
+});
+define('ember-weather/transitions/explode', ['exports', 'liquid-fire/transitions/explode'], function (exports, _liquidFireTransitionsExplode) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsExplode['default'];
+    }
+  });
+});
+define('ember-weather/transitions/fade', ['exports', 'liquid-fire/transitions/fade'], function (exports, _liquidFireTransitionsFade) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsFade['default'];
+    }
+  });
+});
+define('ember-weather/transitions/flex-grow', ['exports', 'liquid-fire/transitions/flex-grow'], function (exports, _liquidFireTransitionsFlexGrow) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsFlexGrow['default'];
+    }
+  });
+});
+define('ember-weather/transitions/fly-to', ['exports', 'liquid-fire/transitions/fly-to'], function (exports, _liquidFireTransitionsFlyTo) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsFlyTo['default'];
+    }
+  });
+});
+define('ember-weather/transitions/move-over', ['exports', 'liquid-fire/transitions/move-over'], function (exports, _liquidFireTransitionsMoveOver) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsMoveOver['default'];
+    }
+  });
+});
+define('ember-weather/transitions/scale', ['exports', 'liquid-fire/transitions/scale'], function (exports, _liquidFireTransitionsScale) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsScale['default'];
+    }
+  });
+});
+define('ember-weather/transitions/scroll-then', ['exports', 'liquid-fire/transitions/scroll-then'], function (exports, _liquidFireTransitionsScrollThen) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsScrollThen['default'];
+    }
+  });
+});
+define('ember-weather/transitions/to-down', ['exports', 'liquid-fire/transitions/to-down'], function (exports, _liquidFireTransitionsToDown) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsToDown['default'];
+    }
+  });
+});
+define('ember-weather/transitions/to-left', ['exports', 'liquid-fire/transitions/to-left'], function (exports, _liquidFireTransitionsToLeft) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsToLeft['default'];
+    }
+  });
+});
+define('ember-weather/transitions/to-right', ['exports', 'liquid-fire/transitions/to-right'], function (exports, _liquidFireTransitionsToRight) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsToRight['default'];
+    }
+  });
+});
+define('ember-weather/transitions/to-up', ['exports', 'liquid-fire/transitions/to-up'], function (exports, _liquidFireTransitionsToUp) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsToUp['default'];
+    }
+  });
+});
+define('ember-weather/transitions/wait', ['exports', 'liquid-fire/transitions/wait'], function (exports, _liquidFireTransitionsWait) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _liquidFireTransitionsWait['default'];
+    }
+  });
 });
 define('ember-weather/utils/dasherizer', ['exports'], function (exports) {
   exports['default'] = dasherizer;
@@ -2312,7 +2567,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+83ae17cb"});
+  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+0c817a5a"});
 }
 
 /* jshint ignore:end */

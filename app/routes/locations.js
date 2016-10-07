@@ -1,9 +1,17 @@
 import Ember from 'ember';
 import dasherizer from "ember-weather/utils/dasherizer";
+import injectService from 'ember-service/inject';
 
 export default Ember.Route.extend({
-  model: function(){
-    return  this.store.findAll('location');
+  locations: injectService(),
+
+  model: function() {
+    return this.store.findAll('location');
+  },
+
+  setupController(controller, model) {
+    this._super(...arguments);
+    this.set('locations.savedLocations', model);
   },
 
   actions: {
@@ -27,8 +35,8 @@ export default Ember.Route.extend({
     },
 
     removeLocation: function(weather){
-      var locations = this.controllerFor('locations'),
-          locationToBeRemoved = locations.findProperty('id', weather.id);
+      var locations = this.controllerFor('locations').get('model'),
+          locationToBeRemoved = locations.findBy('id', weather.id);
 
       locationToBeRemoved.deleteRecord();
       locationToBeRemoved.save();
