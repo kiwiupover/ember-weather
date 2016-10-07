@@ -6,6 +6,12 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    sassOptions: {
+      includePaths: [
+        'bower_components/foundation/scss',
+        'bower_components/bourbon/app/assets/stylesheets'
+      ]
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

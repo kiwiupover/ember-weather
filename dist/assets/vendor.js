@@ -66693,7 +66693,7 @@ createDeprecatedModule('resolver');
 ;/*
  * Foundation Responsive Library
  * http://foundation.zurb.com
- * Copyright 2014, ZURB
+ * Copyright 2015, ZURB
  * Free to use under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
 */
@@ -66702,27 +66702,29 @@ createDeprecatedModule('resolver');
   'use strict';
 
   var header_helpers = function (class_array) {
-    var i = class_array.length;
     var head = $('head');
-
-    while (i--) {
-      if(head.has('.' + class_array[i]).length === 0) {
-        head.append('<meta class="' + class_array[i] + '" />');
+    head.prepend($.map(class_array, function (class_name) {
+      if (head.has('.' + class_name).length === 0) {
+        return '<meta class="' + class_name + '" />';
       }
-    }
+    }));
   };
 
   header_helpers([
     'foundation-mq-small',
+    'foundation-mq-small-only',
     'foundation-mq-medium',
+    'foundation-mq-medium-only',
     'foundation-mq-large',
+    'foundation-mq-large-only',
     'foundation-mq-xlarge',
+    'foundation-mq-xlarge-only',
     'foundation-mq-xxlarge',
     'foundation-data-attribute-namespace']);
 
   // Enable FastClick if present
 
-  $(function() {
+  $(function () {
     if (typeof FastClick !== 'undefined') {
       // Don't attach to body if undefined
       if (typeof document.body !== 'undefined') {
@@ -66740,7 +66742,9 @@ createDeprecatedModule('resolver');
         var cont;
         if (context.jquery) {
           cont = context[0];
-          if (!cont) return context;
+          if (!cont) {
+            return context;
+          }
         } else {
           cont = context;
         }
@@ -66757,8 +66761,12 @@ createDeprecatedModule('resolver');
 
   var attr_name = function (init) {
     var arr = [];
-    if (!init) arr.push('data');
-    if (this.namespace.length > 0) arr.push(this.namespace);
+    if (!init) {
+      arr.push('data');
+    }
+    if (this.namespace.length > 0) {
+      arr.push(this.namespace);
+    }
     arr.push(this.name);
 
     return arr.join('-');
@@ -66788,29 +66796,26 @@ createDeprecatedModule('resolver');
 
   var bindings = function (method, options) {
     var self = this,
-        should_bind_events = !S(this).data(this.attr_name(true));
+        bind = function(){
+          var $this = S(this),
+              should_bind_events = !$this.data(self.attr_name(true) + '-init');
+          $this.data(self.attr_name(true) + '-init', $.extend({}, self.settings, (options || method), self.data_options($this)));
 
+          if (should_bind_events) {
+            self.events(this);
+          }
+        };
+
+    if (S(this.scope).is('[' + this.attr_name() +']')) {
+      bind.call(this.scope);
+    } else {
+      S('[' + this.attr_name() +']', this.scope).each(bind);
+    }
+    // # Patch to fix #5043 to move this *after* the if/else clause in order for Backbone and similar frameworks to have improved control over event binding and data-options updating.
     if (typeof method === 'string') {
       return this[method].call(this, options);
     }
 
-    if (S(this.scope).is('[' + this.attr_name() +']')) {
-      S(this.scope).data(this.attr_name(true) + '-init', $.extend({}, this.settings, (options || method), this.data_options(S(this.scope))));
-
-      if (should_bind_events) {
-        this.events(this.scope);
-      }
-
-    } else {
-      S('[' + this.attr_name() +']', this.scope).each(function () {
-        var should_bind_events = !S(this).data(self.attr_name(true) + '-init');
-        S(this).data(self.attr_name(true) + '-init', $.extend({}, self.settings, (options || method), self.data_options(S(this))));
-
-        if (should_bind_events) {
-          self.events(this);
-        }
-      });
-    }
   };
 
   var single_image_loaded = function (image, callback) {
@@ -66842,42 +66847,52 @@ createDeprecatedModule('resolver');
     }
   };
 
-  /*
-    https://github.com/paulirish/matchMedia.js
-  */
+  /*! matchMedia() polyfill - Test a CSS media type/query in JS. Authors & copyright (c) 2012: Scott Jehl, Paul Irish, Nicholas Zakas, David Knight. Dual MIT/BSD license */
 
-  window.matchMedia = window.matchMedia || (function( doc ) {
+  window.matchMedia || (window.matchMedia = function() {
+      "use strict";
 
-    "use strict";
+      // For browsers that support matchMedium api such as IE 9 and webkit
+      var styleMedia = (window.styleMedia || window.media);
 
-    var bool,
-        docElem = doc.documentElement,
-        refNode = docElem.firstElementChild || docElem.firstChild,
-        // fakeBody required for <FF4 when executed in <head>
-        fakeBody = doc.createElement( "body" ),
-        div = doc.createElement( "div" );
+      // For those that don't support matchMedium
+      if (!styleMedia) {
+          var style       = document.createElement('style'),
+              script      = document.getElementsByTagName('script')[0],
+              info        = null;
 
-    div.id = "mq-test-1";
-    div.style.cssText = "position:absolute;top:-100em";
-    fakeBody.style.background = "none";
-    fakeBody.appendChild(div);
+          style.type  = 'text/css';
+          style.id    = 'matchmediajs-test';
 
-    return function (q) {
+          script.parentNode.insertBefore(style, script);
 
-      div.innerHTML = "&shy;<style media=\"" + q + "\"> #mq-test-1 { width: 42px; }</style>";
+          // 'style.currentStyle' is used by IE <= 8 and 'window.getComputedStyle' for all other browsers
+          info = ('getComputedStyle' in window) && window.getComputedStyle(style, null) || style.currentStyle;
 
-      docElem.insertBefore( fakeBody, refNode );
-      bool = div.offsetWidth === 42;
-      docElem.removeChild( fakeBody );
+          styleMedia = {
+              matchMedium: function(media) {
+                  var text = '@media ' + media + '{ #matchmediajs-test { width: 1px; } }';
 
-      return {
-        matches: bool,
-        media: q
+                  // 'style.styleSheet' is used by IE <= 8 and 'style.textContent' for all other browsers
+                  if (style.styleSheet) {
+                      style.styleSheet.cssText = text;
+                  } else {
+                      style.textContent = text;
+                  }
+
+                  // Test if media query is true or false
+                  return info.width === '1px';
+              }
+          };
+      }
+
+      return function(media) {
+          return {
+              matches: styleMedia.matchMedium(media || 'all'),
+              media: media || 'all'
+          };
       };
-
-    };
-
-  }( document ));
+  }());
 
   /*
    * jquery.requestAnimationFrame
@@ -66888,7 +66903,8 @@ createDeprecatedModule('resolver');
    * Licensed under the MIT license.
    */
 
-  (function($) {
+  (function(jQuery) {
+
 
   // requestAnimationFrame polyfill adapted from Erik Möller
   // fixes from Paul Irish and Tino Zijdel
@@ -66903,10 +66919,10 @@ createDeprecatedModule('resolver');
       jqueryFxAvailable = 'undefined' !== typeof jQuery.fx;
 
   for (; lastTime < vendors.length && !requestAnimationFrame; lastTime++) {
-    requestAnimationFrame = window[ vendors[lastTime] + "RequestAnimationFrame" ];
+    requestAnimationFrame = window[ vendors[lastTime] + 'RequestAnimationFrame' ];
     cancelAnimationFrame = cancelAnimationFrame ||
-      window[ vendors[lastTime] + "CancelAnimationFrame" ] ||
-      window[ vendors[lastTime] + "CancelRequestAnimationFrame" ];
+      window[ vendors[lastTime] + 'CancelAnimationFrame' ] ||
+      window[ vendors[lastTime] + 'CancelRequestAnimationFrame' ];
   }
 
   function raf() {
@@ -66954,8 +66970,7 @@ createDeprecatedModule('resolver');
 
   }
 
-  }( jQuery ));
-
+  }( $ ));
 
   function removeQuotes (string) {
     if (typeof string === 'string' || string instanceof String) {
@@ -66965,23 +66980,36 @@ createDeprecatedModule('resolver');
     return string;
   }
 
+  function MediaQuery(selector) {
+    this.selector = selector;
+    this.query = '';
+  }
+
+  MediaQuery.prototype.toString = function () {
+    return this.query || (this.query = S(this.selector).css('font-family').replace(/^[\/\\'"]+|(;\s?})+|[\/\\'"]+$/g, ''));
+  };
+
   window.Foundation = {
     name : 'Foundation',
 
-    version : '5.2.3',
+    version : '5.5.3',
 
     media_queries : {
-      small : S('.foundation-mq-small').css('font-family').replace(/^[\/\\'"]+|(;\s?})+|[\/\\'"]+$/g, ''),
-      medium : S('.foundation-mq-medium').css('font-family').replace(/^[\/\\'"]+|(;\s?})+|[\/\\'"]+$/g, ''),
-      large : S('.foundation-mq-large').css('font-family').replace(/^[\/\\'"]+|(;\s?})+|[\/\\'"]+$/g, ''),
-      xlarge: S('.foundation-mq-xlarge').css('font-family').replace(/^[\/\\'"]+|(;\s?})+|[\/\\'"]+$/g, ''),
-      xxlarge: S('.foundation-mq-xxlarge').css('font-family').replace(/^[\/\\'"]+|(;\s?})+|[\/\\'"]+$/g, '')
+      'small'       : new MediaQuery('.foundation-mq-small'),
+      'small-only'  : new MediaQuery('.foundation-mq-small-only'),
+      'medium'      : new MediaQuery('.foundation-mq-medium'),
+      'medium-only' : new MediaQuery('.foundation-mq-medium-only'),
+      'large'       : new MediaQuery('.foundation-mq-large'),
+      'large-only'  : new MediaQuery('.foundation-mq-large-only'),
+      'xlarge'      : new MediaQuery('.foundation-mq-xlarge'),
+      'xlarge-only' : new MediaQuery('.foundation-mq-xlarge-only'),
+      'xxlarge'     : new MediaQuery('.foundation-mq-xxlarge')
     },
 
     stylesheet : $('<style></style>').appendTo('head')[0].sheet,
 
-    global: {
-      namespace: undefined
+    global : {
+      namespace : undefined
     },
 
     init : function (scope, libraries, method, options, response) {
@@ -67006,6 +67034,18 @@ createDeprecatedModule('resolver');
         }
       }
 
+      S(window).load(function () {
+        S(window)
+          .trigger('resize.fndtn.clearing')
+          .trigger('resize.fndtn.dropdown')
+          .trigger('resize.fndtn.equalizer')
+          .trigger('resize.fndtn.interchange')
+          .trigger('resize.fndtn.joyride')
+          .trigger('resize.fndtn.magellan')
+          .trigger('resize.fndtn.topbar')
+          .trigger('resize.fndtn.slider');
+      });
+
       return scope;
     },
 
@@ -67015,15 +67055,14 @@ createDeprecatedModule('resolver');
 
         if (args && args.hasOwnProperty(lib)) {
             if (typeof this.libs[lib].settings !== 'undefined') {
-                $.extend(true, this.libs[lib].settings, args[lib]);
-            }
-            else if (typeof this.libs[lib].defaults !== 'undefined') {
-                $.extend(true, this.libs[lib].defaults, args[lib]);
+              $.extend(true, this.libs[lib].settings, args[lib]);
+            } else if (typeof this.libs[lib].defaults !== 'undefined') {
+              $.extend(true, this.libs[lib].defaults, args[lib]);
             }
           return this.libs[lib].init.apply(this.libs[lib], [this.scope, args[lib]]);
         }
 
-        args = args instanceof Array ? args : new Array(args);    // PATCH: added this line
+        args = args instanceof Array ? args : new Array(args);
         return this.libs[lib].init.apply(this.libs[lib], args);
       }
 
@@ -67052,7 +67091,7 @@ createDeprecatedModule('resolver');
       }
     },
 
-    set_namespace: function () {
+    set_namespace : function () {
 
       // Description:
       //    Don't bother reading the namespace out of the meta tag
@@ -67140,12 +67179,16 @@ createDeprecatedModule('resolver');
           var context = this, args = arguments;
           var later = function () {
             timeout = null;
-            if (!immediate) result = func.apply(context, args);
+            if (!immediate) {
+              result = func.apply(context, args);
+            }
           };
           var callNow = immediate && !timeout;
           clearTimeout(timeout);
           timeout = setTimeout(later, delay);
-          if (callNow) result = func.apply(context, args);
+          if (callNow) {
+            result = func.apply(context, args);
+          }
           return result;
         };
       },
@@ -67182,11 +67225,13 @@ createDeprecatedModule('resolver');
         ii = opts_arr.length;
 
         function isNumber (o) {
-          return ! isNaN (o-0) && o !== null && o !== "" && o !== false && o !== true;
+          return !isNaN (o - 0) && o !== null && o !== '' && o !== false && o !== true;
         }
 
         function trim (str) {
-          if (typeof str === 'string') return $.trim(str);
+          if (typeof str === 'string') {
+            return $.trim(str);
+          }
           return str;
         }
 
@@ -67194,8 +67239,12 @@ createDeprecatedModule('resolver');
           p = opts_arr[ii].split(':');
           p = [p[0], p.slice(1).join(':')];
 
-          if (/true/i.test(p[1])) p[1] = true;
-          if (/false/i.test(p[1])) p[1] = false;
+          if (/true/i.test(p[1])) {
+            p[1] = true;
+          }
+          if (/false/i.test(p[1])) {
+            p[1] = false;
+          }
           if (isNumber(p[1])) {
             if (p[1].indexOf('.') === -1) {
               p[1] = parseInt(p[1], 10);
@@ -67221,8 +67270,8 @@ createDeprecatedModule('resolver');
       //
       //    Class (String): Class name for the generated <meta> tag
       register_media : function (media, media_class) {
-        if(Foundation.media_queries[media] === undefined) {
-          $('head').append('<meta class="' + media_class + '">');
+        if (Foundation.media_queries[media] === undefined) {
+          $('head').append('<meta class="' + media_class + '"/>');
           Foundation.media_queries[media] = removeQuotes($('.' + media_class).css('font-family'));
         }
       },
@@ -67243,7 +67292,7 @@ createDeprecatedModule('resolver');
 
           if (query !== undefined) {
             Foundation.stylesheet.insertRule('@media ' +
-              Foundation.media_queries[media] + '{ ' + rule + ' }');
+              Foundation.media_queries[media] + '{ ' + rule + ' }', Foundation.stylesheet.cssRules.length);
           }
         }
       },
@@ -67259,7 +67308,19 @@ createDeprecatedModule('resolver');
         var self = this,
             unloaded = images.length;
 
-        if (unloaded === 0) {
+        function pictures_has_height(images) {
+          var pictures_number = images.length;
+
+          for (var i = pictures_number - 1; i >= 0; i--) {
+            if(images.attr('height') === undefined) {
+              return false;
+            };
+          };
+
+          return true;
+        }
+
+        if (unloaded === 0 || pictures_has_height(images)) {
           callback(images);
         }
 
@@ -67283,10 +67344,70 @@ createDeprecatedModule('resolver');
       // Returns:
       //    Rand (String): Pseudo-random, alphanumeric string.
       random_str : function () {
-        if (!this.fidx) this.fidx = 0;
+        if (!this.fidx) {
+          this.fidx = 0;
+        }
         this.prefix = this.prefix || [(this.name || 'F'), (+new Date).toString(36)].join('-');
 
         return this.prefix + (this.fidx++).toString(36);
+      },
+
+      // Description:
+      //    Helper for window.matchMedia
+      //
+      // Arguments:
+      //    mq (String): Media query
+      //
+      // Returns:
+      //    (Boolean): Whether the media query passes or not
+      match : function (mq) {
+        return window.matchMedia(mq).matches;
+      },
+
+      // Description:
+      //    Helpers for checking Foundation default media queries with JS
+      //
+      // Returns:
+      //    (Boolean): Whether the media query passes or not
+
+      is_small_up : function () {
+        return this.match(Foundation.media_queries.small);
+      },
+
+      is_medium_up : function () {
+        return this.match(Foundation.media_queries.medium);
+      },
+
+      is_large_up : function () {
+        return this.match(Foundation.media_queries.large);
+      },
+
+      is_xlarge_up : function () {
+        return this.match(Foundation.media_queries.xlarge);
+      },
+
+      is_xxlarge_up : function () {
+        return this.match(Foundation.media_queries.xxlarge);
+      },
+
+      is_small_only : function () {
+        return !this.is_medium_up() && !this.is_large_up() && !this.is_xlarge_up() && !this.is_xxlarge_up();
+      },
+
+      is_medium_only : function () {
+        return this.is_medium_up() && !this.is_large_up() && !this.is_xlarge_up() && !this.is_xxlarge_up();
+      },
+
+      is_large_only : function () {
+        return this.is_medium_up() && this.is_large_up() && !this.is_xlarge_up() && !this.is_xxlarge_up();
+      },
+
+      is_xlarge_only : function () {
+        return this.is_medium_up() && this.is_large_up() && this.is_xlarge_up() && !this.is_xxlarge_up();
+      },
+
+      is_xxlarge_only : function () {
+        return this.is_medium_up() && this.is_large_up() && this.is_xlarge_up() && this.is_xxlarge_up();
       }
     }
   };
@@ -67308,17 +67429,19 @@ createDeprecatedModule('resolver');
   Foundation.libs.topbar = {
     name : 'topbar',
 
-    version: '5.2.3',
+    version : '5.5.3',
 
     settings : {
       index : 0,
+      start_offset : 0,
       sticky_class : 'sticky',
-      custom_back_text: true,
-      back_text: 'Back',
-      is_hover: true,
-      mobile_show_parent_link: false,
+      custom_back_text : true,
+      back_text : 'Back',
+      mobile_show_parent_link : true,
+      is_hover : true,
       scrolltop : true, // jump to top when sticky nav menu toggle is clicked
-      sticky_on : 'all'
+      sticky_on : 'all',
+      dropdown_autoclose: true
     },
 
     init : function (section, method, options) {
@@ -67332,7 +67455,7 @@ createDeprecatedModule('resolver');
       self.S('[' + this.attr_name() + ']', this.scope).each(function () {
         var topbar = $(this),
             settings = topbar.data(self.attr_name(true) + '-init'),
-            section = self.S('section', this);
+            section = self.S('section, .top-bar-section', this);
         topbar.data('index', 0);
         var topbarContainer = topbar.parent();
         if (topbarContainer.hasClass('fixed') || self.is_sticky(topbar, topbarContainer, settings) ) {
@@ -67364,23 +67487,29 @@ createDeprecatedModule('resolver');
 
     },
 
-    is_sticky: function (topbar, topbarContainer, settings) {
-      var sticky = topbarContainer.hasClass(settings.sticky_class);
+    is_sticky : function (topbar, topbarContainer, settings) {
+      var sticky     = topbarContainer.hasClass(settings.sticky_class);
+      var smallMatch = matchMedia(Foundation.media_queries.small).matches;
+      var medMatch   = matchMedia(Foundation.media_queries.medium).matches;
+      var lrgMatch   = matchMedia(Foundation.media_queries.large).matches;
 
       if (sticky && settings.sticky_on === 'all') {
         return true;
-      } else if (sticky && this.small() && settings.sticky_on === 'small') {
-        return true;
-      } else if (sticky && this.medium() && settings.sticky_on === 'medium') {
-        return true;
-      } else if (sticky && this.large() && settings.sticky_on === 'large') {
-        return true;
+      }
+      if (sticky && this.small() && settings.sticky_on.indexOf('small') !== -1) {
+        if (smallMatch && !medMatch && !lrgMatch) { return true; }
+      }
+      if (sticky && this.medium() && settings.sticky_on.indexOf('medium') !== -1) {
+        if (smallMatch && medMatch && !lrgMatch) { return true; }
+      }
+      if (sticky && this.large() && settings.sticky_on.indexOf('large') !== -1) {
+        if (smallMatch && medMatch && lrgMatch) { return true; }
       }
 
-      return false;
+       return false;
     },
 
-    toggle: function (toggleEl) {
+    toggle : function (toggleEl) {
       var self = this,
           topbar;
 
@@ -67392,15 +67521,15 @@ createDeprecatedModule('resolver');
 
       var settings = topbar.data(this.attr_name(true) + '-init');
 
-      var section = self.S('section, .section', topbar);
+      var section = self.S('section, .top-bar-section', topbar);
 
       if (self.breakpoint()) {
         if (!self.rtl) {
-          section.css({left: '0%'});
-          $('>.name', section).css({left: '100%'});
+          section.css({left : '0%'});
+          $('>.name', section).css({left : '100%'});
         } else {
-          section.css({right: '0%'});
-          $('>.name', section).css({right: '100%'});
+          section.css({right : '0%'});
+          $('>.name', section).css({right : '100%'});
         }
 
         self.S('li.moved', section).removeClass('moved');
@@ -67424,7 +67553,7 @@ createDeprecatedModule('resolver');
             topbar.addClass('fixed');
             self.S('body').removeClass('f-topbar-fixed');
 
-            window.scrollTo(0,0);
+            window.scrollTo(0, 0);
           } else {
             topbar.parent().removeClass('expanded');
           }
@@ -67460,12 +67589,19 @@ createDeprecatedModule('resolver');
           e.preventDefault();
           self.toggle(this);
         })
-        .on('click.fndtn.topbar','.top-bar .top-bar-section li a[href^="#"],[' + this.attr_name() + '] .top-bar-section li a[href^="#"]',function (e) {
-            var li = $(this).closest('li');
-            if(self.breakpoint() && !li.hasClass('back') && !li.hasClass('has-dropdown'))
-            {
+        .on('click.fndtn.topbar contextmenu.fndtn.topbar', '.top-bar .top-bar-section li a[href^="#"],[' + this.attr_name() + '] .top-bar-section li a[href^="#"]', function (e) {
+          var li = $(this).closest('li'),
+              topbar = li.closest('[' + self.attr_name() + ']'),
+              settings = topbar.data(self.attr_name(true) + '-init');
+
+          if (settings.dropdown_autoclose && settings.is_hover) {
+            var hoverLi = $(this).closest('.hover');
+            hoverLi.removeClass('hover');
+          }
+          if (self.breakpoint() && !li.hasClass('back') && !li.hasClass('has-dropdown')) {
             self.toggle();
-            }
+          }
+
         })
         .on('click.fndtn.topbar', '[' + this.attr_name() + '] li.has-dropdown', function (e) {
           var li = S(this),
@@ -67473,13 +67609,18 @@ createDeprecatedModule('resolver');
               topbar = li.closest('[' + self.attr_name() + ']'),
               settings = topbar.data(self.attr_name(true) + '-init');
 
-          if(target.data('revealId')) {
+          if (target.data('revealId')) {
             self.toggle();
             return;
           }
 
-          if (self.breakpoint()) return;
-          if (settings.is_hover && !Modernizr.touch) return;
+          if (self.breakpoint()) {
+            return;
+          }
+
+          if (settings.is_hover && !Modernizr.touch) {
+            return;
+          }
 
           e.stopImmediatePropagation();
 
@@ -67508,7 +67649,7 @@ createDeprecatedModule('resolver');
 
             var $this = S(this),
                 topbar = $this.closest('[' + self.attr_name() + ']'),
-                section = topbar.find('section, .section'),
+                section = topbar.find('section, .top-bar-section'),
                 dropdownHeight = $this.next('.dropdown').outerHeight(),
                 $selectedLi = $this.closest('li');
 
@@ -67516,22 +67657,25 @@ createDeprecatedModule('resolver');
             $selectedLi.addClass('moved');
 
             if (!self.rtl) {
-              section.css({left: -(100 * topbar.data('index')) + '%'});
-              section.find('>.name').css({left: 100 * topbar.data('index') + '%'});
+              section.css({left : -(100 * topbar.data('index')) + '%'});
+              section.find('>.name').css({left : 100 * topbar.data('index') + '%'});
             } else {
-              section.css({right: -(100 * topbar.data('index')) + '%'});
-              section.find('>.name').css({right: 100 * topbar.data('index') + '%'});
+              section.css({right : -(100 * topbar.data('index')) + '%'});
+              section.find('>.name').css({right : 100 * topbar.data('index') + '%'});
             }
 
             topbar.css('height', $this.siblings('ul').outerHeight(true) + topbar.data('height'));
           }
         });
-      
-      S(window).off('.topbar').on('resize.fndtn.topbar', self.throttle(function () {
-        self.resize.call(self);
-      }, 50)).trigger('resize');
 
-      S('body').off('.topbar').on('click.fndtn.topbar touchstart.fndtn.topbar', function (e) {
+      S(window).off('.topbar').on('resize.fndtn.topbar', self.throttle(function () {
+          self.resize.call(self);
+      }, 50)).trigger('resize.fndtn.topbar').load(function () {
+          // Ensure that the offset is calculated after all of the pages resources have loaded
+          S(this).trigger('resize.fndtn.topbar');
+      });
+
+      S('body').off('.topbar').on('click.fndtn.topbar', function (e) {
         var parent = S(e.target).closest('li').closest('li.hover');
 
         if (parent.length > 0) {
@@ -67547,7 +67691,7 @@ createDeprecatedModule('resolver');
 
         var $this = S(this),
             topbar = $this.closest('[' + self.attr_name() + ']'),
-            section = topbar.find('section, .section'),
+            section = topbar.find('section, .top-bar-section'),
             settings = topbar.data(self.attr_name(true) + '-init'),
             $movedLi = $this.closest('li.moved'),
             $previousLevelUl = $movedLi.parent();
@@ -67555,11 +67699,11 @@ createDeprecatedModule('resolver');
         topbar.data('index', topbar.data('index') - 1);
 
         if (!self.rtl) {
-          section.css({left: -(100 * topbar.data('index')) + '%'});
-          section.find('>.name').css({left: 100 * topbar.data('index') + '%'});
+          section.css({left : -(100 * topbar.data('index')) + '%'});
+          section.find('>.name').css({left : 100 * topbar.data('index') + '%'});
         } else {
-          section.css({right: -(100 * topbar.data('index')) + '%'});
-          section.find('>.name').css({right: 100 * topbar.data('index') + '%'});
+          section.css({right : -(100 * topbar.data('index')) + '%'});
+          section.find('>.name').css({right : 100 * topbar.data('index') + '%'});
         }
 
         if (topbar.data('index') === 0) {
@@ -67572,6 +67716,15 @@ createDeprecatedModule('resolver');
           $movedLi.removeClass('moved');
         }, 300);
       });
+
+      // Show dropdown menus when their items are focused
+      S(this.scope).find('.dropdown a')
+        .focus(function () {
+          $(this).parents('.has-dropdown').addClass('hover');
+        })
+        .blur(function () {
+          $(this).parents('.has-dropdown').removeClass('hover');
+        });
     },
 
     resize : function () {
@@ -67591,18 +67744,18 @@ createDeprecatedModule('resolver');
             .find('li')
             .removeClass('hover');
 
-            if(doToggle) {
+            if (doToggle) {
               self.toggle(topbar);
             }
         }
 
-        if(self.is_sticky(topbar, stickyContainer, settings)) {
-          if(stickyContainer.hasClass('fixed')) {
+        if (self.is_sticky(topbar, stickyContainer, settings)) {
+          if (stickyContainer.hasClass('fixed')) {
             // Remove the fixed to allow for correct calculation of the offset.
             stickyContainer.removeClass('fixed');
 
             stickyOffset = stickyContainer.offset().top;
-            if(self.S(document.body).hasClass('f-topbar-fixed')) {
+            if (self.S(document.body).hasClass('f-topbar-fixed')) {
               stickyOffset -= topbar.data('height');
             }
 
@@ -67636,7 +67789,7 @@ createDeprecatedModule('resolver');
     assemble : function (topbar) {
       var self = this,
           settings = topbar.data(this.attr_name(true) + '-init'),
-          section = self.S('section', topbar);
+          section = self.S('section, .top-bar-section', topbar);
 
       // Pull element out of the DOM for manipulation
       section.detach();
@@ -67648,12 +67801,13 @@ createDeprecatedModule('resolver');
             $titleLi;
 
         if (!$dropdown.find('.title.back').length) {
-          if (settings.mobile_show_parent_link && url && url.length > 1) {
-            $titleLi = $('<li class="title back js-generated"><h5><a href="javascript:void(0)"></a></h5></li><li><a class="parent-link js-generated" href="' + url + '">' + $link.text() +'</a></li>');
+
+          if (settings.mobile_show_parent_link == true && url) {
+            $titleLi = $('<li class="title back js-generated"><h5><a href="javascript:void(0)"></a></h5></li><li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="' + url + '">' + $link.html() +'</a></li>');
           } else {
-            $titleLi = $('<li class="title back js-generated"><h5><a href="javascript:void(0)"></a></h5></li>');
+            $titleLi = $('<li class="title back js-generated"><h5><a href="javascript:void(0)"></a></h5>');
           }
-  
+
           // Copy link to subnav
           if (settings.custom_back_text == true) {
             $('h5>a', $titleLi).html(settings.back_text);
@@ -67674,15 +67828,15 @@ createDeprecatedModule('resolver');
     },
 
     assembled : function (topbar) {
-      topbar.data(this.attr_name(true), $.extend({}, topbar.data(this.attr_name(true)), {assembled: true}));
+      topbar.data(this.attr_name(true), $.extend({}, topbar.data(this.attr_name(true)), {assembled : true}));
     },
 
     height : function (ul) {
       var total = 0,
           self = this;
 
-      $('> li', ul).each(function () { 
-        total += self.S(this).outerHeight(true); 
+      $('> li', ul).each(function () {
+        total += self.S(this).outerHeight(true);
       });
 
       return total;
@@ -67691,18 +67845,18 @@ createDeprecatedModule('resolver');
     sticky : function () {
       var self = this;
 
-      this.S(window).on('scroll', function() {
+      this.S(window).on('scroll', function () {
         self.update_sticky_positioning();
       });
     },
 
-    update_sticky_positioning: function() {
+    update_sticky_positioning : function () {
       var klass = '.' + this.settings.sticky_class,
-          $window = this.S(window), 
+          $window = this.S(window),
           self = this;
 
       if (self.settings.sticky_topbar && self.is_sticky(this.settings.sticky_topbar,this.settings.sticky_topbar.parent(), this.settings)) {
-        var distance = this.settings.sticky_topbar.data('stickyoffset');
+        var distance = this.settings.sticky_topbar.data('stickyoffset') + this.settings.start_offset;
         if (!self.S(klass).hasClass('expanded')) {
           if ($window.scrollTop() > (distance)) {
             if (!self.S(klass).hasClass('fixed')) {
@@ -67726,7 +67880,7 @@ createDeprecatedModule('resolver');
 
     reflow : function () {}
   };
-}(jQuery, this, this.document));
+}(jQuery, window, window.document));
 
 ;;(function () {
 	'use strict';

@@ -30,6 +30,7 @@ define('ember-weather/app', ['exports', 'ember', 'ember-weather/resolver', 'embe
   App = _ember['default'].Application.extend({
     modulePrefix: _emberWeatherConfigEnvironment['default'].modulePrefix,
     podModulePrefix: _emberWeatherConfigEnvironment['default'].podModulePrefix,
+    rootElement: '#main-content',
     Resolver: _emberWeatherResolver['default']
   });
 
@@ -2297,7 +2298,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+f1b54473"});
+  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+ff8bf41a"});
 }
 
 /* jshint ignore:end */
