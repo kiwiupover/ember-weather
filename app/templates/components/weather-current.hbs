@@ -3,9 +3,9 @@
     <h1>{{weather.name}}</h1>
 
     {{#if saved}}
-      <a class='save-location' {{action 'removeLocation' weather}}>Remove Location</a>
+      <a class='save-location' {{action removeLocation weather}}>Remove Location</a>
     {{else}}
-      <a class='save-location' {{action 'saveLocation' weather}}>Save Location</a>
+      <a class='save-location' {{action saveLocation weather}}>Save Location</a>
     {{/if}}
   </div>
   <div class="attribution">

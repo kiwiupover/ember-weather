@@ -210,7 +210,7 @@ define('ember-weather/components/weather-current-details', ['exports', 'ember'],
 
   });
 });
-define('ember-weather/components/weather-current', ['exports', 'ember-computed', 'ember-component', 'ember-service/inject'], function (exports, _emberComputed, _emberComponent, _emberServiceInject) {
+define('ember-weather/components/weather-current', ['exports', 'jquery', 'ember-computed', 'ember-component', 'ember-service/inject'], function (exports, _jquery, _emberComputed, _emberComponent, _emberServiceInject) {
   exports['default'] = _emberComponent['default'].extend({
     weather: null,
 
@@ -224,23 +224,19 @@ define('ember-weather/components/weather-current', ['exports', 'ember-computed',
       return false;
     }),
 
-    setupBackGroundImages: Ember.on('didInsertElement', Ember.observer('weather.imageUrl', function () {
+    didInsertElement: function didInsertElement() {
+      this._super.apply(this, arguments);
       this._setImageBackGround(this.get('weather.imageUrl'));
-    })),
+    },
 
-    actions: {
-      saveLocation: function saveLocation(location) {
-        this.sendAction('saveLocationHandler', location);
-      },
-
-      removeLocation: function removeLocation(location) {
-        this.sendAction('removeLocationHandler', location);
-      }
+    didReceiveAttrs: function didReceiveAttrs() {
+      this._super.apply(this, arguments);
+      this._setImageBackGround(this.get('weather.imageUrl'));
     },
 
     _setImageBackGround: function _setImageBackGround(image) {
-      $('.bg, #bg.bg').css('background-image', 'url(' + image + ')');
-      $('#bg').foggy({
+      (0, _jquery['default'])('.bg, #bg.bg').css('background-image', 'url(' + image + ')');
+      (0, _jquery['default'])('#bg').foggy({
         blurRadius: 12,
         opacity: 1
       });
@@ -393,6 +389,14 @@ define('ember-weather/helpers/photographer-link', ['exports', 'ember-string', 'e
 });
 define('ember-weather/helpers/pluralize', ['exports', 'ember-inflector/lib/helpers/pluralize'], function (exports, _emberInflectorLibHelpersPluralize) {
   exports['default'] = _emberInflectorLibHelpersPluralize['default'];
+});
+define('ember-weather/helpers/route-action', ['exports', 'ember-route-action-helper/helpers/route-action'], function (exports, _emberRouteActionHelperHelpersRouteAction) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberRouteActionHelperHelpersRouteAction['default'];
+    }
+  });
 });
 define('ember-weather/helpers/singularize', ['exports', 'ember-inflector/lib/helpers/singularize'], function (exports, _emberInflectorLibHelpersSingularize) {
   exports['default'] = _emberInflectorLibHelpersSingularize['default'];
@@ -686,7 +690,7 @@ define('ember-weather/serializers/weather', ['exports', 'ember', 'ember-weather/
       return this._super(store, primaryModelClass, ret, id, requestType);
     },
 
-    normalizeFindAllResponse: function normalizeFindAllResponse(store, primaryModelClass, payload) {
+    normalizeFindAllResponse: function normalizeFindAllResponse(store, primaryModelClass, payload, id, requestType) {
       var a_map = _ember['default'].ArrayPolyfills.map;
       var ret = a_map.call(payload, function (record) {
         return normalizeObject(record);
@@ -1341,7 +1345,7 @@ define("ember-weather/templates/components/weather-current", ["exports"], functi
           morphs[0] = dom.createElementMorph(element1);
           return morphs;
         },
-        statements: [["element", "action", ["removeLocation", ["get", "weather", ["loc", [null, [6, 57], [6, 64]]], 0, 0, 0, 0]], [], ["loc", [null, [6, 31], [6, 66]]], 0, 0]],
+        statements: [["element", "action", [["get", "removeLocation", ["loc", [null, [6, 40], [6, 54]]], 0, 0, 0, 0], ["get", "weather", ["loc", [null, [6, 55], [6, 62]]], 0, 0, 0, 0]], [], ["loc", [null, [6, 31], [6, 64]]], 0, 0]],
         locals: [],
         templates: []
       };
@@ -1386,7 +1390,7 @@ define("ember-weather/templates/components/weather-current", ["exports"], functi
           morphs[0] = dom.createElementMorph(element0);
           return morphs;
         },
-        statements: [["element", "action", ["saveLocation", ["get", "weather", ["loc", [null, [8, 55], [8, 62]]], 0, 0, 0, 0]], [], ["loc", [null, [8, 31], [8, 64]]], 0, 0]],
+        statements: [["element", "action", [["get", "saveLocation", ["loc", [null, [8, 40], [8, 52]]], 0, 0, 0, 0], ["get", "weather", ["loc", [null, [8, 53], [8, 60]]], 0, 0, 0, 0]], [], ["loc", [null, [8, 31], [8, 62]]], 0, 0]],
         locals: [],
         templates: []
       };
@@ -2343,7 +2347,7 @@ define("ember-weather/templates/weather", ["exports"], function (exports) {
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "weather-current", [], ["weather", ["subexpr", "@mut", [["get", "model", ["loc", [null, [1, 26], [1, 31]]], 0, 0, 0, 0]], [], [], 0, 0], "saveLocationHandler", "saveLocation", "removeLocationHandler", "removeLocation"], ["loc", [null, [1, 0], [3, 58]]], 0, 0]],
+      statements: [["inline", "weather-current", [], ["weather", ["subexpr", "@mut", [["get", "model", ["loc", [null, [1, 26], [1, 31]]], 0, 0, 0, 0]], [], [], 0, 0], "saveLocation", ["subexpr", "route-action", ["saveLocation"], [], ["loc", [null, [2, 31], [2, 60]]], 0, 0], "removeLocation", ["subexpr", "route-action", ["removeLocation"], [], ["loc", [null, [3, 33], [3, 64]]], 0, 0]], ["loc", [null, [1, 0], [3, 66]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -2567,7 +2571,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+0c817a5a"});
+  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+e6a2805a"});
 }
 
 /* jshint ignore:end */

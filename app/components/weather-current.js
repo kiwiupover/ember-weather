@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import computed from 'ember-computed';
 import Component from 'ember-component';
 import injectService from 'ember-service/inject';
@@ -15,18 +16,14 @@ export default Component.extend({
     return false;
   }),
 
-  setupBackGroundImages: Ember.on('didInsertElement', Ember.observer('weather.imageUrl', function(){
+  didInsertElement() {
+    this._super(...arguments);
     this._setImageBackGround(this.get('weather.imageUrl'));
-  })),
+  },
 
-  actions: {
-    saveLocation: function (location) {
-      this.sendAction('saveLocationHandler', location);
-    },
-
-    removeLocation: function (location) {
-      this.sendAction('removeLocationHandler', location);
-    }
+  didReceiveAttrs(){
+    this._super(...arguments);
+    this._setImageBackGround(this.get('weather.imageUrl'));
   },
 
   _setImageBackGround: function(image){
