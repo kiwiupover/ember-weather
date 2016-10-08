@@ -5827,9 +5827,9 @@ html, body, .perspective {
       height: 32px;
       font-size: 16px; }
 
-.spinkit-rotating-plane-spinner {
-  width: 80px;
-  height: 80px;
+.sk-rotating-plane {
+  width: 60px;
+  height: 60px;
   border-radius: 2px;
   background-color: #2980b9; }
 

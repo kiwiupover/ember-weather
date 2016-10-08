@@ -7,6 +7,7 @@ export default Component.extend({
   weather: null,
 
   locations: injectService(),
+  photographer: computed.readOnly('weather.photographer'),
 
   saved: computed('locations.savedLocations.[]', 'weather.id', function() {
     if (this.get('locations.savedLocations').filterBy('id', this.get('weather.id')).length > 0){

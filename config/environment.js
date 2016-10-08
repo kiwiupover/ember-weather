@@ -12,6 +12,9 @@ module.exports = function(environment) {
         'bower_components/bourbon/app/assets/stylesheets'
       ]
     },
+    moment: {
+      includeTimezone: '2010-2020'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

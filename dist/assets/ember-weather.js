@@ -201,13 +201,13 @@ define('ember-weather/components/nav-locations', ['exports', 'ember'], function 
     }
   });
 });
-define('ember-weather/components/weather-current-details', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Component.extend({
+define('ember-weather/components/weather-current-details', ['exports', 'moment', 'ember-computed', 'ember-component'], function (exports, _moment, _emberComputed, _emberComponent) {
+  exports['default'] = _emberComponent['default'].extend({
 
-    displayDate: _ember['default'].computed('weather.time', function () {
+    displayDate: (0, _emberComputed['default'])('weather.time', function () {
       var time = this.get('weather.time');
       var timezone = this.get('weather.timezone');
-      return moment.unix(time).tz(timezone).format('MMM DD');
+      return _moment['default'].unix(time).tz(timezone).format('MMM DD');
     })
 
   });
@@ -217,6 +217,7 @@ define('ember-weather/components/weather-current', ['exports', 'jquery', 'ember-
     weather: null,
 
     locations: (0, _emberServiceInject['default'])(),
+    photographer: _emberComputed['default'].readOnly('weather.photographer'),
 
     saved: (0, _emberComputed['default'])('locations.savedLocations.[]', 'weather.id', function () {
       if (this.get('locations.savedLocations').filterBy('id', this.get('weather.id')).length > 0) {
@@ -246,13 +247,13 @@ define('ember-weather/components/weather-current', ['exports', 'jquery', 'ember-
 
   });
 });
-define('ember-weather/components/weather-forecast', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Component.extend({
+define('ember-weather/components/weather-forecast', ['exports', 'moment', 'ember-computed', 'ember-component'], function (exports, _moment, _emberComputed, _emberComponent) {
+  exports['default'] = _emberComponent['default'].extend({
 
-    days: _ember['default'].computed.alias('forecast'),
+    days: _emberComputed['default'].alias('forecast'),
 
-    displayDate: _ember['default'].computed('weather.weatherForecast.currently.time', function () {
-      return moment.unix(this.get('weather.weatherForecast.currently.time')).format('MMM DD');
+    displayDate: (0, _emberComputed['default'])('weather.weatherForecast.currently.time', function () {
+      return _moment['default'].unix(this.get('weather.weatherForecast.currently.time')).format('MMM DD');
     })
 
   });
@@ -332,7 +333,7 @@ define('ember-weather/components/weather-vane', ['exports', 'ember'], function (
 
   });
 });
-define('ember-weather/helpers/date-formatter', ['exports', 'ember-string', 'ember-helper'], function (exports, _emberString, _emberHelper) {
+define('ember-weather/helpers/date-formatter', ['exports', 'moment', 'ember-helper', 'ember-string'], function (exports, _moment, _emberHelper, _emberString) {
   var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }; })();
 
   exports.dateFormat = dateFormat;
@@ -343,7 +344,7 @@ define('ember-weather/helpers/date-formatter', ['exports', 'ember-string', 'embe
     var date = _ref2[0];
     var timezone = _ref2[1];
 
-    return (0, _emberString.htmlSafe)(moment.unix(date).tz(timezone).format('ddd MMM DD'));
+    return (0, _emberString.htmlSafe)(_moment['default'].unix(date).tz(timezone).format('ddd MMM DD'));
   }
 
   exports['default'] = (0, _emberHelper.helper)(dateFormat);
@@ -356,6 +357,36 @@ define('ember-weather/helpers/icon-name', ['exports', 'ember-string', 'ember-hel
   }
 
   exports['default'] = (0, _emberHelper.helper)(iconName);
+});
+define('ember-weather/helpers/is-after', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/is-after'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersIsAfter) {
+  exports['default'] = _emberMomentHelpersIsAfter['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
+});
+define('ember-weather/helpers/is-before', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/is-before'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersIsBefore) {
+  exports['default'] = _emberMomentHelpersIsBefore['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
+});
+define('ember-weather/helpers/is-between', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/is-between'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersIsBetween) {
+  exports['default'] = _emberMomentHelpersIsBetween['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
+});
+define('ember-weather/helpers/is-same-or-after', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/is-same-or-after'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersIsSameOrAfter) {
+  exports['default'] = _emberMomentHelpersIsSameOrAfter['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
+});
+define('ember-weather/helpers/is-same-or-before', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/is-same-or-before'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersIsSameOrBefore) {
+  exports['default'] = _emberMomentHelpersIsSameOrBefore['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
+});
+define('ember-weather/helpers/is-same', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/is-same'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersIsSame) {
+  exports['default'] = _emberMomentHelpersIsSame['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
 });
 define('ember-weather/helpers/lf-lock-model', ['exports', 'liquid-fire/helpers/lf-lock-model'], function (exports, _liquidFireHelpersLfLockModel) {
   Object.defineProperty(exports, 'default', {
@@ -385,12 +416,54 @@ define('ember-weather/helpers/lf-or', ['exports', 'liquid-fire/helpers/lf-or'], 
     }
   });
 });
-define('ember-weather/helpers/photographer-link', ['exports', 'ember-string', 'ember-helper'], function (exports, _emberString, _emberHelper) {
+define('ember-weather/helpers/moment-calendar', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/moment-calendar'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersMomentCalendar) {
+  exports['default'] = _emberMomentHelpersMomentCalendar['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
+});
+define('ember-weather/helpers/moment-duration', ['exports', 'ember-moment/helpers/moment-duration'], function (exports, _emberMomentHelpersMomentDuration) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberMomentHelpersMomentDuration['default'];
+    }
+  });
+});
+define('ember-weather/helpers/moment-format', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/moment-format'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersMomentFormat) {
+  exports['default'] = _emberMomentHelpersMomentFormat['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
+});
+define('ember-weather/helpers/moment-from-now', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/moment-from-now'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersMomentFromNow) {
+  exports['default'] = _emberMomentHelpersMomentFromNow['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
+});
+define('ember-weather/helpers/moment-to-now', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/helpers/moment-to-now'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentHelpersMomentToNow) {
+  exports['default'] = _emberMomentHelpersMomentToNow['default'].extend({
+    globalAllowEmpty: !!_ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.allowEmpty')
+  });
+});
+define('ember-weather/helpers/now', ['exports', 'ember-moment/helpers/now'], function (exports, _emberMomentHelpersNow) {
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function get() {
+      return _emberMomentHelpersNow['default'];
+    }
+  });
+});
+define('ember-weather/helpers/photographer-link', ['exports', 'ember-helper', 'ember-string'], function (exports, _emberHelper, _emberString) {
+  var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }; })();
+
   exports.photographerLink = photographerLink;
 
-  function photographerLink(photographer) {
+  function photographerLink(_ref) {
+    var _ref2 = _slicedToArray(_ref, 1);
+
+    var photographer = _ref2[0];
+
     if (photographer) {
-      return (0, _emberString.htmlSafe)('&copy; <a href="http://500px.com/' + photographer.username + '" target="_blank">' + photographer.fullname + '</a>');
+      return (0, _emberString.htmlSafe)('&copy; <a href="https://500px.com/' + photographer.username + '" target="_blank">' + photographer.fullname + '</a>');
     }
   }
 
@@ -596,8 +669,8 @@ define('ember-weather/models/weather', ['exports', 'ember-data'], function (expo
     name: _emberData['default'].attr('string'),
     forecast: _emberData['default'].attr(),
     weatherConditions: _emberData['default'].attr(),
+    photographer: _emberData['default'].attr(),
     imageUrl: _emberData['default'].attr('string'),
-    photographer: _emberData['default'].attr('string'),
     // properties plucked from weatherCurrent in serializer
     temperature: _emberData['default'].attr('number'),
     tempC: _emberData['default'].attr('number'),
@@ -764,6 +837,11 @@ define("ember-weather/services/liquid-fire-transitions", ["exports", "liquid-fir
 define('ember-weather/services/locations', ['exports', 'ember-service'], function (exports, _emberService) {
   exports['default'] = _emberService['default'].extend({
     savedLocations: []
+  });
+});
+define('ember-weather/services/moment', ['exports', 'ember', 'ember-weather/config/environment', 'ember-moment/services/moment'], function (exports, _ember, _emberWeatherConfigEnvironment, _emberMomentServicesMoment) {
+  exports['default'] = _emberMomentServicesMoment['default'].extend({
+    defaultFormat: _ember['default'].get(_emberWeatherConfigEnvironment['default'], 'moment.outputFormat')
   });
 });
 define("ember-weather/templates/-nav", ["exports"], function (exports) {
@@ -1055,11 +1133,11 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
           "loc": {
             "source": null,
             "start": {
-              "line": 9,
+              "line": 8,
               "column": 4
             },
             "end": {
-              "line": 11,
+              "line": 10,
               "column": 4
             }
           },
@@ -1075,8 +1153,6 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
           dom.appendChild(el0, el1);
           var el1 = dom.createElement("li");
           var el2 = dom.createElement("a");
-          var el3 = dom.createTextNode("location: ");
-          dom.appendChild(el2, el3);
           var el3 = dom.createComment("");
           dom.appendChild(el2, el3);
           dom.appendChild(el1, el2);
@@ -1089,10 +1165,10 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
           var element0 = dom.childAt(fragment, [1, 0]);
           var morphs = new Array(2);
           morphs[0] = dom.createElementMorph(element0);
-          morphs[1] = dom.createMorphAt(element0, 1, 1);
+          morphs[1] = dom.createMorphAt(element0, 0, 0);
           return morphs;
         },
-        statements: [["element", "action", ["link", ["get", "location", ["loc", [null, [10, 29], [10, 37]]], 0, 0, 0, 0]], [], ["loc", [null, [10, 13], [10, 39]]], 0, 0], ["content", "location.name", ["loc", [null, [10, 50], [10, 67]]], 0, 0, 0, 0]],
+        statements: [["element", "action", ["link", ["get", "location", ["loc", [null, [9, 29], [9, 37]]], 0, 0, 0, 0]], [], ["loc", [null, [9, 13], [9, 39]]], 0, 0], ["content", "location.name", ["loc", [null, [9, 40], [9, 57]]], 0, 0, 0, 0]],
         locals: ["location"],
         templates: []
       };
@@ -1107,7 +1183,7 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
             "column": 0
           },
           "end": {
-            "line": 19,
+            "line": 18,
             "column": 0
           }
         },
@@ -1133,14 +1209,6 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("ul");
         dom.setAttribute(el2, "class", "no-bullet");
-        var el3 = dom.createTextNode("\n    ");
-        dom.appendChild(el2, el3);
-        var el3 = dom.createElement("li");
-        var el4 = dom.createTextNode("locations: ");
-        dom.appendChild(el3, el4);
-        var el4 = dom.createComment("");
-        dom.appendChild(el3, el4);
-        dom.appendChild(el2, el3);
         var el3 = dom.createTextNode("\n");
         dom.appendChild(el2, el3);
         var el3 = dom.createComment("");
@@ -1168,21 +1236,120 @@ define("ember-weather/templates/components/nav-locations", ["exports"], function
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var element1 = dom.childAt(fragment, [2]);
-        var element2 = dom.childAt(element1, [3]);
-        var element3 = dom.childAt(fragment, [4]);
-        var morphs = new Array(6);
+        var element2 = dom.childAt(fragment, [4]);
+        var morphs = new Array(5);
         morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
         morphs[1] = dom.createMorphAt(element1, 1, 1);
-        morphs[2] = dom.createMorphAt(dom.childAt(element2, [1]), 1, 1);
-        morphs[3] = dom.createMorphAt(element2, 3, 3);
-        morphs[4] = dom.createElementMorph(element3);
-        morphs[5] = dom.createMorphAt(element3, 1, 1);
+        morphs[2] = dom.createMorphAt(dom.childAt(element1, [3]), 1, 1);
+        morphs[3] = dom.createElementMorph(element2);
+        morphs[4] = dom.createMorphAt(element2, 1, 1);
         dom.insertBoundary(fragment, 0);
         return morphs;
       },
-      statements: [["inline", "partial", ["nav"], [], ["loc", [null, [1, 0], [1, 17]]], 0, 0], ["inline", "weather-searchbar", [], ["transitionToLocation", "transitionToLocationHandler", "placeholder", "Search for a city anywhere"], ["loc", [null, [4, 2], [5, 64]]], 0, 0], ["content", "locations.length", ["loc", [null, [8, 19], [8, 39]]], 0, 0, 0, 0], ["block", "each", [["get", "locations", ["loc", [null, [9, 12], [9, 21]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [9, 4], [11, 13]]]], ["element", "action", ["menuClose"], ["on", "click"], ["loc", [null, [16, 23], [16, 56]]], 0, 0], ["content", "yield", ["loc", [null, [17, 2], [17, 11]]], 0, 0, 0, 0]],
+      statements: [["inline", "partial", ["nav"], [], ["loc", [null, [1, 0], [1, 17]]], 0, 0], ["inline", "weather-searchbar", [], ["transitionToLocation", "transitionToLocationHandler", "placeholder", "Search for a city anywhere"], ["loc", [null, [4, 2], [5, 64]]], 0, 0], ["block", "each", [["get", "locations", ["loc", [null, [8, 12], [8, 21]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [8, 4], [10, 13]]]], ["element", "action", ["menuClose"], ["on", "click"], ["loc", [null, [15, 23], [15, 56]]], 0, 0], ["content", "yield", ["loc", [null, [16, 2], [16, 11]]], 0, 0, 0, 0]],
       locals: [],
       templates: [child0]
+    };
+  })());
+});
+define("ember-weather/templates/components/spinkit-rotating-plane", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.8.1",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 0
+          }
+        },
+        "moduleName": "ember-weather/templates/components/spinkit-rotating-plane.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("\n \n\n      ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("div");
+        dom.setAttribute(el1, "class", "sk-rotating-plane");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes() {
+        return [];
+      },
+      statements: [],
+      locals: [],
+      templates: []
+    };
+  })());
+});
+define("ember-weather/templates/components/spinkit-three-bounce", ["exports"], function (exports) {
+  exports["default"] = Ember.HTMLBars.template((function () {
+    return {
+      meta: {
+        "revision": "Ember@2.8.1",
+        "loc": {
+          "source": null,
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 9,
+            "column": 0
+          }
+        },
+        "moduleName": "ember-weather/templates/components/spinkit-three-bounce.hbs"
+      },
+      isEmpty: false,
+      arity: 0,
+      cachedFragment: null,
+      hasRendered: false,
+      buildFragment: function buildFragment(dom) {
+        var el0 = dom.createDocumentFragment();
+        var el1 = dom.createTextNode("\n \n\n      ");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("div");
+        dom.setAttribute(el1, "class", "sk-three-bounce");
+        var el2 = dom.createTextNode("\n        ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2, "class", "sk-child sk-bounce1");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n        ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2, "class", "sk-child sk-bounce2");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n        ");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2, "class", "sk-child sk-bounce3");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n      ");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        return el0;
+      },
+      buildRenderNodes: function buildRenderNodes() {
+        return [];
+      },
+      statements: [],
+      locals: [],
+      templates: []
     };
   })());
 });
@@ -1308,7 +1475,7 @@ define("ember-weather/templates/components/weather-current-details", ["exports"]
         morphs[4] = dom.createMorphAt(dom.childAt(element3, [3]), 1, 1);
         return morphs;
       },
-      statements: [["inline", "whole-number", [["get", "weather.temperature", ["loc", [null, [4, 21], [4, 40]]], 0, 0, 0, 0]], [], ["loc", [null, [4, 6], [4, 42]]], 0, 0], ["content", "displayDate", ["loc", [null, [7, 6], [7, 21]]], 0, 0, 0, 0], ["inline", "icon-name", [["get", "weather.icon", ["loc", [null, [12, 19], [12, 31]]], 0, 0, 0, 0]], [], ["loc", [null, [12, 7], [12, 33]]], 0, 0], ["content", "weather.windSpeed", ["loc", [null, [16, 8], [16, 29]]], 0, 0, 0, 0], ["inline", "weather-vane", [], ["windDegrees", ["subexpr", "@mut", [["get", "weather.windBearing", ["loc", [null, [19, 35], [19, 54]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [19, 8], [19, 56]]], 0, 0]],
+      statements: [["inline", "whole-number", [["get", "weather.temperature", ["loc", [null, [4, 21], [4, 40]]], 0, 0, 0, 0]], [], ["loc", [null, [4, 6], [4, 42]]], 0, 0], ["content", "displayDate", ["loc", [null, [7, 6], [7, 21]]], 0, 0, 0, 0], ["inline", "icon-name", [["get", "weather.icon", ["loc", [null, [12, 19], [12, 31]]], 0, 0, 0, 0]], [], ["loc", [null, [12, 7], [12, 33]]], 0, 0], ["inline", "whole-number", [["get", "weather.windSpeed", ["loc", [null, [16, 23], [16, 40]]], 0, 0, 0, 0]], [], ["loc", [null, [16, 8], [16, 42]]], 0, 0], ["inline", "weather-vane", [], ["windDegrees", ["subexpr", "@mut", [["get", "weather.windBearing", ["loc", [null, [19, 35], [19, 54]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [19, 8], [19, 56]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -1499,7 +1666,7 @@ define("ember-weather/templates/components/weather-current", ["exports"], functi
         morphs[4] = dom.createMorphAt(dom.childAt(element4, [3]), 1, 1);
         return morphs;
       },
-      statements: [["content", "weather.name", ["loc", [null, [3, 8], [3, 24]]], 0, 0, 0, 0], ["block", "if", [["get", "saved", ["loc", [null, [5, 10], [5, 15]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [5, 4], [9, 11]]]], ["inline", "photographer-link", [["get", "weather.photographer", ["loc", [null, [12, 34], [12, 54]]], 0, 0, 0, 0]], [], ["loc", [null, [12, 14], [12, 56]]], 0, 0], ["inline", "weather-current-details", [], ["weather", ["subexpr", "@mut", [["get", "weather", ["loc", [null, [17, 36], [17, 43]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [17, 2], [17, 45]]], 0, 0], ["inline", "weather-forecast", [], ["forecast", ["subexpr", "@mut", [["get", "weather.forecast", ["loc", [null, [19, 32], [19, 48]]], 0, 0, 0, 0]], [], [], 0, 0], "timezone", ["subexpr", "@mut", [["get", "weather.timezone", ["loc", [null, [19, 58], [19, 74]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [19, 4], [19, 76]]], 0, 0]],
+      statements: [["content", "weather.name", ["loc", [null, [3, 8], [3, 24]]], 0, 0, 0, 0], ["block", "if", [["get", "saved", ["loc", [null, [5, 10], [5, 15]]], 0, 0, 0, 0]], [], 0, 1, ["loc", [null, [5, 4], [9, 11]]]], ["inline", "photographer-link", [["get", "photographer", ["loc", [null, [12, 34], [12, 46]]], 0, 0, 0, 0]], [], ["loc", [null, [12, 14], [12, 48]]], 0, 0], ["inline", "weather-current-details", [], ["weather", ["subexpr", "@mut", [["get", "weather", ["loc", [null, [17, 36], [17, 43]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [17, 2], [17, 45]]], 0, 0], ["inline", "weather-forecast", [], ["forecast", ["subexpr", "@mut", [["get", "weather.forecast", ["loc", [null, [19, 32], [19, 48]]], 0, 0, 0, 0]], [], [], 0, 0], "timezone", ["subexpr", "@mut", [["get", "weather.timezone", ["loc", [null, [19, 58], [19, 74]]], 0, 0, 0, 0]], [], [], 0, 0]], ["loc", [null, [19, 4], [19, 76]]], 0, 0]],
       locals: [],
       templates: [child0, child1]
     };
@@ -2582,7 +2749,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+4f84c1fc"});
+  require("ember-weather/app")["default"].create({"name":"ember-weather","version":"0.0.0+1d418c4b"});
 }
 
 /* jshint ignore:end */
