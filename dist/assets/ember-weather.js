@@ -321,14 +321,14 @@ define('ember-weather/components/weather-searchbar', ['exports', 'ember'], funct
 
   });
 });
-define('ember-weather/components/weather-vane', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Component.extend({
+define('ember-weather/components/weather-vane', ['exports', 'ember-computed', 'ember-component'], function (exports, _emberComputed, _emberComponent) {
+  exports['default'] = _emberComponent['default'].extend({
     windDegrees: 0,
     attributeBindings: 'style',
 
-    style: _ember['default'].computed('windDegrees', function () {
+    style: (0, _emberComputed['default'])('windDegrees', function () {
       var degrees = this.get('windDegrees');
-      return "-webkit-transform: rotate(" + degrees + "deg); transform: rotate(" + degrees + "deg);";
+      return '-webkit-transform: rotate(' + degrees + 'deg); transform: rotate(' + degrees + 'deg);';
     })
 
   });
