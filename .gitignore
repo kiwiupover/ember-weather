@@ -42,3 +42,11 @@ dist/assets/vendor.map
 !dist/assets/images/reo-2048.jpg
 !dist/assets/vendor.css
 !dist/assets/vendor.js
+
+ember-cordova/tmp-livereload
+ember-cordova/cordova/www/*
+!ember-cordova/cordova/www/.gitkeep
+ember-cordova/cordova/plugins/*
+!ember-cordova/cordova/plugins/.gitkeep
+ember-cordova/cordova/platforms/*
+!ember-cordova/cordova/platforms/.gitkeep

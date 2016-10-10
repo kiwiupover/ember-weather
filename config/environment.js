@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'ember-weather',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     sassOptions: {
       includePaths: [
         'bower_components/foundation/scss',
