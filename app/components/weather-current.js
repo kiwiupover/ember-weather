@@ -1,20 +1,30 @@
-import Ember from 'ember';
+import $ from 'jquery';
+import computed from 'ember-computed';
+import Component from 'ember-component';
+import injectService from 'ember-service/inject';
 
-export default Ember.Component.extend({
+export default Component.extend({
   weather: null,
 
-  setupBackGroundImages: function(){
-    this._setImageBackGround(this.get('weather.imageUrl'));
-  }.observes('weather.imageUrl').on('didInsertElement'),
+  locations: injectService(),
+  photographer: computed.readOnly('weather.photographer'),
 
-  actions: {
-    saveLocation: function (location) {
-      this.sendAction('saveLocationHandler', location);
-    },
-
-    removeLocation: function (location) {
-      this.sendAction('removeLocationHandler', location);
+  saved: computed('locations.savedLocations.[]', 'weather.id', function() {
+    if (this.get('locations.savedLocations').filterBy('id', this.get('weather.id')).length > 0){
+      return true;
     }
+
+    return false;
+  }),
+
+  didInsertElement() {
+    this._super(...arguments);
+    this._setImageBackGround(this.get('weather.imageUrl'));
+  },
+
+  didReceiveAttrs(){
+    this._super(...arguments);
+    this._setImageBackGround(this.get('weather.imageUrl'));
   },
 
   _setImageBackGround: function(image){

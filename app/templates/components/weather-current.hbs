@@ -3,19 +3,19 @@
     <h1>{{weather.name}}</h1>
 
     {{#if saved}}
-      <a class='save-location' {{action 'removeLocation' weather}}>Remove Location</a>
+      <a class='save-location' {{action removeLocation weather}}>Remove Location</a>
     {{else}}
-      <a class='save-location' {{action 'saveLocation' weather}}>Save Location</a>
+      <a class='save-location' {{action saveLocation weather}}>Save Location</a>
     {{/if}}
   </div>
   <div class="attribution">
-    photo by: {{photographer-link weather.photographer}}
+    photo by: {{photographer-link photographer}}
   </div>
 </div>
 
 <div class="weather-stript">
   {{weather-current-details weather=weather}}
   <div class="forecast">
-    {{weather-forecast forecast=weather.forecast}}
+    {{weather-forecast forecast=weather.forecast timezone=weather.timezone}}
   </div>
 </div>

@@ -3,30 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ember Weather</title>
+    <title>EmberWeather</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
 
-    <base href="/">
+    
+<meta name="ember-weather/config/environment" content="%7B%22modulePrefix%22%3A%22ember-weather%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22sassOptions%22%3A%7B%22includePaths%22%3A%5B%22bower_components/foundation/scss%22%2C%22bower_components/bourbon/app/assets/stylesheets%22%5D%7D%2C%22moment%22%3A%7B%22includeTimezone%22%3A%222010-2020%22%7D%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-weather%22%2C%22version%22%3A%220.0.0+af430012%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
 
-    <link rel="stylesheet" href="assets/vendor-600a0a6289b0cbf34b9c6aaa10bfa1ec.css">
-    <link rel="stylesheet" href="assets/ember-weather-6832f59e3623bcadfe7194ad003ad232.css">
+    <link rel="stylesheet" href="/assets/vendor-4e83609fba8302580c256a0300bad453.css" integrity="sha256-mJGeXhgrbh3yRZ5XYbE2a6+tYUGv/sP/B3joAklUbTA= sha512-leqpYRmr9Yd4ziX/yTxItR1qSQpXTKEszY+Jq5lSIN1LzYIHB1GOSUk2V7k2GYZBhsy/kRQr5xZ9ccrGyS1hUw==" >
+    <link rel="stylesheet" href="/assets/ember-weather-8d0e6bdf67b8d95832e5d82324de916f.css" integrity="sha256-OsHaYkhHq0nKzjz8IKA+WQow3tYgOruFFRoZdM7mOPE= sha512-B2Xw3x9mJl/J4jMeoStOXyGD4z8EaXT0lStIWXeEYTLJ8txH8G8kYBN+HEjvblNa34KWNhmh5EIUllivRghCLg==" >
+
+    
   </head>
   <body>
+    
     <script>
-      window.EmberWeatherENV = {"environment":"production","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{}};
-      window.EmberENV = window.EmberWeatherENV.EmberENV;
+      // window.EmberWeatherENV = {{ENV}};
+      // window.EmberENV = window.EmberWeatherENV.EmberENV;
     </script>
     <div class="wrapper">
       <div id="main-content">
 
       </div>
     </div>
-    <script src="assets/vendor-f42f6ceefbfe5525d174a381daad131c.js"></script>
-    <script src="assets/ember-weather-b49044cf101aa372da170ea6bbda4672.js"></script>
-    <script>
-      window.EmberWeather = require('ember-weather/app')['default'].create(EmberWeatherENV.APP);
-    </script>
+
+    <script src="/assets/vendor-2ef2a3f59b44266a498f188f9ac3bfef.js" integrity="sha256-dpb9b4wNP7cupURm4byt9Y8e3zN1IVu89w6Tuuz2T+E= sha512-B0Idvdwha5JF0EpLmrhnECp3YN/qKT96TXIFvjwcAg0wBwqjCnYUoRR4jUHrXxo7Q7QouwmCAKHHzAgCkVtQtA==" ></script>
+    <script src="/assets/ember-weather-146f0ffeb200b4c900dd73e57cb1e095.js" integrity="sha256-9qB/8mQ+5NWsmW0ew/u6u+rrXqYO9xblePHmp0eOwNE= sha512-dc+QLsLX3zCId2LN/F6M72XEfSWQOWgu95o/lCHwhMmfw3H/G9E+64PAic78aphiHcomxbvJzj7NdfvzbQnYfA==" ></script>
+
+    
   </body>
 </html>

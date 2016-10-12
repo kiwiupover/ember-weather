@@ -1,5 +1,5 @@
 <ul class="locations-list no-bullet columns small-12 medium-8 small-centered">
-  {{#each location in model}}
+  {{#each model as |location|}}
     {{weather-list location=location transitionToLocation="transitionToLocationHandler"}}
   {{/each}}
 </ul>

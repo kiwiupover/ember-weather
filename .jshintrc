@@ -1,13 +1,11 @@
 {
-  "predef": {
-    "document": true,
-    "window": true,
-    "-Promise": true,
-    "EmberWeatherENV": true,
-    "moment": true
-  },
-  "browser" : true,
-  "boss" : true,
+  "predef": [
+    "document",
+    "window",
+    "-Promise"
+  ],
+  "browser": true,
+  "boss": true,
   "curly": true,
   "debug": false,
   "devel": true,
@@ -29,6 +27,6 @@
   "strict": false,
   "white": false,
   "eqnull": true,
-  "esnext": true,
+  "esversion": 6,
   "unused": true
 }

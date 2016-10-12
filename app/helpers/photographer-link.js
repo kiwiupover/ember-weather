@@ -1,7 +1,10 @@
-import Ember from 'ember';
+import { helper } from 'ember-helper';
+import { htmlSafe } from 'ember-string';
 
-export default Ember.Handlebars.makeBoundHelper(function(photographer) {
+export function photographerLink([photographer]) {
   if (photographer) {
-    return new Ember.Handlebars.SafeString('&copy; <a href="http://500px.com/' + photographer.username + '" target="_blank">' + photographer.fullname + '</a>');
+    return htmlSafe(`&copy; <a href="https://500px.com/${photographer.username}" target="_blank">${photographer.fullname}</a>`);
   }
-});
+}
+
+export default helper(photographerLink);

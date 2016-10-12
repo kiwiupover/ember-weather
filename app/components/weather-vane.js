@@ -1,12 +1,13 @@
-import Ember from 'ember';
+import computed from 'ember-computed';
+import Component from 'ember-component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   windDegrees: 0,
   attributeBindings: 'style',
 
-  style: function(){
-    var degrees = this.get('windDegrees');
-    return "-webkit-transform: rotate(" + degrees +"deg); transform: rotate(" + degrees +"deg);";
-  }.property('windDegrees')
+  style: computed('windDegrees', function(){
+    let degrees = this.get('windDegrees');
+    return `-webkit-transform: rotate(${degrees}deg); transform: rotate(${degrees}deg);`;
+  })
 
 });

@@ -1,16 +1,7 @@
-import Ember from 'ember';
+import { test } from 'qunit';
+import moduleForAcceptance from 'ember-weather/tests/helpers/module-for-acceptance';
 
-var App,
-    weatherUrl = 'http://localhost:8000/weather/vancouver-canada';
-
-module('Acceptances - Weather', {
-  setup: function(){
-    App = startApp();
-  },
-  teardown: function() {
-    Ember.run(App, 'destroy');
-  }
-});
+moduleForAcceptance('Acceptances - Weather');
 
 test('locations/weather renders', function(){
   expect(1);
