@@ -1,7 +1,7 @@
 {
   "name": "ember-weather",
   "dependencies": {
-    "ember": "~2.8.0",
+    "ember": "canary",
     "ember-cli-shims": "0.1.1",
     "foundation": "zurb/bower-foundation#~5.5.3",
     "foggy": "master",
