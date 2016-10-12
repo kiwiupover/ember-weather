@@ -27,9 +27,9 @@
   text-shadow: 0 0 0 black;
   border: none;
   h1, h2, h3, h4, h5 ,h6 {
-    color: white;
-    font-weight: 100;
-    text-shadow: 0 0 6px black;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 0px #222, -1px -1px 0px #222, -1px 1px 0px #222, 1px -1px 0px #222;
   }
   @media #{$small-only} {
     h1 {
@@ -60,5 +60,3 @@
     font-weight: 900;
   }
 }
-
-
