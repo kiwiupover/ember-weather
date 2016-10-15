@@ -17,6 +17,7 @@
 npm-debug.log
 testem.log
 server-old/log/*
+.DS_Store
 
 # dist tests
 dist/tests/
