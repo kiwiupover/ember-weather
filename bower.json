@@ -7,9 +7,13 @@
     "foggy": "master",
     "typeahead.js": "~0.9.3",
     "bourbon": "~3.1.0",
-    "jquery": "^3.1.1"
+    "jquery": "3.1.1"
   },
   "devDependencies": {
     "fastclick": "~1.0.3"
+  },
+  "resolutions": {
+    "ember": "canary",
+    "jquery": "^3.1.1"
   }
 }
